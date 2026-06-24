@@ -1,0 +1,392 @@
+{
+  "schema_version": "1.0.0",
+  "final_order": [
+    "BR",
+    "IN",
+    "DE",
+    "CN",
+    "CA",
+    "FR",
+    "MX",
+    "MY",
+    "PL",
+    "JP",
+    "BE",
+    "IT",
+    "CH",
+    "IE",
+    "TH",
+    "SE",
+    "AT",
+    "AE",
+    "ZA",
+    "KR"
+  ],
+  "discovery_budgets": {
+    "searches": 12,
+    "page_reads": 20,
+    "capability_probes": 15,
+    "consecutive_empty_searches": 5,
+    "max_page_reasoning_bytes": 51200
+  },
+  "rediscovery_budgets": {
+    "searches": 6,
+    "page_reads": 8,
+    "capability_probes": 8,
+    "rounds": 1
+  },
+  "hazard_families_required": {
+    "_doc": "Every country's candidate set must cover each applicable flood-hazard family. Where a family is physically inapplicable (e.g. coastal for a landlocked state), record an explicit N/A in fragmentation_summary rather than omitting it silently.",
+    "families": [
+      "fluvial",
+      "coastal",
+      "surface_water"
+    ]
+  },
+  "countries": {
+    "GB": {
+      "name": "United Kingdom",
+      "report_scope": "fixture",
+      "official_languages": [
+        "English",
+        "Welsh"
+      ],
+      "search_terms": [
+        "flood map",
+        "flood hazard",
+        "inundation extent",
+        "flood depth",
+        "flood velocity",
+        "return period",
+        "map llifogydd",
+        "perygl llifogydd"
+      ]
+    },
+    "BR": {
+      "name": "Brazil",
+      "report_scope": "final",
+      "official_languages": [
+        "Portuguese"
+      ],
+      "search_terms": [
+        "mapa de inundação",
+        "perigo de inundação",
+        "mancha de inundação",
+        "profundidade",
+        "velocidade",
+        "tempo de retorno",
+        "inundação costeira",
+        "cota de inundação litoral",
+        "coastal flood hazard",
+        "mapa de risco costeiro"
+      ]
+    },
+    "IN": {
+      "name": "India",
+      "report_scope": "final",
+      "official_languages": [
+        "Hindi",
+        "English"
+      ],
+      "search_terms": [
+        "flood hazard map",
+        "inundation map",
+        "flood depth",
+        "flood velocity",
+        "return period",
+        "बाढ़ मानचित्र",
+        "बाढ़ जोखिम"
+      ]
+    },
+    "DE": {
+      "name": "Germany",
+      "report_scope": "final",
+      "official_languages": [
+        "German"
+      ],
+      "search_terms": [
+        "Hochwassergefahrenkarte",
+        "Überschwemmungsgebiet",
+        "Überflutungstiefe",
+        "Fließgeschwindigkeit",
+        "Wiederkehrintervall",
+        "Starkregengefahrenkarte",
+        "Starkregen Hinweiskarte",
+        "urban pluvial flood map",
+        "Oberflächenwasser Überflutung"
+      ]
+    },
+    "CN": {
+      "name": "China",
+      "report_scope": "final",
+      "official_languages": [
+        "Chinese"
+      ],
+      "search_terms": [
+        "洪水风险图",
+        "洪水淹没图",
+        "淹没深度",
+        "流速",
+        "重现期",
+        "城市内涝风险图",
+        "内涝",
+        "urban waterlogging map",
+        "surface water flood"
+      ]
+    },
+    "CA": {
+      "name": "Canada",
+      "report_scope": "final",
+      "official_languages": [
+        "English",
+        "French"
+      ],
+      "search_terms": [
+        "flood hazard map",
+        "floodplain mapping",
+        "inundation depth",
+        "return period",
+        "carte des zones inondables",
+        "profondeur d'inondation",
+        "période de retour"
+      ]
+    },
+    "FR": {
+      "name": "France",
+      "report_scope": "final",
+      "official_languages": [
+        "French"
+      ],
+      "search_terms": [
+        "carte aléa inondation",
+        "zone inondable",
+        "hauteur d'eau",
+        "vitesse d'écoulement",
+        "période de retour"
+      ]
+    },
+    "MX": {
+      "name": "Mexico",
+      "report_scope": "final",
+      "official_languages": [
+        "Spanish"
+      ],
+      "search_terms": [
+        "mapa de peligro de inundación",
+        "zona inundable",
+        "profundidad de inundación",
+        "velocidad",
+        "periodo de retorno"
+      ]
+    },
+    "MY": {
+      "name": "Malaysia",
+      "report_scope": "final",
+      "official_languages": [
+        "Malay"
+      ],
+      "search_terms": [
+        "peta bahaya banjir",
+        "peta genangan banjir",
+        "kedalaman banjir",
+        "halaju banjir",
+        "tempoh ulangan"
+      ]
+    },
+    "PL": {
+      "name": "Poland",
+      "report_scope": "final",
+      "official_languages": [
+        "Polish"
+      ],
+      "search_terms": [
+        "mapa zagrożenia powodziowego",
+        "obszar zalewowy",
+        "głębokość wody",
+        "prędkość przepływu",
+        "okres powtarzalności",
+        "mapa zagrożenia powodzią opadową",
+        "powódź miejska",
+        "surface water flood map",
+        "pluvial flood"
+      ]
+    },
+    "JP": {
+      "name": "Japan",
+      "report_scope": "final",
+      "official_languages": [
+        "Japanese"
+      ],
+      "search_terms": [
+        "洪水ハザードマップ",
+        "浸水想定区域",
+        "浸水深",
+        "流速",
+        "再現期間"
+      ]
+    },
+    "BE": {
+      "name": "Belgium",
+      "report_scope": "final",
+      "official_languages": [
+        "Dutch",
+        "French",
+        "German"
+      ],
+      "search_terms": [
+        "overstromingsgevaarkaart",
+        "overstromingsdiepte",
+        "carte aléa inondation",
+        "hauteur d'eau",
+        "Hochwassergefahrenkarte"
+      ]
+    },
+    "IT": {
+      "name": "Italy",
+      "report_scope": "final",
+      "official_languages": [
+        "Italian"
+      ],
+      "search_terms": [
+        "mappa pericolosità alluvioni",
+        "area allagabile",
+        "tirante idrico",
+        "velocità",
+        "tempo di ritorno",
+        "allagamento urbano",
+        "pericolosità da pioggia intensa",
+        "pluvial flood map",
+        "rischio allagamenti"
+      ]
+    },
+    "CH": {
+      "name": "Switzerland",
+      "report_scope": "final",
+      "official_languages": [
+        "German",
+        "French",
+        "Italian",
+        "Romansh"
+      ],
+      "search_terms": [
+        "Hochwassergefahrenkarte",
+        "Überflutungstiefe",
+        "carte des dangers crues",
+        "mappa pericolo alluvione",
+        "Wiederkehrperiode"
+      ]
+    },
+    "IE": {
+      "name": "Ireland",
+      "report_scope": "final",
+      "official_languages": [
+        "Irish",
+        "English"
+      ],
+      "search_terms": [
+        "flood hazard map",
+        "flood extent",
+        "flood depth",
+        "return period",
+        "léarscáil tuilte",
+        "pluvial flood map",
+        "surface water flood",
+        "rainfall flood map"
+      ]
+    },
+    "TH": {
+      "name": "Thailand",
+      "report_scope": "final",
+      "official_languages": [
+        "Thai"
+      ],
+      "search_terms": [
+        "แผนที่เสี่ยงน้ำท่วม",
+        "พื้นที่น้ำท่วม",
+        "ความลึกน้ำท่วม",
+        "ความเร็วการไหล",
+        "คาบอุบัติซ้ำ",
+        "coastal flood map",
+        "storm surge map",
+        "แผนที่น้ำท่วมชายฝั่ง",
+        "coastal inundation"
+      ]
+    },
+    "SE": {
+      "name": "Sweden",
+      "report_scope": "final",
+      "official_languages": [
+        "Swedish"
+      ],
+      "search_terms": [
+        "översvämningskarta",
+        "översvämningsrisk",
+        "vattendjup",
+        "flödeshastighet",
+        "återkomsttid",
+        "skyfallskartering",
+        "skyfall översvämning",
+        "pluvial flood",
+        "surface water flood"
+      ]
+    },
+    "AT": {
+      "name": "Austria",
+      "report_scope": "final",
+      "official_languages": [
+        "German"
+      ],
+      "search_terms": [
+        "Hochwassergefahrenkarte",
+        "Überflutungsfläche",
+        "Wassertiefe",
+        "Fließgeschwindigkeit",
+        "Jährlichkeit"
+      ]
+    },
+    "AE": {
+      "name": "United Arab Emirates",
+      "report_scope": "final",
+      "official_languages": [
+        "Arabic"
+      ],
+      "search_terms": [
+        "خريطة مخاطر الفيضانات",
+        "مناطق الغمر",
+        "عمق الفيضان",
+        "سرعة الجريان",
+        "فترة التكرار"
+      ]
+    },
+    "ZA": {
+      "name": "South Africa",
+      "report_scope": "final",
+      "official_languages": [
+        "English",
+        "Afrikaans"
+      ],
+      "search_terms": [
+        "flood hazard map",
+        "floodline",
+        "inundation depth",
+        "return period",
+        "oorstromingskaart",
+        "vloedlyn"
+      ]
+    },
+    "KR": {
+      "name": "Republic of Korea",
+      "report_scope": "final",
+      "official_languages": [
+        "Korean"
+      ],
+      "search_terms": [
+        "홍수위험지도",
+        "침수예상도",
+        "침수심",
+        "유속",
+        "재현기간"
+      ]
+    }
+  }
+}

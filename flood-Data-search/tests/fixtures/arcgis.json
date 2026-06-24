@@ -1,0 +1,18 @@
+{
+  "currentVersion": 11.2,
+  "serviceDescription": "Flood hazard service",
+  "layers": [
+    {"id": 0, "name": "Flood extent"},
+    {"id": 1, "name": "Flood depth"}
+  ],
+  "spatialReference": {"wkid": 4326},
+  "fullExtent": {
+    "xmin": -10,
+    "ymin": 49,
+    "xmax": 2,
+    "ymax": 61,
+    "spatialReference": {"wkid": 4326}
+  },
+  "supportedImageFormatTypes": "PNG32,JPG",
+  "editingInfo": {"lastEditDate": 1780272000000}
+}

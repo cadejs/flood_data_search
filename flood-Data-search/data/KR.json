@@ -1,0 +1,506 @@
+{
+  "artifact_type": "country",
+  "schema_version": "1.0.0",
+  "report_scope": "final",
+  "iso2": "KR",
+  "country_name": "Republic of Korea",
+  "coverage_model": "nationally_unified",
+  "fragmentation_summary": "The Ministry of Environment operates a national Flood Risk Map Information System, supported by national water-information and safety-map platforms. Products include river-flood hazard maps and urban-inundation maps, with some access or download functions potentially restricted.",
+  "top_regions": [],
+  "deferred_regions": [],
+  "score": 3,
+  "confidence": "medium",
+  "score_provisional": false,
+  "subscores": {
+    "geographic_completeness": 3,
+    "scenario_richness": 4,
+    "technical_accessibility": 4,
+    "documentation_currency": 2,
+    "licensing": 2,
+    "integration_effort": 4
+  },
+  "sources": [
+    {
+      "id": "KR-MOE-001",
+      "jurisdiction": "National",
+      "agency": "환경부 / Ministry of Environment",
+      "native_name": "홍수위험지도 정보시스템",
+      "english_name": "Flood Risk Map Information System",
+      "product_type": "national_hazard_map",
+      "flood_types": [
+        "fluvial",
+        "surface_water"
+      ],
+      "scenarios": [
+        "river flooding scenarios",
+        "urban inundation scenarios",
+        "depth candidates"
+      ],
+      "coverage": "Republic of Korea",
+      "resolution_scale": null,
+      "formats": [
+        "Interactive map",
+        "GIS download candidate",
+        "Web services candidate"
+      ],
+      "license": "Korean government public-data terms; verify",
+      "delivery_mode": "viewer+download candidate",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://floodmap.go.kr/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "verified",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://floodmap.go.kr/intro",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "confirmed",
+          "access_class": "viewer",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": true,
+          "selected_role": "primary",
+          "selected_url": "https://floodmap.go.kr/intro",
+          "confirmed": {
+            "flood_types": [
+              "fluvial",
+              "surface_water"
+            ],
+            "scenarios": [
+              "river flooding scenarios",
+              "urban inundation scenarios",
+              "depth candidates"
+            ],
+            "coverage": "Republic of Korea",
+            "formats": [
+              "Interactive viewer"
+            ],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "Official dataset-specific page or viewer confirmed during bounded page review.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://floodmap.go.kr/intro",
+              "bytes": 40844,
+              "range_honored": false,
+              "error": null
+            }
+          },
+          "browser": {
+            "method": "official_page_inspection_fallback",
+            "page_title": "홍수위험지도 정보시스템",
+            "observed_product": "Flood Risk Map Information System",
+            "access_action": "Reviewed authoritative viewer",
+            "final_url": "https://floodmap.go.kr/intro"
+          }
+        },
+        "checked_at": "2026-06-24T21:14:05Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Primary national flood-risk-map candidate."
+    },
+    {
+      "id": "KR-WAMIS-001",
+      "jurisdiction": "National",
+      "agency": "국가수자원관리종합정보시스템",
+      "native_name": "WAMIS 국가수자원관리종합정보시스템",
+      "english_name": "Water Resources Management Information System",
+      "product_type": "national_water_geoportal",
+      "flood_types": [
+        "fluvial"
+      ],
+      "scenarios": [
+        "flood-prone districts, river and basin layers"
+      ],
+      "coverage": "Republic of Korea",
+      "resolution_scale": null,
+      "formats": [
+        "Web GIS",
+        "Download candidate",
+        "API candidate"
+      ],
+      "license": "Korean public-data terms; verify",
+      "delivery_mode": "geoportal+download",
+      "access_constraints": [],
+      "links": {
+        "primary": "http://www.wamis.go.kr/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": null,
+        "content_type": null,
+        "final_url": null,
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "unavailable",
+          "access_class": "unavailable",
+          "authority_confirmed": false,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": null,
+          "selected_url": null,
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "No candidate link resolved successfully during the strict audit.",
+          "links": {
+            "primary": {
+              "http_status": null,
+              "content_type": null,
+              "final_url": null,
+              "bytes": 0,
+              "range_honored": null,
+              "error": "GET: URLError: <urlopen error timed out>"
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:14:29Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate supporting national water catalogue with flood-related thematic layers."
+    },
+    {
+      "id": "KR-SAFEMAP-001",
+      "jurisdiction": "National",
+      "agency": "행정안전부",
+      "native_name": "생활안전지도 - 침수 및 재난안전",
+      "english_name": "National Safety Map - Inundation and Disaster Safety",
+      "product_type": "national_risk_viewer",
+      "flood_types": [
+        "fluvial",
+        "surface_water",
+        "coastal"
+      ],
+      "scenarios": [
+        "risk/safety classes and historical information"
+      ],
+      "coverage": "Republic of Korea",
+      "resolution_scale": null,
+      "formats": [
+        "Interactive map",
+        "API/service candidate"
+      ],
+      "license": "Korean public-data terms; verify",
+      "delivery_mode": "viewer+api candidate",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://www.safemap.go.kr/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://www.safemap.go.kr/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "generic_portal",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "https://www.safemap.go.kr/",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "The link is a generic agency or geoportal entry point; the named dataset was not resolved.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://www.safemap.go.kr/",
+              "bytes": 1410,
+              "range_honored": false,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:14:33Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "National public safety viewer; distinguish derived risk layers from hydraulic hazard maps."
+    },
+    {
+      "id": "KR-VWORLD-001",
+      "jurisdiction": "National",
+      "agency": "국토교통부 / VWorld",
+      "native_name": "국가공간정보 오픈플랫폼 VWorld",
+      "english_name": "VWorld National Spatial Information Platform",
+      "product_type": "national_geodata_catalogue",
+      "flood_types": [
+        "fluvial",
+        "surface_water"
+      ],
+      "scenarios": [
+        "flood-related layers vary by publisher"
+      ],
+      "coverage": "Republic of Korea",
+      "resolution_scale": null,
+      "formats": [
+        "Web map",
+        "Open API",
+        "WMS/WMTS candidate",
+        "Download candidate"
+      ],
+      "license": "Korean public-data terms; verify",
+      "delivery_mode": "catalogue+api",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://www.vworld.kr/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": null,
+        "content_type": null,
+        "final_url": null,
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "unavailable",
+          "access_class": "unavailable",
+          "authority_confirmed": false,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": null,
+          "selected_url": null,
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "No candidate link resolved successfully during the strict audit.",
+          "links": {
+            "primary": {
+              "http_status": null,
+              "content_type": null,
+              "final_url": null,
+              "bytes": 0,
+              "range_honored": null,
+              "error": "GET: RemoteDisconnected: Remote end closed connection without response"
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:14:35Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate discovery/service platform for government flood and inundation layers."
+    },
+    {
+      "id": "KR-DATA-001",
+      "jurisdiction": "National",
+      "agency": "공공데이터포털",
+      "native_name": "공공데이터포털 홍수위험지도 데이터",
+      "english_name": "Korea Public Data Portal Flood Map Datasets",
+      "product_type": "national_hazard_catalogue",
+      "flood_types": [
+        "fluvial",
+        "surface_water"
+      ],
+      "scenarios": [
+        "dataset-specific scenarios"
+      ],
+      "coverage": "Republic of Korea",
+      "resolution_scale": null,
+      "formats": [
+        "Open API",
+        "File download",
+        "Metadata"
+      ],
+      "license": "Korea Open Government Licence candidate; verify",
+      "delivery_mode": "catalogue+download",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://www.data.go.kr/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://www.data.go.kr/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "catalogue_search",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "https://www.data.go.kr/",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "The link is a catalogue/search entry point rather than a dataset-specific record.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://www.data.go.kr/",
+              "bytes": 65536,
+              "range_honored": false,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:14:38Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Search candidate for downloadable flood-risk-map and inundation-zone datasets."
+    },
+    {
+      "id": "KR-JRC-001",
+      "jurisdiction": "National fallback",
+      "agency": "European Commission Joint Research Centre",
+      "native_name": "Global River Flood Hazard Maps",
+      "english_name": "Global River Flood Hazard Maps",
+      "product_type": "global_hazard_raster",
+      "flood_types": [
+        "fluvial"
+      ],
+      "scenarios": [
+        "multiple return periods"
+      ],
+      "coverage": "Republic of Korea",
+      "resolution_scale": null,
+      "formats": [
+        "GeoTIFF"
+      ],
+      "license": "European Commission reuse terms",
+      "delivery_mode": "download",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://data.jrc.ec.europa.eu/collection/id-0054",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": true,
+      "is_material": false,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://data.jrc.ec.europa.eu/collection/id-0054",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "restricted",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "https://data.jrc.ec.europa.eu/collection/id-0054",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "The JRC collection resolves to a login surface; unauthenticated dataset access was not confirmed.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://data.jrc.ec.europa.eu/collection/id-0054",
+              "bytes": 36273,
+              "range_honored": false,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:14:39Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "International fallback only."
+    }
+  ],
+  "discovery_metrics": {
+    "searches": 2,
+    "page_reads": 3,
+    "capability_probes": 0,
+    "consecutive_empty_searches": 0,
+    "stop_reason": "The national flood-risk-map system, WAMIS water information and national safety/geospatial catalogue candidates were identified."
+  },
+  "provenance": {
+    "discovered_by": "codex",
+    "discovered_at": "2026-06-24T16:13:51Z"
+  }
+}

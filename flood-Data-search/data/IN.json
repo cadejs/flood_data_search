@@ -1,0 +1,804 @@
+{
+  "artifact_type": "country",
+  "schema_version": "1.0.0",
+  "report_scope": "final",
+  "iso2": "IN",
+  "country_name": "India",
+  "coverage_model": "mixed_national_and_regional",
+  "fragmentation_summary": "National remote-sensing and water-information systems expose flood inundation, hazard-atlas and forecasting products, but authoritative static hazard coverage is assembled unevenly by state and event. The pilot covers Uttar Pradesh, Maharashtra, Bihar, West Bengal and Madhya Pradesh.",
+  "top_regions": [
+    {
+      "rank": 1,
+      "name": "Uttar Pradesh",
+      "population": 199812341,
+      "pop_year": 2011,
+      "pop_source": "Census of India 2011",
+      "pop_source_url": "https://censusindia.gov.in/census.website/data/census-tables"
+    },
+    {
+      "rank": 2,
+      "name": "Maharashtra",
+      "population": 112374333,
+      "pop_year": 2011,
+      "pop_source": "Census of India 2011",
+      "pop_source_url": "https://censusindia.gov.in/census.website/data/census-tables"
+    },
+    {
+      "rank": 3,
+      "name": "Bihar",
+      "population": 104099452,
+      "pop_year": 2011,
+      "pop_source": "Census of India 2011",
+      "pop_source_url": "https://censusindia.gov.in/census.website/data/census-tables"
+    },
+    {
+      "rank": 4,
+      "name": "West Bengal",
+      "population": 91276115,
+      "pop_year": 2011,
+      "pop_source": "Census of India 2011",
+      "pop_source_url": "https://censusindia.gov.in/census.website/data/census-tables"
+    },
+    {
+      "rank": 5,
+      "name": "Madhya Pradesh",
+      "population": 72626809,
+      "pop_year": 2011,
+      "pop_source": "Census of India 2011",
+      "pop_source_url": "https://censusindia.gov.in/census.website/data/census-tables"
+    }
+  ],
+  "deferred_regions": [
+    "Andhra Pradesh",
+    "Arunachal Pradesh",
+    "Assam",
+    "Chhattisgarh",
+    "Goa",
+    "Gujarat",
+    "Haryana",
+    "Himachal Pradesh",
+    "Jharkhand",
+    "Karnataka",
+    "Kerala",
+    "Manipur",
+    "Meghalaya",
+    "Mizoram",
+    "Nagaland",
+    "Odisha",
+    "Punjab",
+    "Rajasthan",
+    "Sikkim",
+    "Tamil Nadu",
+    "Telangana",
+    "Tripura",
+    "Uttarakhand",
+    "Union territories"
+  ],
+  "score": 3,
+  "confidence": "medium",
+  "score_provisional": true,
+  "subscores": {
+    "geographic_completeness": 3,
+    "scenario_richness": 2,
+    "technical_accessibility": 4,
+    "documentation_currency": 2,
+    "licensing": 2,
+    "integration_effort": 2
+  },
+  "sources": [
+    {
+      "id": "IN-NRSC-001",
+      "jurisdiction": "National",
+      "agency": "National Remote Sensing Centre / ISRO",
+      "native_name": "Bhuvan Disaster Services - Flood",
+      "english_name": "Bhuvan Flood Disaster Services",
+      "product_type": "observed_inundation_raster",
+      "flood_types": [
+        "fluvial",
+        "surface_water"
+      ],
+      "scenarios": [
+        "event-based satellite inundation",
+        "selected state flood-hazard atlases"
+      ],
+      "coverage": "India; event and project dependent",
+      "resolution_scale": null,
+      "formats": [
+        "Web map",
+        "WMS candidate",
+        "Raster/Vector download candidate"
+      ],
+      "license": "Government of India/Bhuvan terms; verify",
+      "delivery_mode": "viewer+service candidate",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://bhuvan-app1.nrsc.gov.in/disaster/disaster.php",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "verified",
+        "http_status": 206,
+        "content_type": "text/html",
+        "final_url": "https://bhuvan-app1.nrsc.gov.in/disaster/disaster.php",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "confirmed",
+          "access_class": "viewer",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": true,
+          "selected_role": "primary",
+          "selected_url": "https://bhuvan-app1.nrsc.gov.in/disaster/disaster.php",
+          "confirmed": {
+            "flood_types": [
+              "fluvial",
+              "surface_water"
+            ],
+            "scenarios": [],
+            "coverage": "India; event and project dependent",
+            "formats": [
+              "Interactive viewer"
+            ],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "Official dataset-specific page or viewer confirmed during bounded page review.",
+          "links": {
+            "primary": {
+              "http_status": 206,
+              "content_type": "text/html",
+              "final_url": "https://bhuvan-app1.nrsc.gov.in/disaster/disaster.php",
+              "bytes": 9021,
+              "range_honored": true,
+              "error": null
+            }
+          },
+          "browser": {
+            "method": "official_page_inspection_fallback",
+            "page_title": "Bhuvan Disaster Services - Flood",
+            "observed_product": "Bhuvan Flood Disaster Services",
+            "access_action": "Reviewed authoritative viewer",
+            "final_url": "https://bhuvan-app1.nrsc.gov.in/disaster/disaster.php"
+          }
+        },
+        "checked_at": "2026-06-24T21:12:53Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Primary candidate for satellite-derived flood inundation and state hazard-atlas layers."
+    },
+    {
+      "id": "IN-CWC-001",
+      "jurisdiction": "National",
+      "agency": "Central Water Commission",
+      "native_name": "भारत बाढ़ पूर्वानुमान / Flood Forecasting Portal",
+      "english_name": "CWC Flood Forecasting Portal",
+      "product_type": "operational_flood_map",
+      "flood_types": [
+        "fluvial"
+      ],
+      "scenarios": [
+        "observed/forecast levels",
+        "inundation advisory candidate"
+      ],
+      "coverage": "National monitoring network and forecast basins",
+      "resolution_scale": null,
+      "formats": [
+        "Web map",
+        "API candidate",
+        "Bulletins"
+      ],
+      "license": "Government of India terms; verify",
+      "delivery_mode": "viewer+api candidate",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://aff.india-water.gov.in/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": null,
+        "content_type": null,
+        "final_url": null,
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "unavailable",
+          "access_class": "unavailable",
+          "authority_confirmed": false,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": null,
+          "selected_url": null,
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "No candidate link resolved successfully during the strict audit.",
+          "links": {
+            "primary": {
+              "http_status": null,
+              "content_type": null,
+              "final_url": null,
+              "bytes": 0,
+              "range_honored": null,
+              "error": "GET: URLError: <urlopen error timed out>"
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:13:19Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Operational rather than static hazard mapping; catalogue for any inundation layers or downloadable advisory products."
+    },
+    {
+      "id": "IN-WRIS-001",
+      "jurisdiction": "National",
+      "agency": "National Water Informatics Centre",
+      "native_name": "India-WRIS",
+      "english_name": "India Water Resources Information System",
+      "product_type": "national_water_geoportal",
+      "flood_types": [
+        "fluvial"
+      ],
+      "scenarios": [
+        "basin and flood layers vary"
+      ],
+      "coverage": "National",
+      "resolution_scale": null,
+      "formats": [
+        "Web GIS",
+        "WMS candidate",
+        "Download candidate"
+      ],
+      "license": "Government Open Data Licence - India candidate; verify",
+      "delivery_mode": "geoportal",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://indiawris.gov.in/wris/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": null,
+        "content_type": null,
+        "final_url": null,
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "unavailable",
+          "access_class": "unavailable",
+          "authority_confirmed": false,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": null,
+          "selected_url": null,
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "No candidate link resolved successfully during the strict audit.",
+          "links": {
+            "primary": {
+              "http_status": null,
+              "content_type": null,
+              "final_url": null,
+              "bytes": 0,
+              "range_honored": null,
+              "error": "GET: URLError: <urlopen error timed out>"
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:13:44Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate national catalogue for river, basin, flood-prone-area and water-resource layers."
+    },
+    {
+      "id": "IN-UP-001",
+      "jurisdiction": "Uttar Pradesh",
+      "agency": "Uttar Pradesh State Disaster Management Authority",
+      "native_name": "उत्तर प्रदेश बाढ़ जोखिम / Flood Hazard Resources",
+      "english_name": "Uttar Pradesh Flood Hazard Resources",
+      "product_type": "regional_hazard_documents",
+      "flood_types": [
+        "fluvial",
+        "surface_water"
+      ],
+      "scenarios": [
+        "district/state plans; scenario detail varies"
+      ],
+      "coverage": "Uttar Pradesh",
+      "resolution_scale": null,
+      "formats": [
+        "PDF",
+        "Web map candidate"
+      ],
+      "license": "Government of Uttar Pradesh terms; verify",
+      "delivery_mode": "portal+pdf candidate",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://upsdma.up.nic.in/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": null,
+        "content_type": null,
+        "final_url": null,
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "unavailable",
+          "access_class": "unavailable",
+          "authority_confirmed": false,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": null,
+          "selected_url": null,
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "No candidate link resolved successfully during the strict audit.",
+          "links": {
+            "primary": {
+              "http_status": null,
+              "content_type": null,
+              "final_url": null,
+              "bytes": 0,
+              "range_honored": null,
+              "error": "GET: URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:13:46Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate authority for state/district flood hazard maps and disaster-management plans."
+    },
+    {
+      "id": "IN-MH-001",
+      "jurisdiction": "Maharashtra",
+      "agency": "Maharashtra State Disaster Management Authority",
+      "native_name": "Maharashtra Flood Hazard and Risk Resources",
+      "english_name": "Maharashtra Flood Hazard and Risk Resources",
+      "product_type": "regional_hazard_documents",
+      "flood_types": [
+        "fluvial",
+        "coastal",
+        "surface_water"
+      ],
+      "scenarios": [
+        "district plans; event/scenario detail varies"
+      ],
+      "coverage": "Maharashtra",
+      "resolution_scale": null,
+      "formats": [
+        "PDF",
+        "Web map candidate"
+      ],
+      "license": "Government of Maharashtra terms; verify",
+      "delivery_mode": "portal+pdf candidate",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://sdma.maharashtra.gov.in/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://sdma.maharashtra.gov.in/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "generic_portal",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "https://sdma.maharashtra.gov.in/",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "The link is a generic agency or geoportal entry point; the named dataset was not resolved.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://sdma.maharashtra.gov.in/",
+              "bytes": 65536,
+              "range_honored": false,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:13:51Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate state source; detailed GIS may be split among districts and water agencies."
+    },
+    {
+      "id": "IN-BR-001",
+      "jurisdiction": "Bihar",
+      "agency": "Water Resources Department, Bihar / FMIS",
+      "native_name": "Flood Management Information System",
+      "english_name": "Bihar Flood Management Information System",
+      "product_type": "regional_flood_geoportal",
+      "flood_types": [
+        "fluvial"
+      ],
+      "scenarios": [
+        "historic/event inundation",
+        "embankment and flood-prone layers"
+      ],
+      "coverage": "Bihar",
+      "resolution_scale": null,
+      "formats": [
+        "Web GIS",
+        "Remote-sensing maps",
+        "PDF",
+        "Download candidate"
+      ],
+      "license": "Government of Bihar terms; verify",
+      "delivery_mode": "viewer+download candidate",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://www.fmiscwrdbihar.gov.in/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "verified",
+        "http_status": 206,
+        "content_type": "text/html",
+        "final_url": "https://www.fmiscwrdbihar.gov.in/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "confirmed",
+          "access_class": "dataset_page",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": true,
+          "selected_role": "primary",
+          "selected_url": "https://www.fmiscwrdbihar.gov.in/",
+          "confirmed": {
+            "flood_types": [
+              "fluvial"
+            ],
+            "scenarios": [],
+            "coverage": "Bihar",
+            "formats": [
+              "Dataset-specific page"
+            ],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "Official dataset-specific page or viewer confirmed during bounded page review.",
+          "links": {
+            "primary": {
+              "http_status": 206,
+              "content_type": "text/html",
+              "final_url": "https://www.fmiscwrdbihar.gov.in/",
+              "bytes": 56785,
+              "range_honored": true,
+              "error": null
+            }
+          },
+          "browser": {
+            "method": "official_page_inspection_fallback",
+            "page_title": "Flood Management Information System",
+            "observed_product": "Bihar Flood Management Information System",
+            "access_action": "Reviewed authoritative dataset page",
+            "final_url": "https://www.fmiscwrdbihar.gov.in/"
+          }
+        },
+        "checked_at": "2026-06-24T21:13:56Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Strong candidate for Bihar flood inundation and flood-management mapping."
+    },
+    {
+      "id": "IN-WB-001",
+      "jurisdiction": "West Bengal",
+      "agency": "Irrigation & Waterways Department, West Bengal",
+      "native_name": "Flood Management and GIS Resources",
+      "english_name": "West Bengal Flood Management and GIS Resources",
+      "product_type": "regional_hazard_catalogue",
+      "flood_types": [
+        "fluvial",
+        "coastal"
+      ],
+      "scenarios": [
+        "basin/project dependent"
+      ],
+      "coverage": "West Bengal",
+      "resolution_scale": null,
+      "formats": [
+        "Web GIS candidate",
+        "PDF",
+        "Reports"
+      ],
+      "license": "Government of West Bengal terms; verify",
+      "delivery_mode": "portal",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://wbiwd.gov.in/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": null,
+        "content_type": null,
+        "final_url": null,
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "unavailable",
+          "access_class": "unavailable",
+          "authority_confirmed": false,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": null,
+          "selected_url": null,
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "No candidate link resolved successfully during the strict audit.",
+          "links": {
+            "primary": {
+              "http_status": null,
+              "content_type": null,
+              "final_url": null,
+              "bytes": 0,
+              "range_honored": null,
+              "error": "GET: URLError: <urlopen error timed out>"
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:14:21Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate department source for basin plans, flood maps and coastal/river studies."
+    },
+    {
+      "id": "IN-MP-001",
+      "jurisdiction": "Madhya Pradesh",
+      "agency": "Water Resources Department, Madhya Pradesh",
+      "native_name": "Water Resources GIS and Flood Studies",
+      "english_name": "Madhya Pradesh Water Resources GIS and Flood Studies",
+      "product_type": "regional_hazard_catalogue",
+      "flood_types": [
+        "fluvial"
+      ],
+      "scenarios": [
+        "project/basin dependent"
+      ],
+      "coverage": "Madhya Pradesh",
+      "resolution_scale": null,
+      "formats": [
+        "Web GIS candidate",
+        "PDF",
+        "Download candidate"
+      ],
+      "license": "Government of Madhya Pradesh terms; verify",
+      "delivery_mode": "portal",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://mpwrd.gov.in/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": null,
+        "content_type": null,
+        "final_url": null,
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "unavailable",
+          "access_class": "unavailable",
+          "authority_confirmed": false,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": null,
+          "selected_url": null,
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "No candidate link resolved successfully during the strict audit.",
+          "links": {
+            "primary": {
+              "http_status": null,
+              "content_type": null,
+              "final_url": null,
+              "bytes": 0,
+              "range_honored": null,
+              "error": "GET: URLError: <urlopen error timed out>"
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:14:46Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate state source; public flood polygons may be limited."
+    },
+    {
+      "id": "IN-JRC-001",
+      "jurisdiction": "National fallback",
+      "agency": "European Commission Joint Research Centre",
+      "native_name": "Global River Flood Hazard Maps",
+      "english_name": "Global River Flood Hazard Maps",
+      "product_type": "global_hazard_raster",
+      "flood_types": [
+        "fluvial"
+      ],
+      "scenarios": [
+        "multiple return periods"
+      ],
+      "coverage": "India",
+      "resolution_scale": null,
+      "formats": [
+        "GeoTIFF"
+      ],
+      "license": "European Commission reuse terms",
+      "delivery_mode": "download",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://data.jrc.ec.europa.eu/collection/id-0054",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": true,
+      "is_material": false,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://data.jrc.ec.europa.eu/collection/id-0054",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "restricted",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "https://data.jrc.ec.europa.eu/collection/id-0054",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "The JRC collection resolves to a login surface; unauthenticated dataset access was not confirmed.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://data.jrc.ec.europa.eu/collection/id-0054",
+              "bytes": 36283,
+              "range_honored": false,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:14:47Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "International fallback only."
+    }
+  ],
+  "discovery_metrics": {
+    "searches": 4,
+    "page_reads": 3,
+    "capability_probes": 0,
+    "consecutive_empty_searches": 0,
+    "stop_reason": "National Bhuvan/CWC/India-WRIS candidates plus official portals for the five population-priority states were identified."
+  },
+  "provenance": {
+    "discovered_by": "codex",
+    "discovered_at": "2026-06-24T16:02:07Z"
+  }
+}

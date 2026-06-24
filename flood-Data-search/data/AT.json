@@ -1,0 +1,479 @@
+{
+  "artifact_type": "country",
+  "schema_version": "1.0.0",
+  "report_scope": "final",
+  "iso2": "AT",
+  "country_name": "Austria",
+  "coverage_model": "nationally_unified",
+  "fragmentation_summary": "Austria provides nationally unified public viewing through HORA and WISA, combining federal and Länder flood-hazard information. Detailed planning layers may still originate with provincial authorities and river-basin planning, but discovery is centralized. Coastal flood hazard is N/A because Austria is landlocked.",
+  "top_regions": [],
+  "deferred_regions": [],
+  "score": 3,
+  "confidence": "medium",
+  "score_provisional": false,
+  "subscores": {
+    "geographic_completeness": 5,
+    "scenario_richness": 5,
+    "technical_accessibility": 4,
+    "documentation_currency": 2,
+    "licensing": 2,
+    "integration_effort": 4
+  },
+  "sources": [
+    {
+      "id": "AT-HORA-001",
+      "jurisdiction": "National",
+      "agency": "Bundesministerium für Land- und Forstwirtschaft, Klima- und Umweltschutz, Regionen und Wasserwirtschaft",
+      "native_name": "HORA - Natural Hazard Overview & Risk Assessment Austria",
+      "english_name": "HORA Natural Hazard Map",
+      "product_type": "national_hazard_viewer",
+      "flood_types": [
+        "fluvial",
+        "surface_water",
+        "flash_flood"
+      ],
+      "scenarios": [
+        "HQ30",
+        "HQ100",
+        "HQ300 candidates",
+        "surface runoff",
+        "address risk"
+      ],
+      "coverage": "Austria",
+      "resolution_scale": null,
+      "formats": [
+        "Interactive map",
+        "Address lookup",
+        "WMS candidate"
+      ],
+      "license": "Austrian federal geodata terms; verify",
+      "delivery_mode": "viewer+address lookup",
+      "access_constraints": [
+        "address_only"
+      ],
+      "links": {
+        "primary": "https://www.hora.gv.at/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "verified",
+        "http_status": 206,
+        "content_type": "text/html",
+        "final_url": "https://hora.gv.at/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "confirmed",
+          "access_class": "viewer",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": true,
+          "selected_role": "primary",
+          "selected_url": "https://hora.gv.at/",
+          "confirmed": {
+            "flood_types": [
+              "fluvial",
+              "surface_water",
+              "flash_flood"
+            ],
+            "scenarios": [
+              "HQ30",
+              "HQ100",
+              "HQ300 candidates",
+              "surface runoff",
+              "address risk"
+            ],
+            "coverage": "Austria",
+            "formats": [
+              "Interactive viewer"
+            ],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "Official dataset-specific page or viewer confirmed during bounded page review.",
+          "links": {
+            "primary": {
+              "http_status": 206,
+              "content_type": "text/html",
+              "final_url": "https://hora.gv.at/",
+              "bytes": 13539,
+              "range_honored": true,
+              "error": null
+            }
+          },
+          "browser": {
+            "method": "official_page_inspection_fallback",
+            "page_title": "HORA - Natural Hazard Overview & Risk Assessment Austria",
+            "observed_product": "HORA Natural Hazard Map",
+            "access_action": "Reviewed authoritative viewer",
+            "final_url": "https://hora.gv.at/"
+          }
+        },
+        "checked_at": "2026-06-24T21:12:10Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "National public-facing hazard viewer; distinguish generalized HORA zones from statutory detailed maps."
+    },
+    {
+      "id": "AT-WISA-001",
+      "jurisdiction": "National",
+      "agency": "Bundesministerium / Wasser Informationssystem Austria",
+      "native_name": "WISA Hochwasser - Gefahren- und Risikokarten",
+      "english_name": "WISA Flood Hazard and Risk Maps",
+      "product_type": "floods_directive_hazard_map",
+      "flood_types": [
+        "fluvial"
+      ],
+      "scenarios": [
+        "high/medium/low probability",
+        "Floods Directive cycles",
+        "depth candidate"
+      ],
+      "coverage": "Austria",
+      "resolution_scale": null,
+      "formats": [
+        "Interactive map",
+        "WMS candidate",
+        "GIS download candidate",
+        "PDF"
+      ],
+      "license": "Austrian federal open-data terms; verify",
+      "delivery_mode": "viewer+services+download",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://maps.wisa.bml.gv.at/hochwasser",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "verified",
+        "http_status": 206,
+        "content_type": "text/html",
+        "final_url": "https://maps.wisa.bmluk.gv.at/hochwasser",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "confirmed",
+          "access_class": "viewer",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": true,
+          "selected_role": "primary",
+          "selected_url": "https://maps.wisa.bmluk.gv.at/hochwasser",
+          "confirmed": {
+            "flood_types": [
+              "fluvial"
+            ],
+            "scenarios": [
+              "high/medium/low probability",
+              "Floods Directive cycles",
+              "depth candidate"
+            ],
+            "coverage": "Austria",
+            "formats": [
+              "Interactive viewer"
+            ],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "Official dataset-specific page or viewer confirmed during bounded page review.",
+          "links": {
+            "primary": {
+              "http_status": 206,
+              "content_type": "text/html",
+              "final_url": "https://maps.wisa.bmluk.gv.at/hochwasser",
+              "bytes": 680,
+              "range_honored": true,
+              "error": null
+            }
+          },
+          "browser": {
+            "method": "official_page_inspection_fallback",
+            "page_title": "WISA Hochwasser - Gefahren- und Risikokarten",
+            "observed_product": "WISA Flood Hazard and Risk Maps",
+            "access_action": "Reviewed authoritative viewer",
+            "final_url": "https://maps.wisa.bmluk.gv.at/hochwasser"
+          }
+        },
+        "checked_at": "2026-06-24T21:12:13Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Primary candidate for official Floods Directive map layers."
+    },
+    {
+      "id": "AT-BML-001",
+      "jurisdiction": "National",
+      "agency": "Bundesministerium",
+      "native_name": "Hochwasserrisikomanagement in Österreich",
+      "english_name": "Flood Risk Management in Austria",
+      "product_type": "national_hazard_catalogue",
+      "flood_types": [
+        "fluvial",
+        "surface_water"
+      ],
+      "scenarios": [
+        "Floods Directive scenarios and management cycles"
+      ],
+      "coverage": "Austria",
+      "resolution_scale": null,
+      "formats": [
+        "Data catalogue",
+        "PDF",
+        "Map links"
+      ],
+      "license": "Austrian federal terms; verify",
+      "delivery_mode": "catalogue",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://info.bml.gv.at/themen/wasser/wisa/hochwasserrisiko.html",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "verified",
+        "http_status": 206,
+        "content_type": "text/html",
+        "final_url": "https://www.bmluk.gv.at/themen/wasser/wisa/hochwasserrisiko.html",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "confirmed",
+          "access_class": "dataset_page",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": true,
+          "selected_role": "primary",
+          "selected_url": "https://www.bmluk.gv.at/themen/wasser/wisa/hochwasserrisiko.html",
+          "confirmed": {
+            "flood_types": [
+              "fluvial",
+              "surface_water"
+            ],
+            "scenarios": [],
+            "coverage": "Austria",
+            "formats": [
+              "Dataset-specific page"
+            ],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "Official dataset-specific page or viewer confirmed during bounded page review.",
+          "links": {
+            "primary": {
+              "http_status": 206,
+              "content_type": "text/html",
+              "final_url": "https://www.bmluk.gv.at/themen/wasser/wisa/hochwasserrisiko.html",
+              "bytes": 51571,
+              "range_honored": true,
+              "error": null
+            }
+          },
+          "browser": {
+            "method": "official_page_inspection_fallback",
+            "page_title": "Hochwasserrisikomanagement in Österreich",
+            "observed_product": "Flood Risk Management in Austria",
+            "access_action": "Reviewed authoritative dataset page",
+            "final_url": "https://www.bmluk.gv.at/themen/wasser/wisa/hochwasserrisiko.html"
+          }
+        },
+        "checked_at": "2026-06-24T21:12:17Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Official documentation and map-discovery entry point."
+    },
+    {
+      "id": "AT-EHYD-001",
+      "jurisdiction": "National supporting",
+      "agency": "Hydrographischer Dienst Österreich",
+      "native_name": "eHYD",
+      "english_name": "Austrian Hydrological Data Portal",
+      "product_type": "operational_hydrology",
+      "flood_types": [
+        "fluvial"
+      ],
+      "scenarios": [
+        "observed hydrology; no hazard return periods"
+      ],
+      "coverage": "Austria",
+      "resolution_scale": null,
+      "formats": [
+        "Web map",
+        "Download",
+        "API candidate"
+      ],
+      "license": "Austrian federal terms; verify",
+      "delivery_mode": "viewer+download",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://ehyd.gv.at/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": false,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 206,
+        "content_type": "text/html",
+        "final_url": "https://ehyd.gv.at/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "wrong_product",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "https://ehyd.gv.at/",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "The reachable product is operational or observational, not a confirmed flood-hazard dataset.",
+          "links": {
+            "primary": {
+              "http_status": 206,
+              "content_type": "text/html",
+              "final_url": "https://ehyd.gv.at/",
+              "bytes": 13317,
+              "range_honored": true,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:12:18Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Supporting hydrological data, not a modelled flood-hazard map."
+    },
+    {
+      "id": "AT-EEA-001",
+      "jurisdiction": "National fallback",
+      "agency": "European Environment Agency",
+      "native_name": "WISE Floods Directive",
+      "english_name": "WISE Floods Directive",
+      "product_type": "harmonized_floods_directive_data",
+      "flood_types": [
+        "fluvial"
+      ],
+      "scenarios": [
+        "reported Floods Directive scenarios"
+      ],
+      "coverage": "Austria",
+      "resolution_scale": null,
+      "formats": [
+        "Download",
+        "Web map",
+        "Service candidate"
+      ],
+      "license": "EEA reuse policy",
+      "delivery_mode": "download+viewer",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://water.europa.eu/freshwater/europe-freshwater/floods-directive",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": true,
+      "is_material": false,
+      "supersedes_id": null,
+      "verification": {
+        "status": "verified",
+        "http_status": 206,
+        "content_type": "text/html",
+        "final_url": "https://water.europa.eu/freshwater/europe-freshwater/floods-directive",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "confirmed",
+          "access_class": "dataset_page",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": true,
+          "selected_role": "primary",
+          "selected_url": "https://water.europa.eu/freshwater/europe-freshwater/floods-directive",
+          "confirmed": {
+            "flood_types": [
+              "fluvial"
+            ],
+            "scenarios": [],
+            "coverage": "Austria",
+            "formats": [
+              "Dataset-specific page"
+            ],
+            "license": "EEA reuse policy",
+            "last_update": null
+          },
+          "reason": "Official dataset-specific page or viewer confirmed during bounded page review.",
+          "links": {
+            "primary": {
+              "http_status": 206,
+              "content_type": "text/html",
+              "final_url": "https://water.europa.eu/freshwater/europe-freshwater/floods-directive",
+              "bytes": 65536,
+              "range_honored": true,
+              "error": null
+            }
+          },
+          "browser": {
+            "method": "official_page_inspection_fallback",
+            "page_title": "WISE Floods Directive",
+            "observed_product": "WISE Floods Directive",
+            "access_action": "Reviewed authoritative dataset page",
+            "final_url": "https://water.europa.eu/freshwater/europe-freshwater/floods-directive"
+          }
+        },
+        "checked_at": "2026-06-24T21:12:20Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "EU fallback only."
+    }
+  ],
+  "discovery_metrics": {
+    "searches": 2,
+    "page_reads": 3,
+    "capability_probes": 0,
+    "consecutive_empty_searches": 0,
+    "stop_reason": "The national HORA address-level viewer, WISA Floods Directive maps and supporting federal water services were identified."
+  },
+  "provenance": {
+    "discovered_by": "codex",
+    "discovered_at": "2026-06-24T16:13:14Z"
+  }
+}

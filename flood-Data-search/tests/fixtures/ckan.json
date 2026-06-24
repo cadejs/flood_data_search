@@ -1,0 +1,10 @@
+{
+  "success": true,
+  "result": {
+    "metadata_modified": "2026-06-03T00:00:00.000000",
+    "resources": [
+      {"id": "one", "name": "Flood polygons", "format": "GeoJSON", "url": "https://example.test/flood.geojson"},
+      {"id": "two", "name": "Flood raster", "format": "GeoTIFF", "url": "https://example.test/flood.tif"}
+    ]
+  }
+}

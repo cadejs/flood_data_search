@@ -1,0 +1,784 @@
+{
+  "artifact_type": "country",
+  "schema_version": "1.0.0",
+  "report_scope": "final",
+  "iso2": "JP",
+  "country_name": "Japan",
+  "coverage_model": "national_catalogue_with_regional_publishers",
+  "fragmentation_summary": "MLIT and GSI provide a unified national hazard-map portal and downloadable national land numerical information, while legally designated inundation-assumption zones and local hazard maps are maintained by prefectures, river offices and municipalities. The pilot covers Tokyo, Kanagawa, Osaka, Aichi and Saitama.",
+  "top_regions": [
+    {
+      "rank": 1,
+      "name": "Tokyo",
+      "population": 14047594,
+      "pop_year": 2020,
+      "pop_source": "Statistics Bureau of Japan 2020 Census",
+      "pop_source_url": "https://www.stat.go.jp/english/data/kokusei/2020/summary.html"
+    },
+    {
+      "rank": 2,
+      "name": "Kanagawa",
+      "population": 9237337,
+      "pop_year": 2020,
+      "pop_source": "Statistics Bureau of Japan 2020 Census",
+      "pop_source_url": "https://www.stat.go.jp/english/data/kokusei/2020/summary.html"
+    },
+    {
+      "rank": 3,
+      "name": "Osaka",
+      "population": 8837685,
+      "pop_year": 2020,
+      "pop_source": "Statistics Bureau of Japan 2020 Census",
+      "pop_source_url": "https://www.stat.go.jp/english/data/kokusei/2020/summary.html"
+    },
+    {
+      "rank": 4,
+      "name": "Aichi",
+      "population": 7542415,
+      "pop_year": 2020,
+      "pop_source": "Statistics Bureau of Japan 2020 Census",
+      "pop_source_url": "https://www.stat.go.jp/english/data/kokusei/2020/summary.html"
+    },
+    {
+      "rank": 5,
+      "name": "Saitama",
+      "population": 7344765,
+      "pop_year": 2020,
+      "pop_source": "Statistics Bureau of Japan 2020 Census",
+      "pop_source_url": "https://www.stat.go.jp/english/data/kokusei/2020/summary.html"
+    }
+  ],
+  "deferred_regions": [
+    "Hokkaido",
+    "Aomori",
+    "Iwate",
+    "Miyagi",
+    "Akita",
+    "Yamagata",
+    "Fukushima",
+    "Ibaraki",
+    "Tochigi",
+    "Gunma",
+    "Chiba",
+    "Niigata",
+    "Toyama",
+    "Ishikawa",
+    "Fukui",
+    "Yamanashi",
+    "Nagano",
+    "Gifu",
+    "Shizuoka",
+    "Mie",
+    "Shiga",
+    "Kyoto",
+    "Hyogo",
+    "Nara",
+    "Wakayama",
+    "Tottori",
+    "Shimane",
+    "Okayama",
+    "Hiroshima",
+    "Yamaguchi",
+    "Tokushima",
+    "Kagawa",
+    "Ehime",
+    "Kochi",
+    "Fukuoka",
+    "Saga",
+    "Nagasaki",
+    "Kumamoto",
+    "Oita",
+    "Miyazaki",
+    "Kagoshima",
+    "Okinawa"
+  ],
+  "score": 3,
+  "confidence": "high",
+  "score_provisional": true,
+  "subscores": {
+    "geographic_completeness": 4,
+    "scenario_richness": 2,
+    "technical_accessibility": 4,
+    "documentation_currency": 3,
+    "licensing": 2,
+    "integration_effort": 3
+  },
+  "sources": [
+    {
+      "id": "JP-MLIT-001",
+      "jurisdiction": "National",
+      "agency": "国土交通省 / Ministry of Land, Infrastructure, Transport and Tourism",
+      "native_name": "ハザードマップポータルサイト",
+      "english_name": "Hazard Map Portal Site",
+      "product_type": "national_hazard_viewer",
+      "flood_types": [
+        "fluvial",
+        "coastal",
+        "surface_water",
+        "tsunami"
+      ],
+      "scenarios": [
+        "designated maximum inundation scenarios",
+        "planned-scale scenarios where available",
+        "depth"
+      ],
+      "coverage": "Japan",
+      "resolution_scale": null,
+      "formats": [
+        "Interactive map",
+        "Tile/API candidate",
+        "Linked municipal maps"
+      ],
+      "license": "Government of Japan standard terms; verify",
+      "delivery_mode": "viewer+linked_maps",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://disaportal.gsi.go.jp/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "verified",
+        "http_status": 206,
+        "content_type": "text/html",
+        "final_url": "https://disaportal.gsi.go.jp/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "confirmed",
+          "access_class": "viewer",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": true,
+          "selected_role": "primary",
+          "selected_url": "https://disaportal.gsi.go.jp/",
+          "confirmed": {
+            "flood_types": [
+              "fluvial",
+              "coastal",
+              "surface_water",
+              "tsunami"
+            ],
+            "scenarios": [],
+            "coverage": "Japan",
+            "formats": [
+              "Interactive viewer"
+            ],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "Official dataset-specific page or viewer confirmed during bounded page review.",
+          "links": {
+            "primary": {
+              "http_status": 206,
+              "content_type": "text/html",
+              "final_url": "https://disaportal.gsi.go.jp/",
+              "bytes": 19085,
+              "range_honored": true,
+              "error": null
+            }
+          },
+          "browser": {
+            "method": "official_page_inspection_fallback",
+            "page_title": "ハザードマップポータルサイト",
+            "observed_product": "Hazard Map Portal Site",
+            "access_action": "Reviewed authoritative viewer",
+            "final_url": "https://disaportal.gsi.go.jp/"
+          }
+        },
+        "checked_at": "2026-06-24T21:14:26Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Primary national overlay and municipal hazard-map portal."
+    },
+    {
+      "id": "JP-MLIT-002",
+      "jurisdiction": "National",
+      "agency": "国土交通省 国土数値情報",
+      "native_name": "洪水浸水想定区域データ",
+      "english_name": "Flood Inundation Assumption Area Data",
+      "product_type": "national_hazard_vector",
+      "flood_types": [
+        "fluvial"
+      ],
+      "scenarios": [
+        "designated assumed maximum flood",
+        "planned-scale variants by release"
+      ],
+      "coverage": "Japan; compiled prefectural/national river designations",
+      "resolution_scale": null,
+      "formats": [
+        "GML",
+        "Shapefile candidate",
+        "GIS download"
+      ],
+      "license": "Government of Japan standard terms; verify",
+      "delivery_mode": "download",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-A31-v3_0.html",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "verified",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-A31-v3_0.html",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "confirmed",
+          "access_class": "dataset_page",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": true,
+          "selected_role": "primary",
+          "selected_url": "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-A31-v3_0.html",
+          "confirmed": {
+            "flood_types": [
+              "fluvial"
+            ],
+            "scenarios": [],
+            "coverage": "Japan; compiled prefectural/national river designations",
+            "formats": [
+              "Dataset-specific page"
+            ],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "Official dataset-specific page or viewer confirmed during bounded page review.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-A31-v3_0.html",
+              "bytes": 65536,
+              "range_honored": false,
+              "error": null
+            }
+          },
+          "browser": {
+            "method": "official_page_inspection_fallback",
+            "page_title": "洪水浸水想定区域データ",
+            "observed_product": "Flood Inundation Assumption Area Data",
+            "access_action": "Reviewed authoritative dataset page",
+            "final_url": "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-A31-v3_0.html"
+          }
+        },
+        "checked_at": "2026-06-24T21:14:28Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate machine-readable national compilation of flood-inundation assumption zones."
+    },
+    {
+      "id": "JP-MLIT-003",
+      "jurisdiction": "National supporting",
+      "agency": "国土交通省",
+      "native_name": "川の防災情報",
+      "english_name": "River Disaster Prevention Information",
+      "product_type": "operational_flood_map",
+      "flood_types": [
+        "fluvial"
+      ],
+      "scenarios": [
+        "observed/forecast river and rainfall conditions"
+      ],
+      "coverage": "Japan",
+      "resolution_scale": null,
+      "formats": [
+        "Interactive map",
+        "API candidate"
+      ],
+      "license": "Government of Japan standard terms; verify",
+      "delivery_mode": "viewer+api candidate",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://www.river.go.jp/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": false,
+      "supersedes_id": null,
+      "verification": {
+        "status": "verified",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://www.river.go.jp/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "confirmed",
+          "access_class": "viewer",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": true,
+          "selected_role": "primary",
+          "selected_url": "https://www.river.go.jp/",
+          "confirmed": {
+            "flood_types": [
+              "fluvial"
+            ],
+            "scenarios": [],
+            "coverage": "Japan",
+            "formats": [
+              "Interactive viewer"
+            ],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "Official dataset-specific page or viewer confirmed during bounded page review.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://www.river.go.jp/",
+              "bytes": 9717,
+              "range_honored": false,
+              "error": null
+            }
+          },
+          "browser": {
+            "method": "official_page_inspection_fallback",
+            "page_title": "川の防災情報",
+            "observed_product": "River Disaster Prevention Information",
+            "access_action": "Reviewed authoritative viewer",
+            "final_url": "https://www.river.go.jp/"
+          }
+        },
+        "checked_at": "2026-06-24T21:14:29Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Operational supporting portal rather than static hazard mapping."
+    },
+    {
+      "id": "JP-TKY-001",
+      "jurisdiction": "Tokyo",
+      "agency": "東京都建設局",
+      "native_name": "洪水浸水想定区域図",
+      "english_name": "Tokyo Flood Inundation Assumption Maps",
+      "product_type": "regional_hazard_map",
+      "flood_types": [
+        "fluvial",
+        "surface_water"
+      ],
+      "scenarios": [
+        "assumed maximum",
+        "planned scale",
+        "depth/duration candidates"
+      ],
+      "coverage": "Tokyo Metropolis",
+      "resolution_scale": null,
+      "formats": [
+        "Web maps",
+        "PDF",
+        "GIS download candidate"
+      ],
+      "license": "Tokyo Metropolitan Government terms; verify",
+      "delivery_mode": "portal+maps",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://www.kensetsu.metro.tokyo.lg.jp/jigyo/river/chusho_seibi/index/menu03-01.html",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 404,
+        "content_type": "text/html",
+        "final_url": "https://www.kensetsu.metro.tokyo.lg.jp/jigyo/river/chusho_seibi/index/menu03-01.html",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "unavailable",
+          "access_class": "unavailable",
+          "authority_confirmed": false,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": null,
+          "selected_url": null,
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "No candidate link resolved successfully during the strict audit.",
+          "links": {
+            "primary": {
+              "http_status": 404,
+              "content_type": "text/html",
+              "final_url": "https://www.kensetsu.metro.tokyo.lg.jp/jigyo/river/chusho_seibi/index/menu03-01.html",
+              "bytes": 17943,
+              "range_honored": false,
+              "error": "HTTPError: Not Found"
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:14:31Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Official metropolitan river authority candidate; municipal hazard maps supplement prefectural designations."
+    },
+    {
+      "id": "JP-KNG-001",
+      "jurisdiction": "Kanagawa",
+      "agency": "神奈川県",
+      "native_name": "洪水浸水想定区域図",
+      "english_name": "Kanagawa Flood Inundation Assumption Maps",
+      "product_type": "regional_hazard_map",
+      "flood_types": [
+        "fluvial"
+      ],
+      "scenarios": [
+        "assumed maximum",
+        "planned scale",
+        "depth/duration candidates"
+      ],
+      "coverage": "Kanagawa Prefecture",
+      "resolution_scale": null,
+      "formats": [
+        "Web map",
+        "PDF",
+        "GIS candidate"
+      ],
+      "license": "Kanagawa Prefecture terms; verify",
+      "delivery_mode": "portal+maps",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://www.pref.kanagawa.jp/docs/f4i/cnt/f3747/",
+        "service": null,
+        "download": null
+      },
+      "last_update": "2026-01-05",
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "verified",
+        "http_status": 206,
+        "content_type": "text/html",
+        "final_url": "https://www.pref.kanagawa.jp/docs/f4i/cnt/f3747/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "confirmed",
+          "access_class": "dataset_page",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": true,
+          "selected_role": "primary",
+          "selected_url": "https://www.pref.kanagawa.jp/docs/f4i/cnt/f3747/",
+          "confirmed": {
+            "flood_types": [
+              "fluvial"
+            ],
+            "scenarios": [],
+            "coverage": "Kanagawa Prefecture",
+            "formats": [
+              "Dataset-specific page"
+            ],
+            "license": null,
+            "last_update": "2026-01-05"
+          },
+          "reason": "Official dataset-specific page or viewer confirmed during bounded page review.",
+          "links": {
+            "primary": {
+              "http_status": 206,
+              "content_type": "text/html",
+              "final_url": "https://www.pref.kanagawa.jp/docs/f4i/cnt/f3747/",
+              "bytes": 10953,
+              "range_honored": true,
+              "error": null
+            }
+          },
+          "browser": {
+            "method": "official_page_inspection_fallback",
+            "page_title": "洪水浸水想定区域図",
+            "observed_product": "Kanagawa Flood Inundation Assumption Maps",
+            "access_action": "Reviewed authoritative dataset page",
+            "final_url": "https://www.pref.kanagawa.jp/docs/f4i/cnt/f3747/"
+          }
+        },
+        "checked_at": "2026-06-24T21:14:35Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Official prefectural inundation-zone entry point."
+    },
+    {
+      "id": "JP-OSK-001",
+      "jurisdiction": "Osaka",
+      "agency": "大阪府",
+      "native_name": "洪水浸水想定区域図",
+      "english_name": "Osaka Flood Inundation Assumption Maps",
+      "product_type": "regional_hazard_map",
+      "flood_types": [
+        "fluvial",
+        "surface_water"
+      ],
+      "scenarios": [
+        "assumed maximum",
+        "planned scale",
+        "depth/duration candidates"
+      ],
+      "coverage": "Osaka Prefecture",
+      "resolution_scale": null,
+      "formats": [
+        "Web map",
+        "PDF",
+        "GIS candidate"
+      ],
+      "license": "Osaka Prefecture terms; verify",
+      "delivery_mode": "portal+maps",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://www.pref.osaka.lg.jp/o130350/kasenkankyo/hazardmap/index.html",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 404,
+        "content_type": "text/html",
+        "final_url": "https://www.pref.osaka.lg.jp/o130350/kasenkankyo/hazardmap/index.html",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "unavailable",
+          "access_class": "unavailable",
+          "authority_confirmed": false,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": null,
+          "selected_url": null,
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "No candidate link resolved successfully during the strict audit.",
+          "links": {
+            "primary": {
+              "http_status": 404,
+              "content_type": "text/html",
+              "final_url": "https://www.pref.osaka.lg.jp/o130350/kasenkankyo/hazardmap/index.html",
+              "bytes": 11672,
+              "range_honored": false,
+              "error": "HTTPError: Not Found"
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:14:39Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Official prefectural inundation-zone candidate."
+    },
+    {
+      "id": "JP-AIC-001",
+      "jurisdiction": "Aichi",
+      "agency": "愛知県",
+      "native_name": "洪水浸水想定区域図",
+      "english_name": "Aichi Flood Inundation Assumption Maps",
+      "product_type": "regional_hazard_map",
+      "flood_types": [
+        "fluvial",
+        "coastal"
+      ],
+      "scenarios": [
+        "assumed maximum",
+        "planned scale",
+        "depth/duration candidates"
+      ],
+      "coverage": "Aichi Prefecture",
+      "resolution_scale": null,
+      "formats": [
+        "Web map",
+        "PDF",
+        "GIS candidate"
+      ],
+      "license": "Aichi Prefecture terms; verify",
+      "delivery_mode": "portal+maps",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://www.pref.aichi.jp/soshiki/kasen/shinsuisoutei.html",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 404,
+        "content_type": "text/html",
+        "final_url": "https://www.pref.aichi.jp/soshiki/kasen/shinsuisoutei.html",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "unavailable",
+          "access_class": "unavailable",
+          "authority_confirmed": false,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": null,
+          "selected_url": null,
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "No candidate link resolved successfully during the strict audit.",
+          "links": {
+            "primary": {
+              "http_status": 404,
+              "content_type": "text/html",
+              "final_url": "https://www.pref.aichi.jp/soshiki/kasen/shinsuisoutei.html",
+              "bytes": 10064,
+              "range_honored": false,
+              "error": "HTTPError: Not Found"
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:14:41Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Official prefectural inundation-zone candidate."
+    },
+    {
+      "id": "JP-SAI-001",
+      "jurisdiction": "Saitama",
+      "agency": "埼玉県",
+      "native_name": "洪水浸水想定区域図",
+      "english_name": "Saitama Flood Inundation Assumption Maps",
+      "product_type": "regional_hazard_map",
+      "flood_types": [
+        "fluvial"
+      ],
+      "scenarios": [
+        "assumed maximum",
+        "planned scale",
+        "depth/duration candidates"
+      ],
+      "coverage": "Saitama Prefecture",
+      "resolution_scale": null,
+      "formats": [
+        "Web map",
+        "PDF",
+        "GIS candidate"
+      ],
+      "license": "Saitama Prefecture terms; verify",
+      "delivery_mode": "portal+maps",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://www.pref.saitama.lg.jp/a1007/kouzui-sinsuisouteikuiki.html",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 404,
+        "content_type": "text/html",
+        "final_url": "https://www.pref.saitama.lg.jp/a1007/kouzui-sinsuisouteikuiki.html",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "unavailable",
+          "access_class": "unavailable",
+          "authority_confirmed": false,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": null,
+          "selected_url": null,
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "No candidate link resolved successfully during the strict audit.",
+          "links": {
+            "primary": {
+              "http_status": 404,
+              "content_type": "text/html",
+              "final_url": "https://www.pref.saitama.lg.jp/a1007/kouzui-sinsuisouteikuiki.html",
+              "bytes": 14039,
+              "range_honored": false,
+              "error": "HTTPError: Not Found"
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:14:45Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Official prefectural inundation-zone candidate."
+    }
+  ],
+  "discovery_metrics": {
+    "searches": 2,
+    "page_reads": 4,
+    "capability_probes": 0,
+    "consecutive_empty_searches": 0,
+    "stop_reason": "National MLIT/GSI portals and official inundation-zone entry points for the five largest prefectures were identified."
+  },
+  "provenance": {
+    "discovered_by": "codex",
+    "discovered_at": "2026-06-24T16:08:05Z"
+  }
+}

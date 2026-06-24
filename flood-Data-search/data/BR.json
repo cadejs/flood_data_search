@@ -1,0 +1,879 @@
+{
+  "artifact_type": "country",
+  "schema_version": "1.0.0",
+  "report_scope": "final",
+  "iso2": "BR",
+  "country_name": "Brazil",
+  "coverage_model": "mixed_national_and_regional",
+  "fragmentation_summary": "ANA/SNIRH and SGB provide national flood-vulnerability, risk-sector and monitoring entry points, while detailed hazard mapping is commonly published through state environmental and water geoportals. The top-five-state pilot therefore combines national candidates with São Paulo, Minas Gerais, Rio de Janeiro, Bahia and Paraná portals.",
+  "top_regions": [
+    {
+      "rank": 1,
+      "name": "São Paulo",
+      "population": 44411238,
+      "pop_year": 2022,
+      "pop_source": "IBGE Censo Demográfico 2022",
+      "pop_source_url": "https://censo2022.ibge.gov.br/panorama/"
+    },
+    {
+      "rank": 2,
+      "name": "Minas Gerais",
+      "population": 20539989,
+      "pop_year": 2022,
+      "pop_source": "IBGE Censo Demográfico 2022",
+      "pop_source_url": "https://censo2022.ibge.gov.br/panorama/"
+    },
+    {
+      "rank": 3,
+      "name": "Rio de Janeiro",
+      "population": 16055174,
+      "pop_year": 2022,
+      "pop_source": "IBGE Censo Demográfico 2022",
+      "pop_source_url": "https://censo2022.ibge.gov.br/panorama/"
+    },
+    {
+      "rank": 4,
+      "name": "Bahia",
+      "population": 14141626,
+      "pop_year": 2022,
+      "pop_source": "IBGE Censo Demográfico 2022",
+      "pop_source_url": "https://censo2022.ibge.gov.br/panorama/"
+    },
+    {
+      "rank": 5,
+      "name": "Paraná",
+      "population": 11444380,
+      "pop_year": 2022,
+      "pop_source": "IBGE Censo Demográfico 2022",
+      "pop_source_url": "https://censo2022.ibge.gov.br/panorama/"
+    }
+  ],
+  "deferred_regions": [
+    "Acre",
+    "Alagoas",
+    "Amapá",
+    "Amazonas",
+    "Ceará",
+    "Distrito Federal",
+    "Espírito Santo",
+    "Goiás",
+    "Maranhão",
+    "Mato Grosso",
+    "Mato Grosso do Sul",
+    "Pará",
+    "Paraíba",
+    "Pernambuco",
+    "Piauí",
+    "Rio Grande do Norte",
+    "Rio Grande do Sul",
+    "Rondônia",
+    "Roraima",
+    "Santa Catarina",
+    "Sergipe",
+    "Tocantins"
+  ],
+  "score": 1,
+  "confidence": "low",
+  "score_provisional": true,
+  "subscores": {
+    "geographic_completeness": 1,
+    "scenario_richness": 1,
+    "technical_accessibility": 1,
+    "documentation_currency": 2,
+    "licensing": 2,
+    "integration_effort": 1
+  },
+  "sources": [
+    {
+      "id": "BR-ANA-001",
+      "jurisdiction": "National",
+      "agency": "Agência Nacional de Águas e Saneamento Básico (ANA)",
+      "native_name": "Atlas de Vulnerabilidade a Inundações",
+      "english_name": "Flood Vulnerability Atlas",
+      "product_type": "flood_vulnerability_vector",
+      "flood_types": [
+        "fluvial"
+      ],
+      "scenarios": [
+        "recurrence/impact/susceptibility classes"
+      ],
+      "coverage": "National river reaches",
+      "resolution_scale": null,
+      "formats": [
+        "Shapefile",
+        "Web map",
+        "Metadata catalogue"
+      ],
+      "license": "Brazilian federal open-data terms; verify",
+      "delivery_mode": "catalogue+download candidate",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://www.snirh.gov.br/portal/snirh/snirh-1/atlas-de-vulnerabilidade-a-inundacoes",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 404,
+        "content_type": "text/html",
+        "final_url": "https://www.snirh.gov.br/portal/snirh/snirh-1/atlas-de-vulnerabilidade-a-inundacoes",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "unavailable",
+          "access_class": "unavailable",
+          "authority_confirmed": false,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": null,
+          "selected_url": null,
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "No candidate link resolved successfully during the strict audit.",
+          "links": {
+            "primary": {
+              "http_status": 404,
+              "content_type": "text/html",
+              "final_url": "https://www.snirh.gov.br/portal/snirh/snirh-1/atlas-de-vulnerabilidade-a-inundacoes",
+              "bytes": 23824,
+              "range_honored": false,
+              "error": "HTTPError: Not Found"
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:11:55Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "National screening atlas; candidate may provide reach-level vulnerability rather than modelled inundation polygons."
+    },
+    {
+      "id": "BR-SGB-001",
+      "jurisdiction": "National",
+      "agency": "Serviço Geológico do Brasil (SGB/CPRM)",
+      "native_name": "GeoSGB / Cartografia de Risco Geológico",
+      "english_name": "GeoSGB Geological Risk Mapping",
+      "product_type": "risk_sector_vector",
+      "flood_types": [
+        "fluvial",
+        "flash_flood",
+        "other"
+      ],
+      "scenarios": [
+        "mapped high/very-high risk sectors"
+      ],
+      "coverage": "Municipal risk-mapping projects across Brazil",
+      "resolution_scale": null,
+      "formats": [
+        "Web GIS",
+        "Shapefile candidate",
+        "Reports"
+      ],
+      "license": "Brazilian federal open-data terms; verify",
+      "delivery_mode": "viewer+download candidate",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://geoportal.sgb.gov.br/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 206,
+        "content_type": "text/html",
+        "final_url": "https://geoportal.sgb.gov.br/portal/home/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "generic_portal",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "https://geoportal.sgb.gov.br/portal/home/",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "The link is a generic agency or geoportal entry point; the named dataset was not resolved.",
+          "links": {
+            "primary": {
+              "http_status": 206,
+              "content_type": "text/html",
+              "final_url": "https://geoportal.sgb.gov.br/portal/home/",
+              "bytes": 4713,
+              "range_honored": true,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:12:01Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate national portal for flood/flash-flood risk sectors and susceptibility products; coverage is project-based."
+    },
+    {
+      "id": "BR-SP-001",
+      "jurisdiction": "São Paulo",
+      "agency": "Secretaria de Meio Ambiente, Infraestrutura e Logística / DataGEO",
+      "native_name": "DataGEO - Áreas de risco e inundação",
+      "english_name": "DataGEO Flood and Risk Layers",
+      "product_type": "regional_hazard_catalogue",
+      "flood_types": [
+        "fluvial",
+        "surface_water"
+      ],
+      "scenarios": [
+        "varies by layer and municipality"
+      ],
+      "coverage": "São Paulo state",
+      "resolution_scale": null,
+      "formats": [
+        "WMS",
+        "WFS candidate",
+        "Shapefile candidate",
+        "Web map"
+      ],
+      "license": "São Paulo open-data terms; verify",
+      "delivery_mode": "geoportal",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://datageo.ambiente.sp.gov.br/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://datageo.ambiente.sp.gov.br/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "catalogue_search",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "https://datageo.ambiente.sp.gov.br/",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "The link is a catalogue/search entry point rather than a dataset-specific record.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://datageo.ambiente.sp.gov.br/",
+              "bytes": 39219,
+              "range_honored": false,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:12:05Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate state catalogue expected to aggregate DAEE, IPT and municipal flood-risk layers."
+    },
+    {
+      "id": "BR-MG-001",
+      "jurisdiction": "Minas Gerais",
+      "agency": "SEMAD / IDE-Sisema",
+      "native_name": "IDE-Sisema - Inundação e áreas de risco",
+      "english_name": "IDE-Sisema Flood and Risk Layers",
+      "product_type": "regional_hazard_catalogue",
+      "flood_types": [
+        "fluvial",
+        "flash_flood"
+      ],
+      "scenarios": [
+        "varies by layer"
+      ],
+      "coverage": "Minas Gerais state",
+      "resolution_scale": null,
+      "formats": [
+        "Web GIS",
+        "WMS candidate",
+        "WFS candidate",
+        "Download candidate"
+      ],
+      "license": "Minas Gerais spatial-data terms; verify",
+      "delivery_mode": "geoportal",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://idesisema.meioambiente.mg.gov.br/webgis",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://geoportal.meioambiente.mg.gov.br/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "catalogue_search",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "https://geoportal.meioambiente.mg.gov.br/",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "The link is a catalogue/search entry point rather than a dataset-specific record.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://geoportal.meioambiente.mg.gov.br/",
+              "bytes": 65536,
+              "range_honored": false,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:12:09Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate state spatial-data infrastructure; detailed flood content and licensing require Pass-2 inspection."
+    },
+    {
+      "id": "BR-RJ-001",
+      "jurisdiction": "Rio de Janeiro",
+      "agency": "Instituto Estadual do Ambiente (INEA)",
+      "native_name": "GeoINEA - Risco de Inundação",
+      "english_name": "GeoINEA Flood-Risk Mapping",
+      "product_type": "regional_hazard_catalogue",
+      "flood_types": [
+        "fluvial",
+        "coastal",
+        "surface_water"
+      ],
+      "scenarios": [
+        "varies by basin/project"
+      ],
+      "coverage": "Rio de Janeiro state",
+      "resolution_scale": null,
+      "formats": [
+        "ArcGIS web map",
+        "REST candidate",
+        "Download candidate"
+      ],
+      "license": "INEA reuse terms; verify",
+      "delivery_mode": "viewer+service candidate",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://geoportal.inea.rj.gov.br/portal/apps/sites/#/geoinea",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": null,
+        "content_type": null,
+        "final_url": null,
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "unavailable",
+          "access_class": "unavailable",
+          "authority_confirmed": false,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": null,
+          "selected_url": null,
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "No candidate link resolved successfully during the strict audit.",
+          "links": {
+            "primary": {
+              "http_status": null,
+              "content_type": null,
+              "final_url": null,
+              "bytes": 0,
+              "range_honored": null,
+              "error": "GET: URLError: <urlopen error timed out>"
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:12:33Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate portal for basin and municipal flood-risk studies."
+    },
+    {
+      "id": "BR-BA-001",
+      "jurisdiction": "Bahia",
+      "agency": "Instituto do Meio Ambiente e Recursos Hídricos (INEMA)",
+      "native_name": "GeoBahia",
+      "english_name": "GeoBahia Environmental Geoportal",
+      "product_type": "regional_hazard_catalogue",
+      "flood_types": [
+        "fluvial",
+        "coastal"
+      ],
+      "scenarios": [
+        "varies by dataset"
+      ],
+      "coverage": "Bahia state",
+      "resolution_scale": null,
+      "formats": [
+        "Web GIS",
+        "WMS candidate",
+        "Download candidate"
+      ],
+      "license": "INEMA reuse terms; verify",
+      "delivery_mode": "geoportal",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://geobahia.inema.ba.gov.br/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": null,
+        "content_type": null,
+        "final_url": null,
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "unavailable",
+          "access_class": "unavailable",
+          "authority_confirmed": false,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": null,
+          "selected_url": null,
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "No candidate link resolved successfully during the strict audit.",
+          "links": {
+            "primary": {
+              "http_status": null,
+              "content_type": null,
+              "final_url": null,
+              "bytes": 0,
+              "range_honored": null,
+              "error": "GET: URLError: <urlopen error [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1081)>"
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:12:37Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate catalogue for water-resource and risk layers; flood-specific content requires verification."
+    },
+    {
+      "id": "BR-PR-001",
+      "jurisdiction": "Paraná",
+      "agency": "Governo do Paraná / GeoPR",
+      "native_name": "GeoPR - Dados geoespaciais de risco e inundação",
+      "english_name": "GeoPR Flood and Risk Geodata",
+      "product_type": "regional_hazard_catalogue",
+      "flood_types": [
+        "fluvial",
+        "surface_water"
+      ],
+      "scenarios": [
+        "varies by publisher"
+      ],
+      "coverage": "Paraná state",
+      "resolution_scale": null,
+      "formats": [
+        "Web GIS",
+        "OGC services candidate",
+        "Download candidate"
+      ],
+      "license": "Paraná open-data terms; verify",
+      "delivery_mode": "geoportal",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://www.geopr.pr.gov.br/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": null,
+        "content_type": null,
+        "final_url": null,
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "unavailable",
+          "access_class": "unavailable",
+          "authority_confirmed": false,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": null,
+          "selected_url": null,
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "No candidate link resolved successfully during the strict audit.",
+          "links": {
+            "primary": {
+              "http_status": null,
+              "content_type": null,
+              "final_url": null,
+              "bytes": 0,
+              "range_honored": null,
+              "error": "GET: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:12:38Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate state discovery point for IAT, Defesa Civil and municipal risk mapping."
+    },
+    {
+      "id": "BR-JRC-001",
+      "jurisdiction": "National fallback",
+      "agency": "European Commission Joint Research Centre",
+      "native_name": "Global River Flood Hazard Maps",
+      "english_name": "Global River Flood Hazard Maps",
+      "product_type": "global_hazard_raster",
+      "flood_types": [
+        "fluvial"
+      ],
+      "scenarios": [
+        "multiple return periods"
+      ],
+      "coverage": "Brazil",
+      "resolution_scale": null,
+      "formats": [
+        "GeoTIFF"
+      ],
+      "license": "European Commission reuse terms",
+      "delivery_mode": "download",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://data.jrc.ec.europa.eu/collection/id-0054",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": true,
+      "is_material": false,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://data.jrc.ec.europa.eu/collection/id-0054",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "restricted",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "https://data.jrc.ec.europa.eu/collection/id-0054",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "The JRC collection resolves to a login surface; unauthenticated dataset access was not confirmed.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://data.jrc.ec.europa.eu/collection/id-0054",
+              "bytes": 36378,
+              "range_honored": false,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:12:39Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "International fallback only; must not raise Brazil's national score."
+    },
+    {
+      "id": "BR-SP-002",
+      "jurisdiction": "São Paulo",
+      "agency": "Instituto de Pesquisas Ambientais (IPA) / SEMIL - DataGEO",
+      "native_name": "Mapa de Risco de Erosão Costeira Crônica e Inundação Costeira - Orla Oceânica de São Paulo",
+      "english_name": "São Paulo Coastal Erosion and Coastal Flooding Risk Map",
+      "product_type": "coastal_hazard_map",
+      "flood_types": [
+        "coastal"
+      ],
+      "scenarios": [
+        "chronic coastal erosion",
+        "coastal flooding / storm surge on the ocean shoreline"
+      ],
+      "coverage": "São Paulo State ocean shoreline (litoral paulista)",
+      "resolution_scale": null,
+      "formats": [
+        "WMS",
+        "WFS",
+        "Shapefile",
+        "PDF map"
+      ],
+      "license": "São Paulo open-data terms; verify",
+      "delivery_mode": "viewer+wms+download",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://datageo.ambiente.sp.gov.br/",
+        "service": "https://datageo.ambiente.sp.gov.br/geoserver/datageo/ows?SERVICE=WMS&REQUEST=GetCapabilities",
+        "download": null
+      },
+      "last_update": "38378",
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 200,
+        "content_type": "text/xml",
+        "final_url": "https://datageo.ambiente.sp.gov.br/geoserver/datageo/ows?SERVICE=WMS&REQUEST=GetCapabilities",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "service",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": false,
+          "selected_role": "service",
+          "selected_url": "https://datageo.ambiente.sp.gov.br/geoserver/datageo/ows?SERVICE=WMS&REQUEST=GetCapabilities",
+          "confirmed": {
+            "flood_types": [
+              "coastal"
+            ],
+            "scenarios": [],
+            "coverage": "São Paulo State ocean shoreline (litoral paulista)",
+            "formats": [
+              "OGC service"
+            ],
+            "license": null,
+            "last_update": "38378"
+          },
+          "reason": "service exposes no recognizably flood-related layers",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://datageo.ambiente.sp.gov.br/",
+              "bytes": 39219,
+              "range_honored": false,
+              "error": null
+            },
+            "service": {
+              "http_status": 200,
+              "content_type": "text/xml",
+              "final_url": "https://datageo.ambiente.sp.gov.br/geoserver/datageo/ows?SERVICE=WMS&REQUEST=GetCapabilities",
+              "bytes": 65536,
+              "range_honored": false,
+              "error": null
+            }
+          },
+          "capabilities": {
+            "service_type": "wms",
+            "layer_count": 926,
+            "layers_truncated": true,
+            "layers": [
+              "G_AIA_FLORA",
+              "G_AIA_FLORA_2016",
+              "G_AIA_FLORA_2017",
+              "G_AIA_FLORA_2018",
+              "G_AIA_FLORA_2020",
+              "G_AIA_FLORA_2021",
+              "G_AIA_FLORA_2022",
+              "G_AIA_FLORA_2023",
+              "G_AIA_FLORA_2024",
+              "G_AIA_PESCA_UGRHI_2020",
+              "G_AIA_PESCA_UGRHI_2021",
+              "G_AIA_PESCA_UGRHI_2022",
+              "G_AIA_PESCA_UGRHI_2023",
+              "G_AIA_PESCA_UGRHI_2024",
+              "G_APPCAVIDADES",
+              "datageo:APPCAVIDADESCECAV",
+              "datageo:CavidadesCecav",
+              "G_APRMATC",
+              "datageo:APRMATC_SUBAREAS_2015_POL",
+              "datageo:APRMATC_SEC_2015_LN",
+              "G_REGIOES_MACROMETROPOLE",
+              "G_REGIONALIZACAO_POPULACAO_2023",
+              "G_REGIONALIZACAO_POPULACAO_2024",
+              "G_RedeCosteira",
+              "datageo:VWM_REDE_MONITORAMENTO_AGUA_COSTEIRA_CETESB_POL"
+            ],
+            "crs": [
+              "AUTO:42001",
+              "AUTO:42002",
+              "AUTO:42003",
+              "AUTO:42004",
+              "AUTO:97001",
+              "AUTO:97002",
+              "EPSG:29194",
+              "EPSG:29193",
+              "EPSG:29192",
+              "EPSG:2000",
+              "EPSG:2001",
+              "EPSG:2002",
+              "EPSG:2003",
+              "EPSG:2004",
+              "EPSG:2005",
+              "EPSG:2006",
+              "EPSG:2007",
+              "EPSG:2008",
+              "EPSG:2009",
+              "EPSG:2010"
+            ],
+            "formats": [
+              "text/xml",
+              "image/png",
+              "application/atom+xml",
+              "application/json;type=utfgrid",
+              "application/pdf",
+              "application/rss+xml",
+              "application/vnd.google-earth.kml+xml",
+              "application/vnd.google-earth.kml+xml;mode=networklink",
+              "application/vnd.google-earth.kmz",
+              "image/geotiff",
+              "image/geotiff8",
+              "image/gif",
+              "image/jpeg",
+              "image/png; mode=8bit",
+              "image/svg+xml",
+              "image/tiff",
+              "image/tiff8",
+              "image/vnd.jpeg-png",
+              "text/html; subtype=openlayers",
+              "text/html; subtype=openlayers2"
+            ],
+            "bbox": [
+              -180.12721704087724,
+              -89.99982838943765,
+              180.82831808590447,
+              85.12844258486786
+            ],
+            "declared_update": "38378"
+          }
+        },
+        "checked_at": "2026-06-24T21:12:44Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "São Paulo State coastal erosion/flooding risk map on the DataGEO infrastructure; DataGEO GeoServer WMS GetCapabilities probe-confirmed. Adds working coastal coverage after the failed Rio de Janeiro and Bahia coastal candidates."
+    }
+  ],
+  "discovery_metrics": {
+    "searches": 4,
+    "page_reads": 4,
+    "capability_probes": 0,
+    "consecutive_empty_searches": 0,
+    "stop_reason": "National candidates and official geoportals for the five most populous states were identified."
+  },
+  "provenance": {
+    "discovered_by": "codex",
+    "discovered_at": "2026-06-24T16:01:59Z"
+  }
+}

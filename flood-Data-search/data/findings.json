@@ -1,0 +1,1451 @@
+{
+  "artifact_type": "findings",
+  "schema_version": "1.0.0",
+  "round": 2,
+  "items": [
+    {
+      "iso2": "GB",
+      "id": "GB-EA-002",
+      "problem": "WMS service endpoint spatialdata/risk-of-flooding-from-rivers-and-sea/wms returns HTTP 404 while the catalogue primary page is live (200). Legacy RoFRS WMS slug was decommissioned when the EA migrated the product to NaFRA2.",
+      "evidence": {
+        "service_http_status": 404,
+        "primary_http_status": 200,
+        "failed_role": "service",
+        "replacement_id": "GB-EA-005",
+        "replacement_service": "https://environment.data.gov.uk/spatialdata/nafra2-risk-of-flooding-from-rivers-and-sea/wms",
+        "replacement_verification": "verified",
+        "probe": "wms/6 layers/EPSG:4326,4258,27700",
+        "searches_used": 2
+      },
+      "request": "Replacement GB-EA-005 points at the live NaFRA2 rivers-and-sea WMS (bounded-probe verified). Human review: confirm NaFRA2 is the accepted successor product for RoFRS in the readiness ranking.",
+      "status": "resolved"
+    },
+    {
+      "iso2": "GB",
+      "id": "GB-EA-003",
+      "problem": "WMS service endpoint spatialdata/risk-of-flooding-from-surface-water/wms returns HTTP 404 while the catalogue primary page is live (200). Legacy RoFSW WMS slug was decommissioned under the NaFRA2 migration.",
+      "evidence": {
+        "service_http_status": 404,
+        "primary_http_status": 200,
+        "failed_role": "service",
+        "replacement_id": "GB-EA-006",
+        "replacement_service": "https://environment.data.gov.uk/spatialdata/nafra2-risk-of-flooding-from-surface-water/wms",
+        "replacement_verification": "verified",
+        "probe": "wms/6 layers/EPSG:4326,4258,27700",
+        "searches_used": 1
+      },
+      "request": "Replacement GB-EA-006 points at the live NaFRA2 surface-water WMS (bounded-probe verified). Human review: confirm NaFRA2 surface-water service as successor to the decommissioned RoFSW endpoint.",
+      "status": "resolved"
+    },
+    {
+      "iso2": "BR",
+      "id": "BR-ANA-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for BR-ANA-001 (Agência Nacional de Águas e Saneamento Básico (ANA) — Flood Vulnerability Atlas). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": 404,
+        "final_url": "https://www.snirh.gov.br/portal/snirh/snirh-1/atlas-de-vulnerabilidade-a-inundacoes",
+        "checked_at": "2026-06-24T21:11:55Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "BR",
+      "id": "BR-RJ-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for BR-RJ-001 (Instituto Estadual do Ambiente (INEA) — GeoINEA Flood-Risk Mapping). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": null,
+        "final_url": null,
+        "checked_at": "2026-06-24T21:12:33Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "BR",
+      "id": "BR-BA-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for BR-BA-001 (Instituto do Meio Ambiente e Recursos Hídricos (INEMA) — GeoBahia Environmental Geoportal). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": null,
+        "final_url": null,
+        "checked_at": "2026-06-24T21:12:37Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "BR",
+      "id": "BR-PR-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for BR-PR-001 (Governo do Paraná / GeoPR — GeoPR Flood and Risk Geodata). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": null,
+        "final_url": null,
+        "checked_at": "2026-06-24T21:12:38Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "IN",
+      "id": "IN-CWC-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for IN-CWC-001 (Central Water Commission — CWC Flood Forecasting Portal). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": null,
+        "final_url": null,
+        "checked_at": "2026-06-24T21:13:19Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "IN",
+      "id": "IN-WRIS-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for IN-WRIS-001 (National Water Informatics Centre — India Water Resources Information System). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": null,
+        "final_url": null,
+        "checked_at": "2026-06-24T21:13:44Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "IN",
+      "id": "IN-UP-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for IN-UP-001 (Uttar Pradesh State Disaster Management Authority — Uttar Pradesh Flood Hazard Resources). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": null,
+        "final_url": null,
+        "checked_at": "2026-06-24T21:13:46Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "IN",
+      "id": "IN-WB-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for IN-WB-001 (Irrigation & Waterways Department, West Bengal — West Bengal Flood Management and GIS Resources). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": null,
+        "final_url": null,
+        "checked_at": "2026-06-24T21:14:21Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "IN",
+      "id": "IN-MP-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for IN-MP-001 (Water Resources Department, Madhya Pradesh — Madhya Pradesh Water Resources GIS and Flood Studies). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": null,
+        "final_url": null,
+        "checked_at": "2026-06-24T21:14:46Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "CN",
+      "id": "CN-GD-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for CN-GD-001 (广东省水利厅 — Guangdong Flood and Flash-Flood Risk Maps). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": 500,
+        "final_url": "https://slt.gd.gov.cn/",
+        "checked_at": "2026-06-24T21:15:42Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "CN",
+      "id": "CN-HA-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for CN-HA-001 (河南省水利厅 — Henan Flood Risk Maps). Classification: unavailable / unavailable. The official page returned HTTP 403; public dataset usability could not be confirmed.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": 403,
+        "final_url": "https://slt.henan.gov.cn/",
+        "checked_at": "2026-06-24T21:15:47Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "CN",
+      "id": "CN-JS-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for CN-JS-001 (江苏省水利厅 — Jiangsu Flood Risk Maps). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": null,
+        "final_url": null,
+        "checked_at": "2026-06-24T21:16:12Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "CA",
+      "id": "CA-NRCAN-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for CA-NRCAN-001 (Natural Resources Canada — Flood Hazard Identification and Mapping Program). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": 404,
+        "final_url": "https://natural-resources.canada.ca/science-and-data/science-and-research/natural-hazards/flood-hazard-identification-and-mapping-program",
+        "checked_at": "2026-06-24T21:16:22Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "CA",
+      "id": "CA-ON-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for CA-ON-001 (Government of Ontario / Ministry of Natural Resources — Ontario Floodplain Mapping). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": 404,
+        "final_url": "https://www.ontario.ca/page/floodplain-mapping",
+        "checked_at": "2026-06-24T21:16:44Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "CA",
+      "id": "CA-BC-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for CA-BC-001 (Government of British Columbia — British Columbia Floodplain Mapping). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": 404,
+        "final_url": "https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/drought-flooding-dikes-dams/integrated-flood-hazard-management/flood-hazard-land-use-management/floodplain-mapping",
+        "checked_at": "2026-06-24T21:16:46Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "FR",
+      "id": "FR-IDF-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for FR-IDF-001 (DRIEAT Île-de-France — Île-de-France TRI Flood Maps). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": 404,
+        "final_url": "https://www.drieat.ile-de-france.developpement-durable.gouv.fr/cartographie-des-risques-d-inondation-r677.html",
+        "checked_at": "2026-06-24T21:12:03Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "FR",
+      "id": "FR-ARA-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for FR-ARA-001 (DREAL Auvergne-Rhône-Alpes — Auvergne-Rhône-Alpes TRI Flood Maps). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": 404,
+        "final_url": "https://www.auvergne-rhone-alpes.developpement-durable.gouv.fr/directive-inondation-r3414.html",
+        "checked_at": "2026-06-24T21:12:05Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "FR",
+      "id": "FR-OCC-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for FR-OCC-001 (DREAL Occitanie — Occitanie Flood Hazard and Risk Maps). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": 404,
+        "final_url": "https://www.occitanie.developpement-durable.gouv.fr/la-directive-inondation-r7214.html",
+        "checked_at": "2026-06-24T21:12:09Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "FR",
+      "id": "FR-HDF-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for FR-HDF-001 (DREAL Hauts-de-France — Hauts-de-France TRI Flood Maps). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": 404,
+        "final_url": "https://www.hauts-de-france.developpement-durable.gouv.fr/?Cartographie-des-risques-d-inondation",
+        "checked_at": "2026-06-24T21:12:12Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "MX",
+      "id": "MX-CENAPRED-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for MX-CENAPRED-001 (Centro Nacional de Prevención de Desastres — National Risk Atlas). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": null,
+        "final_url": null,
+        "checked_at": "2026-06-24T21:12:38Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "MX",
+      "id": "MX-EM-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for MX-EM-001 (Coordinación General de Protección Civil del Estado de México — State of Mexico Risk Atlas). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": null,
+        "final_url": null,
+        "checked_at": "2026-06-24T21:12:51Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "MX",
+      "id": "MX-VER-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for MX-VER-001 (Secretaría de Protección Civil de Veracruz — Veracruz State Risk Atlas). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": null,
+        "final_url": null,
+        "checked_at": "2026-06-24T21:13:19Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "MX",
+      "id": "MX-PUE-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for MX-PUE-001 (Coordinación General de Protección Civil del Estado de Puebla — Puebla State Risk Atlas). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": null,
+        "final_url": null,
+        "checked_at": "2026-06-24T21:13:19Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "MY",
+      "id": "MY-JPS-002",
+      "problem": "Dataset-resolved verification did not confirm usable access for MY-JPS-002 (Jabatan Pengairan dan Saliran Malaysia — DID Geospatial Flood Hazard Maps). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": null,
+        "final_url": null,
+        "checked_at": "2026-06-24T21:13:25Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "MY",
+      "id": "MY-SEL-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for MY-SEL-001 (JPS Malaysia / JPS Selangor — Selangor Flood Hazard Maps). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": null,
+        "final_url": null,
+        "checked_at": "2026-06-24T21:13:58Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "MY",
+      "id": "MY-JHR-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for MY-JHR-001 (JPS Malaysia / JPS Johor — Johor Flood Hazard Maps). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": null,
+        "final_url": null,
+        "checked_at": "2026-06-24T21:13:58Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "MY",
+      "id": "MY-PRK-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for MY-PRK-001 (JPS Malaysia / JPS Perak — Perak Flood Hazard Maps). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": null,
+        "final_url": null,
+        "checked_at": "2026-06-24T21:14:06Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "JP",
+      "id": "JP-TKY-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for JP-TKY-001 (東京都建設局 — Tokyo Flood Inundation Assumption Maps). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": 404,
+        "final_url": "https://www.kensetsu.metro.tokyo.lg.jp/jigyo/river/chusho_seibi/index/menu03-01.html",
+        "checked_at": "2026-06-24T21:14:31Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "JP",
+      "id": "JP-OSK-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for JP-OSK-001 (大阪府 — Osaka Flood Inundation Assumption Maps). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": 404,
+        "final_url": "https://www.pref.osaka.lg.jp/o130350/kasenkankyo/hazardmap/index.html",
+        "checked_at": "2026-06-24T21:14:39Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "JP",
+      "id": "JP-AIC-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for JP-AIC-001 (愛知県 — Aichi Flood Inundation Assumption Maps). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": 404,
+        "final_url": "https://www.pref.aichi.jp/soshiki/kasen/shinsuisoutei.html",
+        "checked_at": "2026-06-24T21:14:41Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "JP",
+      "id": "JP-SAI-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for JP-SAI-001 (埼玉県 — Saitama Flood Inundation Assumption Maps). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": 404,
+        "final_url": "https://www.pref.saitama.lg.jp/a1007/kouzui-sinsuisouteikuiki.html",
+        "checked_at": "2026-06-24T21:14:45Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "BE",
+      "id": "BE-BRU-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for BE-BRU-001 (Bruxelles Environnement — Brussels Flood Hazard and Risk Map). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": 404,
+        "final_url": "https://environnement.brussels/citoyen/outils-et-donnees/cartes/les-cartes-relatives-aux-inondations-pour-la-region-bruxelloise",
+        "checked_at": "2026-06-24T21:12:05Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "IT",
+      "id": "IT-AC-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for IT-AC-001 (Autorità di bacino distrettuale dell'Appennino Centrale — Central Apennines Flood Hazard and Risk Maps). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": null,
+        "final_url": null,
+        "checked_at": "2026-06-24T21:12:12Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "IT",
+      "id": "IT-AM-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for IT-AM-001 (Autorità di bacino distrettuale dell'Appennino Meridionale — Southern Apennines Flood Risk Management Maps). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": 404,
+        "final_url": "https://www.distrettoappenninomeridionale.it/pgra",
+        "checked_at": "2026-06-24T21:12:17Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "IT",
+      "id": "IT-AO-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for IT-AO-001 (Autorità di bacino distrettuale delle Alpi Orientali — Eastern Alps Flood Hazard and Risk Maps). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": null,
+        "final_url": null,
+        "checked_at": "2026-06-24T21:12:18Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "CH",
+      "id": "CH-BE-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for CH-BE-001 (Kanton Bern — Bern Natural-Hazard Flood Map). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": null,
+        "final_url": null,
+        "checked_at": "2026-06-24T21:12:34Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "TH",
+      "id": "TH-GISTDA-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for TH-GISTDA-001 (สำนักงานพัฒนาเทคโนโลยีอวกาศและภูมิสารสนเทศ — GISTDA Disaster Flood Monitoring). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": null,
+        "final_url": null,
+        "checked_at": "2026-06-24T21:13:45Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "TH",
+      "id": "TH-BKK-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for TH-BKK-001 (Bangkok Metropolitan Administration — Bangkok Flood Monitoring and Risk Maps). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": null,
+        "final_url": null,
+        "checked_at": "2026-06-24T21:14:10Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "TH",
+      "id": "TH-NMA-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for TH-NMA-001 (Department of Disaster Prevention and Mitigation / provincial authorities — Nakhon Ratchasima Flood-Risk Maps). Classification: unavailable / unavailable. The official page returned HTTP 403; public dataset usability could not be confirmed.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": 403,
+        "final_url": "https://www.disaster.go.th/",
+        "checked_at": "2026-06-24T21:14:12Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "TH",
+      "id": "TH-UBN-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for TH-UBN-001 (Department of Disaster Prevention and Mitigation / provincial authorities — Ubon Ratchathani Flood-Risk Maps). Classification: unavailable / unavailable. The official page returned HTTP 403; public dataset usability could not be confirmed.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": 403,
+        "final_url": "https://www.disaster.go.th/",
+        "checked_at": "2026-06-24T21:14:13Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "TH",
+      "id": "TH-CMI-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for TH-CMI-001 (Department of Disaster Prevention and Mitigation / provincial authorities — Chiang Mai Flood-Risk Maps). Classification: unavailable / unavailable. The official page returned HTTP 403; public dataset usability could not be confirmed.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": 403,
+        "final_url": "https://www.disaster.go.th/",
+        "checked_at": "2026-06-24T21:14:13Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "TH",
+      "id": "TH-KKN-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for TH-KKN-001 (Department of Disaster Prevention and Mitigation / provincial authorities — Khon Kaen Flood-Risk Maps). Classification: unavailable / unavailable. The official page returned HTTP 403; public dataset usability could not be confirmed.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": 403,
+        "final_url": "https://www.disaster.go.th/",
+        "checked_at": "2026-06-24T21:14:13Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "SE",
+      "id": "SE-MSB-002",
+      "problem": "Dataset-resolved verification did not confirm usable access for SE-MSB-002 (Myndigheten för samhällsskydd och beredskap — Flood Inundation Mapping Downloads). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": 404,
+        "final_url": "https://www.mcf.se/sv/verktyg--tjanster/oversvamningsportalen/oversvamningskarteringar/",
+        "checked_at": "2026-06-24T21:12:00Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "AE",
+      "id": "AE-MOEI-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for AE-MOEI-001 (Ministry of Energy and Infrastructure — Federal Flood and Stormwater Studies). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": null,
+        "final_url": null,
+        "checked_at": "2026-06-24T21:12:45Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "AE",
+      "id": "AE-AUH-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for AE-AUH-001 (Department of Municipalities and Transport / Abu Dhabi Spatial Data Infrastructure — Abu Dhabi Flood and Drainage Geodata). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": null,
+        "final_url": null,
+        "checked_at": "2026-06-24T21:12:51Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "AE",
+      "id": "AE-DXB-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for AE-DXB-001 (Dubai Municipality — Dubai Flood and Drainage Geodata). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": null,
+        "final_url": null,
+        "checked_at": "2026-06-24T21:13:19Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "AE",
+      "id": "AE-SHJ-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for AE-SHJ-001 (Sharjah Department of Town Planning and Survey / Sharjah SDI — Sharjah Flood and Drainage Geodata). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": null,
+        "final_url": null,
+        "checked_at": "2026-06-24T21:13:20Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "AE",
+      "id": "AE-AJM-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for AE-AJM-001 (Ajman Municipality and Planning Department — Ajman Flood and Drainage Geodata). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": null,
+        "final_url": null,
+        "checked_at": "2026-06-24T21:13:21Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "ZA",
+      "id": "ZA-DWS-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for ZA-DWS-001 (Department of Water and Sanitation — DWS Hydrological and Flood Studies). Classification: unavailable / unavailable. The official page returned HTTP 403; public dataset usability could not be confirmed.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": 403,
+        "final_url": "https://www.dws.gov.za/Hydrology/",
+        "checked_at": "2026-06-24T21:13:34Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "ZA",
+      "id": "ZA-GP-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for ZA-GP-001 (Gauteng Provincial Government / municipalities — Gauteng Floodline and Risk Geodata). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": null,
+        "final_url": null,
+        "checked_at": "2026-06-24T21:13:38Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "ZA",
+      "id": "ZA-WC-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for ZA-WC-001 (Western Cape Government / Department of Local Government — Western Cape Flood Risk Mapping). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": 404,
+        "final_url": "https://www.westerncape.gov.za/general-publication/disaster-management",
+        "checked_at": "2026-06-24T21:13:47Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "KR",
+      "id": "KR-WAMIS-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for KR-WAMIS-001 (국가수자원관리종합정보시스템 — Water Resources Management Information System). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": null,
+        "final_url": null,
+        "checked_at": "2026-06-24T21:14:29Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "KR",
+      "id": "KR-VWORLD-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for KR-VWORLD-001 (국토교통부 / VWorld — VWorld National Spatial Information Platform). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": null,
+        "final_url": null,
+        "checked_at": "2026-06-24T21:14:35Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "IT",
+      "id": "IT-MI-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for IT-MI-001 (Comune di Milano - PGT Componente Geologica — Milan Simplified Hydraulic-Risk Document and Map). Classification: unavailable / unavailable. The official page returned HTTP 403; public dataset usability could not be confirmed.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": 403,
+        "final_url": "https://pgt.comune.milano.it/gall08-documento-semplificato-del-rischio-idraulico",
+        "checked_at": "2026-06-24T21:12:24Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "TH",
+      "id": "TH-DMCR-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for TH-DMCR-001 (Department of Marine and Coastal Resources (DMCR) — Thailand Coastal Spatial Database (TCS) - Coastal Change / Erosion). Classification: unavailable / unavailable. No candidate link resolved successfully during the strict audit.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": 200,
+        "final_url": "https://tcs.dmcr.go.th/dmcr/v2/router?page=home",
+        "checked_at": "2026-06-24T21:14:18Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "BR",
+      "id": "BR-SGB-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for BR-SGB-001 (Serviço Geológico do Brasil (SGB/CPRM) — GeoSGB Geological Risk Mapping). Classification: lead / generic_portal. The link is a generic agency or geoportal entry point; the named dataset was not resolved.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "generic_portal",
+        "http_status": 206,
+        "final_url": "https://geoportal.sgb.gov.br/portal/home/",
+        "checked_at": "2026-06-24T21:12:01Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "BR",
+      "id": "BR-SP-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for BR-SP-001 (Secretaria de Meio Ambiente, Infraestrutura e Logística / DataGEO — DataGEO Flood and Risk Layers). Classification: lead / catalogue_search. The link is a catalogue/search entry point rather than a dataset-specific record.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "catalogue_search",
+        "http_status": 200,
+        "final_url": "https://datageo.ambiente.sp.gov.br/",
+        "checked_at": "2026-06-24T21:12:05Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "BR",
+      "id": "BR-MG-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for BR-MG-001 (SEMAD / IDE-Sisema — IDE-Sisema Flood and Risk Layers). Classification: lead / catalogue_search. The link is a catalogue/search entry point rather than a dataset-specific record.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "catalogue_search",
+        "http_status": 200,
+        "final_url": "https://geoportal.meioambiente.mg.gov.br/",
+        "checked_at": "2026-06-24T21:12:09Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "BR",
+      "id": "BR-SP-002",
+      "problem": "Dataset-resolved verification did not confirm usable access for BR-SP-002 (Instituto de Pesquisas Ambientais (IPA) / SEMIL - DataGEO — São Paulo Coastal Erosion and Coastal Flooding Risk Map). Classification: lead / service. service exposes no recognizably flood-related layers",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "service",
+        "http_status": 200,
+        "final_url": "https://datageo.ambiente.sp.gov.br/geoserver/datageo/ows?SERVICE=WMS&REQUEST=GetCapabilities",
+        "checked_at": "2026-06-24T21:12:44Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "IN",
+      "id": "IN-MH-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for IN-MH-001 (Maharashtra State Disaster Management Authority — Maharashtra Flood Hazard and Risk Resources). Classification: lead / generic_portal. The link is a generic agency or geoportal entry point; the named dataset was not resolved.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "generic_portal",
+        "http_status": 200,
+        "final_url": "https://sdma.maharashtra.gov.in/",
+        "checked_at": "2026-06-24T21:13:51Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "DE",
+      "id": "DE-BFG-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for DE-BFG-001 (Bundesanstalt für Gewässerkunde (BfG) — BfG Geoportal). Classification: lead / catalogue_search. The link is a catalogue/search entry point rather than a dataset-specific record.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "catalogue_search",
+        "http_status": 206,
+        "final_url": "https://geoportal.bafg.de/",
+        "checked_at": "2026-06-24T21:18:06Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "DE",
+      "id": "DE-NI-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for DE-NI-001 (Niedersächsischer Landesbetrieb für Wasserwirtschaft, Küsten- und Naturschutz — Lower Saxony Environmental Maps - Flood). Classification: lead / generic_portal. The link is a generic agency or geoportal entry point; the named dataset was not resolved.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "generic_portal",
+        "http_status": 206,
+        "final_url": "https://www.umweltkarten-niedersachsen.de/",
+        "checked_at": "2026-06-24T21:18:34Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "CN",
+      "id": "CN-MWR-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for CN-MWR-001 (中华人民共和国水利部 / Ministry of Water Resources — National Flood Risk Map Programme). Classification: lead / restricted. Access is restricted and no public dataset path was confirmed.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "restricted",
+        "http_status": 206,
+        "final_url": "http://www.mwr.gov.cn/",
+        "checked_at": "2026-06-24T21:15:36Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "CN",
+      "id": "CN-MEM-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for CN-MEM-001 (中华人民共和国应急管理部 / Ministry of Emergency Management — First National Comprehensive Natural Disaster Risk Survey). Classification: lead / restricted. Access is restricted and no public dataset path was confirmed.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "restricted",
+        "http_status": 200,
+        "final_url": "https://www.mem.gov.cn/",
+        "checked_at": "2026-06-24T21:15:38Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "CN",
+      "id": "CN-SD-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for CN-SD-001 (山东省水利厅 — Shandong Flood Risk Maps). Classification: lead / restricted. Access is restricted and no public dataset path was confirmed.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "restricted",
+        "http_status": 206,
+        "final_url": "http://wr.shandong.gov.cn/",
+        "checked_at": "2026-06-24T21:15:47Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "CN",
+      "id": "CN-SC-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for CN-SC-001 (四川省水利厅 — Sichuan Flood and Flash-Flood Risk Maps). Classification: lead / restricted. Access is restricted and no public dataset path was confirmed.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "restricted",
+        "http_status": 200,
+        "final_url": "http://slt.sc.gov.cn/",
+        "checked_at": "2026-06-24T21:16:15Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "CA",
+      "id": "CA-OPENMAPS-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for CA-OPENMAPS-001 (Government of Canada — Open Maps Flood Geospatial Catalogue). Classification: unavailable / unavailable. The link is a catalogue/search entry point rather than a dataset-specific record.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "unavailable",
+        "access_class": "unavailable",
+        "http_status": null,
+        "final_url": null,
+        "checked_at": "2026-06-24T21:16:43Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "FR",
+      "id": "FR-GEORISQUES-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for FR-GEORISQUES-001 (Ministère de la Transition écologique / BRGM — Georisques Flood Data). Classification: lead / catalogue_search. The link is a catalogue/search entry point rather than a dataset-specific record.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "catalogue_search",
+        "http_status": 200,
+        "final_url": "https://www.georisques.gouv.fr/donnees/bases-de-donnees",
+        "checked_at": "2026-06-24T21:11:59Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "FR",
+      "id": "FR-GPU-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for FR-GPU-001 (Ministère de la Transition écologique — Urban Planning Geoportal - Risk Prevention Plans). Classification: lead / generic_portal. The link is a generic agency or geoportal entry point; the named dataset was not resolved.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "generic_portal",
+        "http_status": 200,
+        "final_url": "https://www.geoportail-urbanisme.gouv.fr/",
+        "checked_at": "2026-06-24T21:12:01Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "MX",
+      "id": "MX-CONAGUA-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for MX-CONAGUA-001 (Comisión Nacional del Agua — National Water Information System). Classification: lead / catalogue_search. The link is a catalogue/search entry point rather than a dataset-specific record.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "catalogue_search",
+        "http_status": 206,
+        "final_url": "https://www.gob.mx/conagua",
+        "checked_at": "2026-06-24T21:12:40Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "MX",
+      "id": "MX-INEGI-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for MX-INEGI-001 (Instituto Nacional de Estadística y Geografía — SIATL Watershed Flow Simulator). Classification: lead / ambiguous. The page resolves, but dataset identity or usable access could not be confirmed.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "ambiguous",
+        "http_status": 206,
+        "final_url": "https://antares.inegi.org.mx/analisis/red_hidro/siatl/",
+        "checked_at": "2026-06-24T21:12:41Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "MX",
+      "id": "MX-JAL-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for MX-JAL-001 (Unidad Estatal de Protección Civil y Bomberos Jalisco — Jalisco State Risk Atlas). Classification: lead / generic_portal. The link is a generic agency or geoportal entry point; the named dataset was not resolved.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "generic_portal",
+        "http_status": 206,
+        "final_url": "https://proteccioncivil.jalisco.gob.mx/",
+        "checked_at": "2026-06-24T21:12:54Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "MY",
+      "id": "MY-JPS-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for MY-JPS-001 (Jabatan Pengairan dan Saliran Malaysia / Department of Irrigation and Drainage — Public Flood Information Portal). Classification: lead / wrong_product. The reachable product is operational or observational, not a confirmed flood-hazard dataset.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "wrong_product",
+        "http_status": 206,
+        "final_url": "https://publicinfobanjir.water.gov.my/",
+        "checked_at": "2026-06-24T21:13:25Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "MY",
+      "id": "MY-NAHRIM-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for MY-NAHRIM-001 (National Water Research Institute of Malaysia (NAHRIM) — NAHRIM Flood and Climate Risk Products). Classification: lead / generic_portal. The link is a generic agency or geoportal entry point; the named dataset was not resolved.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "generic_portal",
+        "http_status": 200,
+        "final_url": "https://www.nahrim.gov.my/",
+        "checked_at": "2026-06-24T21:13:58Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "MY",
+      "id": "MY-SBH-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for MY-SBH-001 (Jabatan Pengairan dan Saliran Sabah — Sabah Flood Hazard Maps). Classification: lead / generic_portal. The link is a generic agency or geoportal entry point; the named dataset was not resolved.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "generic_portal",
+        "http_status": 200,
+        "final_url": "https://did.sabah.gov.my/",
+        "checked_at": "2026-06-24T21:14:06Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "MY",
+      "id": "MY-SWK-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for MY-SWK-001 (Department of Irrigation and Drainage Sarawak — Sarawak Flood Hazard and Drainage Maps). Classification: lead / generic_portal. The link is a generic agency or geoportal entry point; the named dataset was not resolved.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "generic_portal",
+        "http_status": 200,
+        "final_url": "https://did.sarawak.gov.my/web/home/index/",
+        "checked_at": "2026-06-24T21:14:15Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "PL",
+      "id": "PL-GUGIK-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for PL-GUGIK-001 (Główny Urząd Geodezji i Kartografii — National Geoportal Flood Hazard Layers). Classification: lead / ambiguous. The page resolves, but dataset identity or usable access could not be confirmed.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "ambiguous",
+        "http_status": 206,
+        "final_url": "https://mapy.geoportal.gov.pl/imap/Imgp_2.html",
+        "checked_at": "2026-06-24T21:14:21Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "BE",
+      "id": "BE-VLG-002",
+      "problem": "Dataset-resolved verification did not confirm usable access for BE-VLG-002 (Digitaal Vlaanderen — Geopunt Flood-Susceptibility Layers). Classification: lead / catalogue_search. The link is a catalogue/search entry point rather than a dataset-specific record.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "catalogue_search",
+        "http_status": 206,
+        "final_url": "https://www.geopunt.be/",
+        "checked_at": "2026-06-24T21:11:59Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "BE",
+      "id": "BE-WAL-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for BE-WAL-001 (Service public de Wallonie — Wallonia Flood Hazard Maps). Classification: lead / catalogue_search. The link is a catalogue/search entry point rather than a dataset-specific record.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "catalogue_search",
+        "http_status": 200,
+        "final_url": "https://geoportail.wallonie.be/walonmap",
+        "checked_at": "2026-06-24T21:12:01Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "IT",
+      "id": "IT-SIC-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for IT-SIC-001 (Autorità di bacino del Distretto Idrografico della Sicilia — Sicily Flood Risk Management Plan Maps). Classification: lead / ambiguous. The page resolves, but dataset identity or usable access could not be confirmed.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "ambiguous",
+        "http_status": 200,
+        "final_url": "https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/presidenza-regione/autorita-bacino-distretto-idrografico-sicilia",
+        "checked_at": "2026-06-24T21:12:21Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "CH",
+      "id": "CH-ZH-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for CH-ZH-001 (Kanton Zürich — Zurich Flood Natural-Hazard Map). Classification: lead / generic_portal. The link is a generic agency or geoportal entry point; the named dataset was not resolved.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "generic_portal",
+        "http_status": 200,
+        "final_url": "https://maps.zh.ch/",
+        "checked_at": "2026-06-24T21:12:33Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "CH",
+      "id": "CH-VD-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for CH-VD-001 (État de Vaud — Vaud Natural-Hazard Flood Maps). Classification: lead / generic_portal. The link is a generic agency or geoportal entry point; the named dataset was not resolved.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "generic_portal",
+        "http_status": 206,
+        "final_url": "https://www.geo.vd.ch/",
+        "checked_at": "2026-06-24T21:12:35Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "CH",
+      "id": "CH-AG-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for CH-AG-001 (Kanton Aargau — Aargau Flood Hazard Map). Classification: lead / ambiguous. The page resolves, but dataset identity or usable access could not be confirmed.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "ambiguous",
+        "http_status": 200,
+        "final_url": "https://www.ag.ch/geoportal/apps/onlinekarten/?welcome",
+        "checked_at": "2026-06-24T21:12:39Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "CH",
+      "id": "CH-SG-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for CH-SG-001 (Kanton St. Gallen — St. Gallen Water Natural-Hazard Map). Classification: lead / generic_portal. The link is a generic agency or geoportal entry point; the named dataset was not resolved.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "generic_portal",
+        "http_status": 200,
+        "final_url": "https://www.geoportal.ch/",
+        "checked_at": "2026-06-24T21:12:40Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "IE",
+      "id": "IE-DATA-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for IE-DATA-001 (Office of Public Works / data.gov.ie — Irish Flood Map Open Data). Classification: lead / catalogue_search. The link is a catalogue/search entry point rather than a dataset-specific record.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "catalogue_search",
+        "http_status": 200,
+        "final_url": "https://data.gov.ie/dataset/?q=flood+maps",
+        "checked_at": "2026-06-24T21:12:48Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "TH",
+      "id": "TH-DWR-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for TH-DWR-001 (กรมทรัพยากรน้ำ / Department of Water Resources — Water Resources GIS and Flood-Risk Maps). Classification: lead / catalogue_search. The link is a catalogue/search entry point rather than a dataset-specific record.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "catalogue_search",
+        "http_status": 200,
+        "final_url": "https://mekhala.dwr.go.th/",
+        "checked_at": "2026-06-24T21:13:21Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "AE",
+      "id": "AE-RAK-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for AE-RAK-001 (Ras Al Khaimah Municipality — Ras Al Khaimah Flood and Drainage Geodata). Classification: lead / request_only. Access requires a data request; no public dataset path was confirmed.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "request_only",
+        "http_status": 200,
+        "final_url": "https://mun.rak.ae/",
+        "checked_at": "2026-06-24T21:13:24Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "ZA",
+      "id": "ZA-SARVA-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for ZA-SARVA-001 (South African Environmental Observation Network / government partners — South African Risk and Vulnerability Atlas). Classification: lead / generic_portal. The link is a generic agency or geoportal entry point; the named dataset was not resolved.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "generic_portal",
+        "http_status": 200,
+        "final_url": "https://sarva.saeon.ac.za/",
+        "checked_at": "2026-06-24T21:13:31Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "ZA",
+      "id": "ZA-NDMC-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for ZA-NDMC-001 (National Disaster Management Centre — National Disaster Risk GIS). Classification: lead / generic_portal. The link is a generic agency or geoportal entry point; the named dataset was not resolved.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "generic_portal",
+        "http_status": 200,
+        "final_url": "https://www.ndmc.gov.za/",
+        "checked_at": "2026-06-24T21:13:37Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "ZA",
+      "id": "ZA-KZN-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for ZA-KZN-001 (KwaZulu-Natal Provincial Disaster Management Centre / eThekwini Municipality — KwaZulu-Natal Flood Risk and Floodline Maps). Classification: lead / request_only. Access requires a data request; no public dataset path was confirmed.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "request_only",
+        "http_status": 200,
+        "final_url": "https://www.kzncogta.gov.za/",
+        "checked_at": "2026-06-24T21:13:43Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "ZA",
+      "id": "ZA-EC-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for ZA-EC-001 (Eastern Cape Provincial Disaster Management Centre — Eastern Cape Flood Risk Maps). Classification: lead / request_only. Access requires a data request; no public dataset path was confirmed.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "request_only",
+        "http_status": 200,
+        "final_url": "https://www.eccogta.gov.za/",
+        "checked_at": "2026-06-24T21:13:53Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "ZA",
+      "id": "ZA-LP-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for ZA-LP-001 (Limpopo Provincial Disaster Management Centre — Limpopo Flood Risk Maps). Classification: lead / request_only. Access requires a data request; no public dataset path was confirmed.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "request_only",
+        "http_status": 200,
+        "final_url": "https://www.coghsta.limpopo.gov.za/",
+        "checked_at": "2026-06-24T21:13:56Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "KR",
+      "id": "KR-SAFEMAP-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for KR-SAFEMAP-001 (행정안전부 — National Safety Map - Inundation and Disaster Safety). Classification: lead / generic_portal. The link is a generic agency or geoportal entry point; the named dataset was not resolved.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "generic_portal",
+        "http_status": 200,
+        "final_url": "https://www.safemap.go.kr/",
+        "checked_at": "2026-06-24T21:14:33Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    },
+    {
+      "iso2": "KR",
+      "id": "KR-DATA-001",
+      "problem": "Dataset-resolved verification did not confirm usable access for KR-DATA-001 (공공데이터포털 — Korea Public Data Portal Flood Map Datasets). Classification: lead / catalogue_search. The link is a catalogue/search entry point rather than a dataset-specific record.",
+      "evidence": {
+        "verification_standard": "dataset_resolved_v1",
+        "outcome": "lead",
+        "access_class": "catalogue_search",
+        "http_status": 200,
+        "final_url": "https://www.data.go.kr/",
+        "checked_at": "2026-06-24T21:14:38Z"
+      },
+      "request": "Human review: provide a current authoritative dataset-specific viewer, document, service, API, or download as a superseding candidate, or accept this coverage/access gap in the readiness score.",
+      "status": "human_review"
+    }
+  ]
+}

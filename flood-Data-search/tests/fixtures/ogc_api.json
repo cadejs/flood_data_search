@@ -1,0 +1,13 @@
+{
+  "collections": [
+    {
+      "id": "flood_extent",
+      "title": "Flood extent",
+      "extent": {"spatial": {"bbox": [[-10, 49, 2, 61]]}}
+    }
+  ],
+  "links": [
+    {"href": "https://example.test/collections", "type": "application/json"}
+  ],
+  "updated": "2026-06-04T00:00:00Z"
+}

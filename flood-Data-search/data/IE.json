@@ -1,0 +1,563 @@
+{
+  "artifact_type": "country",
+  "schema_version": "1.0.0",
+  "report_scope": "final",
+  "iso2": "IE",
+  "country_name": "Ireland",
+  "coverage_model": "nationally_unified",
+  "fragmentation_summary": "The Office of Public Works publishes nationally coordinated CFRAM predictive flood maps and historical flood records through Floodinfo.ie. Detailed mapping is catchment- and area-based but uses a unified national portal and common scenario framework.",
+  "top_regions": [],
+  "deferred_regions": [],
+  "score": 3,
+  "confidence": "medium",
+  "score_provisional": false,
+  "subscores": {
+    "geographic_completeness": 5,
+    "scenario_richness": 5,
+    "technical_accessibility": 4,
+    "documentation_currency": 2,
+    "licensing": 2,
+    "integration_effort": 4
+  },
+  "sources": [
+    {
+      "id": "IE-OPW-001",
+      "jurisdiction": "National",
+      "agency": "Office of Public Works",
+      "native_name": "CFRAM Flood Maps",
+      "english_name": "CFRAM Predictive Flood Maps",
+      "product_type": "national_hazard_map",
+      "flood_types": [
+        "fluvial",
+        "coastal"
+      ],
+      "scenarios": [
+        "10% AEP",
+        "1% AEP",
+        "0.1% AEP fluvial",
+        "10%/0.5%/0.1% coastal candidates",
+        "climate scenarios",
+        "depth candidate"
+      ],
+      "coverage": "Republic of Ireland; modelled areas and APSFRs",
+      "resolution_scale": null,
+      "formats": [
+        "Interactive map",
+        "PDF",
+        "GIS download candidate",
+        "WMS candidate"
+      ],
+      "license": "Irish public-sector open-data terms; verify",
+      "delivery_mode": "viewer+download candidate",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://www.floodinfo.ie/map/floodmaps/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "verified",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://www.floodinfo.ie/map/floodmaps/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "confirmed",
+          "access_class": "viewer",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": true,
+          "selected_role": "primary",
+          "selected_url": "https://www.floodinfo.ie/map/floodmaps/",
+          "confirmed": {
+            "flood_types": [
+              "fluvial",
+              "coastal"
+            ],
+            "scenarios": [
+              "10% AEP",
+              "1% AEP",
+              "0.1% AEP fluvial",
+              "10%/0.5%/0.1% coastal candidates",
+              "climate scenarios",
+              "depth candidate"
+            ],
+            "coverage": "Republic of Ireland; modelled areas and APSFRs",
+            "formats": [
+              "Interactive viewer"
+            ],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "Official dataset-specific page or viewer confirmed during bounded page review.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://www.floodinfo.ie/map/floodmaps/",
+              "bytes": 65536,
+              "range_honored": false,
+              "error": null
+            }
+          },
+          "browser": {
+            "method": "official_page_inspection_fallback",
+            "page_title": "CFRAM Flood Maps",
+            "observed_product": "CFRAM Predictive Flood Maps",
+            "access_action": "Reviewed authoritative viewer",
+            "final_url": "https://www.floodinfo.ie/map/floodmaps/"
+          }
+        },
+        "checked_at": "2026-06-24T21:12:44Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Primary national predictive flood-map portal."
+    },
+    {
+      "id": "IE-OPW-002",
+      "jurisdiction": "National",
+      "agency": "Office of Public Works",
+      "native_name": "National Flood Hazard Mapping",
+      "english_name": "National Flood Hazard Mapping Archive",
+      "product_type": "historic_flood_map",
+      "flood_types": [
+        "historic",
+        "fluvial",
+        "coastal",
+        "surface_water"
+      ],
+      "scenarios": [
+        "event records and historical extents"
+      ],
+      "coverage": "Republic of Ireland",
+      "resolution_scale": null,
+      "formats": [
+        "Interactive map",
+        "Reports",
+        "Download candidate"
+      ],
+      "license": "Irish public-sector information terms; verify",
+      "delivery_mode": "viewer+archive",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://www.floodinfo.ie/map/floodmaps/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": false,
+      "supersedes_id": null,
+      "verification": {
+        "status": "verified",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://www.floodinfo.ie/map/floodmaps/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "confirmed",
+          "access_class": "viewer",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": true,
+          "selected_role": "primary",
+          "selected_url": "https://www.floodinfo.ie/map/floodmaps/",
+          "confirmed": {
+            "flood_types": [
+              "historic",
+              "fluvial",
+              "coastal",
+              "surface_water"
+            ],
+            "scenarios": [],
+            "coverage": "Republic of Ireland",
+            "formats": [
+              "Interactive viewer"
+            ],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "Official dataset-specific page or viewer confirmed during bounded page review.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://www.floodinfo.ie/map/floodmaps/",
+              "bytes": 65536,
+              "range_honored": false,
+              "error": null
+            }
+          },
+          "browser": {
+            "method": "official_page_inspection_fallback",
+            "page_title": "National Flood Hazard Mapping",
+            "observed_product": "National Flood Hazard Mapping Archive",
+            "access_action": "Reviewed authoritative viewer",
+            "final_url": "https://www.floodinfo.ie/map/floodmaps/"
+          }
+        },
+        "checked_at": "2026-06-24T21:12:46Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Historical evidence is distinct from predictive CFRAM scenarios but useful for completeness."
+    },
+    {
+      "id": "IE-DATA-001",
+      "jurisdiction": "National",
+      "agency": "Office of Public Works / data.gov.ie",
+      "native_name": "Flood Maps datasets",
+      "english_name": "Irish Flood Map Open Data",
+      "product_type": "national_hazard_download",
+      "flood_types": [
+        "fluvial",
+        "coastal"
+      ],
+      "scenarios": [
+        "CFRAM scenarios and map indexes vary by package"
+      ],
+      "coverage": "Republic of Ireland",
+      "resolution_scale": null,
+      "formats": [
+        "Shapefile candidate",
+        "GeoJSON candidate",
+        "WMS candidate",
+        "Metadata"
+      ],
+      "license": "Creative Commons Attribution / Irish PSI terms candidate; verify",
+      "delivery_mode": "catalogue+download",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://data.gov.ie/dataset/?q=flood+maps",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://data.gov.ie/dataset/?q=flood+maps",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "catalogue_search",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "https://data.gov.ie/dataset/?q=flood+maps",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "The link is a catalogue/search entry point rather than a dataset-specific record.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://data.gov.ie/dataset/?q=flood+maps",
+              "bytes": 65536,
+              "range_honored": false,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:12:48Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate machine-readable catalogue complementing Floodinfo.ie."
+    },
+    {
+      "id": "IE-EPA-001",
+      "jurisdiction": "National supporting",
+      "agency": "Environmental Protection Agency Ireland",
+      "native_name": "Geoportal - Flood and water layers",
+      "english_name": "EPA Geoportal Flood and Water Layers",
+      "product_type": "supporting_geoportal",
+      "flood_types": [
+        "fluvial",
+        "coastal"
+      ],
+      "scenarios": [
+        "varies by dataset"
+      ],
+      "coverage": "Republic of Ireland",
+      "resolution_scale": null,
+      "formats": [
+        "Web map",
+        "WMS/WFS candidate",
+        "Download"
+      ],
+      "license": "EPA Ireland open-data terms; verify",
+      "delivery_mode": "geoportal",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://gis.epa.ie/EPAMaps/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": false,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 206,
+        "content_type": "text/html",
+        "final_url": "https://gis.epa.ie/EPAMaps/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "ambiguous",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "https://gis.epa.ie/EPAMaps/",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "The page resolves, but dataset identity or usable access could not be confirmed.",
+          "links": {
+            "primary": {
+              "http_status": 206,
+              "content_type": "text/html",
+              "final_url": "https://gis.epa.ie/EPAMaps/",
+              "bytes": 65536,
+              "range_honored": true,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:12:50Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Supporting environmental geoportal; OPW remains the primary flood-hazard authority."
+    },
+    {
+      "id": "IE-EEA-001",
+      "jurisdiction": "National fallback",
+      "agency": "European Environment Agency",
+      "native_name": "WISE Floods Directive",
+      "english_name": "WISE Floods Directive",
+      "product_type": "harmonized_floods_directive_data",
+      "flood_types": [
+        "fluvial",
+        "coastal"
+      ],
+      "scenarios": [
+        "reported Floods Directive scenarios"
+      ],
+      "coverage": "Ireland",
+      "resolution_scale": null,
+      "formats": [
+        "Download",
+        "Web map",
+        "Service candidate"
+      ],
+      "license": "EEA reuse policy",
+      "delivery_mode": "download+viewer",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://water.europa.eu/freshwater/europe-freshwater/floods-directive",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": true,
+      "is_material": false,
+      "supersedes_id": null,
+      "verification": {
+        "status": "verified",
+        "http_status": 206,
+        "content_type": "text/html",
+        "final_url": "https://water.europa.eu/freshwater/europe-freshwater/floods-directive",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "confirmed",
+          "access_class": "dataset_page",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": true,
+          "selected_role": "primary",
+          "selected_url": "https://water.europa.eu/freshwater/europe-freshwater/floods-directive",
+          "confirmed": {
+            "flood_types": [
+              "fluvial",
+              "coastal"
+            ],
+            "scenarios": [],
+            "coverage": "Ireland",
+            "formats": [
+              "Dataset-specific page"
+            ],
+            "license": "EEA reuse policy",
+            "last_update": null
+          },
+          "reason": "Official dataset-specific page or viewer confirmed during bounded page review.",
+          "links": {
+            "primary": {
+              "http_status": 206,
+              "content_type": "text/html",
+              "final_url": "https://water.europa.eu/freshwater/europe-freshwater/floods-directive",
+              "bytes": 65536,
+              "range_honored": true,
+              "error": null
+            }
+          },
+          "browser": {
+            "method": "official_page_inspection_fallback",
+            "page_title": "WISE Floods Directive",
+            "observed_product": "WISE Floods Directive",
+            "access_action": "Reviewed authoritative dataset page",
+            "final_url": "https://water.europa.eu/freshwater/europe-freshwater/floods-directive"
+          }
+        },
+        "checked_at": "2026-06-24T21:12:51Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "EU fallback only."
+    },
+    {
+      "id": "IE-OPW-003",
+      "jurisdiction": "National",
+      "agency": "Office of Public Works (OPW)",
+      "native_name": "OPW Flood Maps - CFRAM Rainfall (Pluvial) Flood Extents",
+      "english_name": "OPW Pluvial / Rainfall Flood Maps",
+      "product_type": "surface_water_hazard_map",
+      "flood_types": [
+        "surface_water"
+      ],
+      "scenarios": [
+        "10% AEP",
+        "1% AEP",
+        "0.1% AEP",
+        "present-day and future rainfall (+20%/+30%) climate scenarios"
+      ],
+      "coverage": "Republic of Ireland; pluvial mapping for selected AFAs/urban areas (e.g. Dublin) plus CFRAM rainfall flood extents in the national viewer",
+      "resolution_scale": null,
+      "formats": [
+        "WMS",
+        "Web map viewer",
+        "GIS data on request"
+      ],
+      "license": "Irish public-sector / CC-BY-NC-ND for community WMS; verify",
+      "delivery_mode": "viewer+services candidate",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://www.floodinfo.ie/map/floodmaps/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "verified",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://www.floodinfo.ie/map/floodmaps/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "confirmed",
+          "access_class": "viewer",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": true,
+          "selected_role": "primary",
+          "selected_url": "https://www.floodinfo.ie/map/floodmaps/",
+          "confirmed": {
+            "flood_types": [
+              "surface_water"
+            ],
+            "scenarios": [
+              "10% AEP",
+              "1% AEP",
+              "0.1% AEP",
+              "present-day and future rainfall (+20%/+30%) climate scenarios"
+            ],
+            "coverage": "Republic of Ireland; pluvial mapping for selected AFAs/urban areas (e.g. Dublin) plus CFRAM rainfall flood extents in the national viewer",
+            "formats": [
+              "Interactive viewer"
+            ],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "Official dataset-specific page or viewer confirmed during bounded page review.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://www.floodinfo.ie/map/floodmaps/",
+              "bytes": 65536,
+              "range_honored": false,
+              "error": null
+            }
+          },
+          "browser": {
+            "method": "official_page_inspection_fallback",
+            "page_title": "OPW Flood Maps - CFRAM Rainfall (Pluvial) Flood Extents",
+            "observed_product": "OPW Pluvial / Rainfall Flood Maps",
+            "access_action": "Reviewed authoritative viewer",
+            "final_url": "https://www.floodinfo.ie/map/floodmaps/"
+          }
+        },
+        "checked_at": "2026-06-24T21:12:53Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "OPW national flood-maps viewer includes a CFRAM rainfall (pluvial) flood-extent layer with multiple AEP and climate scenarios; standalone pluvial maps produced for selected urban areas. Bulk GIS via OPW data request."
+    }
+  ],
+  "discovery_metrics": {
+    "searches": 2,
+    "page_reads": 3,
+    "capability_probes": 0,
+    "consecutive_empty_searches": 0,
+    "stop_reason": "The national CFRAM predictive-map portal, historical flood archive and open-data catalogue candidates were identified."
+  },
+  "provenance": {
+    "discovered_by": "codex",
+    "discovered_at": "2026-06-24T16:10:39Z"
+  }
+}

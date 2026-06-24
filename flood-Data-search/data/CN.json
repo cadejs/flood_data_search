@@ -1,0 +1,810 @@
+{
+  "artifact_type": "country",
+  "schema_version": "1.0.0",
+  "report_scope": "final",
+  "iso2": "CN",
+  "country_name": "China",
+  "coverage_model": "primarily_regional",
+  "fragmentation_summary": "China has a national flood-risk-map programme and technical standards, but public machine-readable hazard datasets are difficult to locate. Candidate access is concentrated in Ministry of Water Resources and provincial water-resources portals; the top-five-province pilot covers Guangdong, Shandong, Henan, Jiangsu and Sichuan.",
+  "top_regions": [
+    {
+      "rank": 1,
+      "name": "Guangdong",
+      "population": 126012510,
+      "pop_year": 2020,
+      "pop_source": "Seventh National Population Census",
+      "pop_source_url": "https://www.stats.gov.cn/english/PressRelease/202105/t20210510_1817185.html"
+    },
+    {
+      "rank": 2,
+      "name": "Shandong",
+      "population": 101527453,
+      "pop_year": 2020,
+      "pop_source": "Seventh National Population Census",
+      "pop_source_url": "https://www.stats.gov.cn/english/PressRelease/202105/t20210510_1817185.html"
+    },
+    {
+      "rank": 3,
+      "name": "Henan",
+      "population": 99365519,
+      "pop_year": 2020,
+      "pop_source": "Seventh National Population Census",
+      "pop_source_url": "https://www.stats.gov.cn/english/PressRelease/202105/t20210510_1817185.html"
+    },
+    {
+      "rank": 4,
+      "name": "Jiangsu",
+      "population": 84748016,
+      "pop_year": 2020,
+      "pop_source": "Seventh National Population Census",
+      "pop_source_url": "https://www.stats.gov.cn/english/PressRelease/202105/t20210510_1817185.html"
+    },
+    {
+      "rank": 5,
+      "name": "Sichuan",
+      "population": 83674866,
+      "pop_year": 2020,
+      "pop_source": "Seventh National Population Census",
+      "pop_source_url": "https://www.stats.gov.cn/english/PressRelease/202105/t20210510_1817185.html"
+    }
+  ],
+  "deferred_regions": [
+    "Anhui",
+    "Beijing",
+    "Chongqing",
+    "Fujian",
+    "Gansu",
+    "Guangxi",
+    "Guizhou",
+    "Hainan",
+    "Hebei",
+    "Heilongjiang",
+    "Hubei",
+    "Hunan",
+    "Inner Mongolia",
+    "Jiangxi",
+    "Jilin",
+    "Liaoning",
+    "Ningxia",
+    "Qinghai",
+    "Shaanxi",
+    "Shanghai",
+    "Shanxi",
+    "Tianjin",
+    "Tibet",
+    "Xinjiang",
+    "Yunnan",
+    "Zhejiang"
+  ],
+  "score": 2,
+  "confidence": "low",
+  "score_provisional": true,
+  "subscores": {
+    "geographic_completeness": 2,
+    "scenario_richness": 2,
+    "technical_accessibility": 3,
+    "documentation_currency": 2,
+    "licensing": 2,
+    "integration_effort": 2
+  },
+  "sources": [
+    {
+      "id": "CN-MWR-001",
+      "jurisdiction": "National",
+      "agency": "中华人民共和国水利部 / Ministry of Water Resources",
+      "native_name": "全国洪水风险图编制与应用",
+      "english_name": "National Flood Risk Map Programme",
+      "product_type": "national_risk_map_programme",
+      "flood_types": [
+        "fluvial",
+        "flash_flood"
+      ],
+      "scenarios": [
+        "design flood scenarios vary by basin"
+      ],
+      "coverage": "National programme; public data availability unclear",
+      "resolution_scale": null,
+      "formats": [
+        "Programme pages",
+        "Technical documents",
+        "Map portal candidate"
+      ],
+      "license": "Chinese government information terms; verify",
+      "delivery_mode": "portal+documents",
+      "access_constraints": [
+        "restricted"
+      ],
+      "links": {
+        "primary": "http://www.mwr.gov.cn/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 206,
+        "content_type": "text/html",
+        "final_url": "http://www.mwr.gov.cn/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "restricted",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "http://www.mwr.gov.cn/",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "Access is restricted and no public dataset path was confirmed.",
+          "links": {
+            "primary": {
+              "http_status": 206,
+              "content_type": "text/html",
+              "final_url": "http://www.mwr.gov.cn/",
+              "bytes": 65536,
+              "range_honored": true,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:15:36Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "National authority and programme candidate; public download/service access must be established independently."
+    },
+    {
+      "id": "CN-MEM-001",
+      "jurisdiction": "National",
+      "agency": "中华人民共和国应急管理部 / Ministry of Emergency Management",
+      "native_name": "第一次全国自然灾害综合风险普查",
+      "english_name": "First National Comprehensive Natural Disaster Risk Survey",
+      "product_type": "national_risk_survey",
+      "flood_types": [
+        "fluvial",
+        "coastal",
+        "flash_flood"
+      ],
+      "scenarios": [
+        "survey hazard/risk classes"
+      ],
+      "coverage": "National; published products may be summary-level",
+      "resolution_scale": null,
+      "formats": [
+        "Reports",
+        "Map products candidate",
+        "PDF"
+      ],
+      "license": "Chinese government information terms; verify",
+      "delivery_mode": "portal+documents",
+      "access_constraints": [
+        "restricted"
+      ],
+      "links": {
+        "primary": "https://www.mem.gov.cn/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://www.mem.gov.cn/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "restricted",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "https://www.mem.gov.cn/",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "Access is restricted and no public dataset path was confirmed.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://www.mem.gov.cn/",
+              "bytes": 22088,
+              "range_honored": false,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:15:38Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate umbrella survey for national and provincial flood-risk products."
+    },
+    {
+      "id": "CN-GD-001",
+      "jurisdiction": "Guangdong",
+      "agency": "广东省水利厅",
+      "native_name": "广东省洪水风险图 / 山洪灾害风险图",
+      "english_name": "Guangdong Flood and Flash-Flood Risk Maps",
+      "product_type": "regional_risk_map",
+      "flood_types": [
+        "fluvial",
+        "flash_flood",
+        "coastal"
+      ],
+      "scenarios": [
+        "basin/county design scenarios"
+      ],
+      "coverage": "Guangdong province",
+      "resolution_scale": null,
+      "formats": [
+        "Web map candidate",
+        "Reports",
+        "PDF"
+      ],
+      "license": "Guangdong government terms; verify",
+      "delivery_mode": "portal",
+      "access_constraints": [
+        "restricted"
+      ],
+      "links": {
+        "primary": "https://slt.gd.gov.cn/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 500,
+        "content_type": "text/html",
+        "final_url": "https://slt.gd.gov.cn/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "unavailable",
+          "access_class": "unavailable",
+          "authority_confirmed": false,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": null,
+          "selected_url": null,
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "No candidate link resolved successfully during the strict audit.",
+          "links": {
+            "primary": {
+              "http_status": 500,
+              "content_type": "text/html",
+              "final_url": "https://slt.gd.gov.cn/",
+              "bytes": 170,
+              "range_honored": false,
+              "error": "HTTPError: Internal Server Error"
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:15:42Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Official provincial water authority candidate; data may be internal or document-only."
+    },
+    {
+      "id": "CN-SD-001",
+      "jurisdiction": "Shandong",
+      "agency": "山东省水利厅",
+      "native_name": "山东省洪水风险图",
+      "english_name": "Shandong Flood Risk Maps",
+      "product_type": "regional_risk_map",
+      "flood_types": [
+        "fluvial",
+        "coastal"
+      ],
+      "scenarios": [
+        "basin/city scenarios"
+      ],
+      "coverage": "Shandong province",
+      "resolution_scale": null,
+      "formats": [
+        "Web map candidate",
+        "PDF",
+        "Reports"
+      ],
+      "license": "Shandong government terms; verify",
+      "delivery_mode": "portal",
+      "access_constraints": [
+        "restricted"
+      ],
+      "links": {
+        "primary": "http://wr.shandong.gov.cn/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 206,
+        "content_type": "text/html",
+        "final_url": "http://wr.shandong.gov.cn/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "restricted",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "http://wr.shandong.gov.cn/",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "Access is restricted and no public dataset path was confirmed.",
+          "links": {
+            "primary": {
+              "http_status": 206,
+              "content_type": "text/html",
+              "final_url": "http://wr.shandong.gov.cn/",
+              "bytes": 59276,
+              "range_honored": true,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:15:47Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate provincial programme and map portal."
+    },
+    {
+      "id": "CN-HA-001",
+      "jurisdiction": "Henan",
+      "agency": "河南省水利厅",
+      "native_name": "河南省洪水风险图",
+      "english_name": "Henan Flood Risk Maps",
+      "product_type": "regional_risk_map",
+      "flood_types": [
+        "fluvial",
+        "flash_flood"
+      ],
+      "scenarios": [
+        "basin/county scenarios"
+      ],
+      "coverage": "Henan province",
+      "resolution_scale": null,
+      "formats": [
+        "Web map candidate",
+        "PDF",
+        "Reports"
+      ],
+      "license": "Henan government terms; verify",
+      "delivery_mode": "portal",
+      "access_constraints": [
+        "restricted"
+      ],
+      "links": {
+        "primary": "https://slt.henan.gov.cn/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 403,
+        "content_type": "text/html",
+        "final_url": "https://slt.henan.gov.cn/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "unavailable",
+          "access_class": "unavailable",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": null,
+          "selected_url": null,
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "The official page returned HTTP 403; public dataset usability could not be confirmed.",
+          "links": {
+            "primary": {
+              "http_status": 403,
+              "content_type": "text/html",
+              "final_url": "https://slt.henan.gov.cn/",
+              "bytes": 1648,
+              "range_honored": false,
+              "error": "HTTPError: Forbidden"
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:15:47Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate provincial source for Yellow River and tributary flood-risk mapping."
+    },
+    {
+      "id": "CN-JS-001",
+      "jurisdiction": "Jiangsu",
+      "agency": "江苏省水利厅",
+      "native_name": "江苏省洪水风险图",
+      "english_name": "Jiangsu Flood Risk Maps",
+      "product_type": "regional_risk_map",
+      "flood_types": [
+        "fluvial",
+        "coastal",
+        "surface_water"
+      ],
+      "scenarios": [
+        "basin/city scenarios"
+      ],
+      "coverage": "Jiangsu province",
+      "resolution_scale": null,
+      "formats": [
+        "Web map candidate",
+        "PDF",
+        "Reports"
+      ],
+      "license": "Jiangsu government terms; verify",
+      "delivery_mode": "portal",
+      "access_constraints": [
+        "restricted"
+      ],
+      "links": {
+        "primary": "http://jssslt.jiangsu.gov.cn/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": null,
+        "content_type": null,
+        "final_url": null,
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "unavailable",
+          "access_class": "unavailable",
+          "authority_confirmed": false,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": null,
+          "selected_url": null,
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "No candidate link resolved successfully during the strict audit.",
+          "links": {
+            "primary": {
+              "http_status": null,
+              "content_type": null,
+              "final_url": null,
+              "bytes": 0,
+              "range_honored": null,
+              "error": "GET: URLError: <urlopen error timed out>"
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:16:12Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate provincial source; likely split among river/lake and urban drainage programmes."
+    },
+    {
+      "id": "CN-SC-001",
+      "jurisdiction": "Sichuan",
+      "agency": "四川省水利厅",
+      "native_name": "四川省洪水风险图与山洪灾害危险区",
+      "english_name": "Sichuan Flood and Flash-Flood Risk Maps",
+      "product_type": "regional_risk_map",
+      "flood_types": [
+        "fluvial",
+        "flash_flood"
+      ],
+      "scenarios": [
+        "county/basin scenarios"
+      ],
+      "coverage": "Sichuan province",
+      "resolution_scale": null,
+      "formats": [
+        "Web map candidate",
+        "PDF",
+        "Reports"
+      ],
+      "license": "Sichuan government terms; verify",
+      "delivery_mode": "portal",
+      "access_constraints": [
+        "restricted"
+      ],
+      "links": {
+        "primary": "http://slt.sc.gov.cn/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "http://slt.sc.gov.cn/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "restricted",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "http://slt.sc.gov.cn/",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "Access is restricted and no public dataset path was confirmed.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "http://slt.sc.gov.cn/",
+              "bytes": 65536,
+              "range_honored": false,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:16:15Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate provincial source with strong flash-flood programme relevance."
+    },
+    {
+      "id": "CN-JRC-001",
+      "jurisdiction": "National fallback",
+      "agency": "European Commission Joint Research Centre",
+      "native_name": "Global River Flood Hazard Maps",
+      "english_name": "Global River Flood Hazard Maps",
+      "product_type": "global_hazard_raster",
+      "flood_types": [
+        "fluvial"
+      ],
+      "scenarios": [
+        "multiple return periods"
+      ],
+      "coverage": "China",
+      "resolution_scale": null,
+      "formats": [
+        "GeoTIFF"
+      ],
+      "license": "European Commission reuse terms",
+      "delivery_mode": "download",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://data.jrc.ec.europa.eu/collection/id-0054",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": true,
+      "is_material": false,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://data.jrc.ec.europa.eu/collection/id-0054",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "restricted",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "https://data.jrc.ec.europa.eu/collection/id-0054",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "The JRC collection resolves to a login surface; unauthenticated dataset access was not confirmed.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://data.jrc.ec.europa.eu/collection/id-0054",
+              "bytes": 36273,
+              "range_honored": false,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:16:16Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "International fallback only."
+    },
+    {
+      "id": "CN-BJ-001",
+      "jurisdiction": "Beijing Municipality",
+      "agency": "北京市水务局 (Beijing Municipal Water Authority)",
+      "native_name": "北京城市积水内涝风险地图",
+      "english_name": "Beijing Urban Waterlogging (Ponding) Risk Map",
+      "product_type": "surface_water_hazard_map",
+      "flood_types": [
+        "surface_water"
+      ],
+      "scenarios": [
+        "historical waterlogging points + hydrodynamic model risk zones",
+        "depth severity tiers (<27cm, 27-40cm, 40-60cm, >=60cm)"
+      ],
+      "coverage": "Beijing Municipality (central city, sub-centre, and 11 suburban districts)",
+      "resolution_scale": null,
+      "formats": [
+        "High-resolution map image"
+      ],
+      "license": "Chinese government information terms; verify",
+      "delivery_mode": "portal+documents",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://swj.beijing.gov.cn/swdt/tzgg/202207/t20220707_2766190.html",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "verified",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://swj.beijing.gov.cn/swdt/tzgg/202207/t20220707_2766190.html",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "confirmed",
+          "access_class": "document",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": true,
+          "selected_role": "primary",
+          "selected_url": "https://swj.beijing.gov.cn/swdt/tzgg/202207/t20220707_2766190.html",
+          "confirmed": {
+            "flood_types": [
+              "surface_water"
+            ],
+            "scenarios": [],
+            "coverage": "Beijing Municipality (central city, sub-centre, and 11 suburban districts)",
+            "formats": [
+              "Map document"
+            ],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "Official dataset-specific page or viewer confirmed during bounded page review.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://swj.beijing.gov.cn/swdt/tzgg/202207/t20220707_2766190.html",
+              "bytes": 36084,
+              "range_honored": false,
+              "error": null
+            }
+          },
+          "browser": {
+            "method": "official_page_inspection_fallback",
+            "page_title": "北京城市积水内涝风险地图",
+            "observed_product": "Beijing Urban Waterlogging (Ponding) Risk Map",
+            "access_action": "Reviewed authoritative document",
+            "final_url": "https://swj.beijing.gov.cn/swdt/tzgg/202207/t20220707_2766190.html"
+          }
+        },
+        "checked_at": "2026-06-24T21:16:21Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Beijing Municipal Water Authority urban-waterlogging risk map - the most authoritative publicly published Chinese pluvial product; static map images, no machine service or bulk download, and no national MWR/MEM equivalent is public."
+    }
+  ],
+  "discovery_metrics": {
+    "searches": 4,
+    "page_reads": 3,
+    "capability_probes": 0,
+    "consecutive_empty_searches": 0,
+    "stop_reason": "National programme and top-five provincial water-resource authority portals were identified; no public machine-readable national endpoint was asserted."
+  },
+  "provenance": {
+    "discovered_by": "codex",
+    "discovered_at": "2026-06-24T16:02:33Z"
+  }
+}

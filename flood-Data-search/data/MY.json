@@ -1,0 +1,774 @@
+{
+  "artifact_type": "country",
+  "schema_version": "1.0.0",
+  "report_scope": "final",
+  "iso2": "MY",
+  "country_name": "Malaysia",
+  "coverage_model": "mixed_national_and_regional",
+  "fragmentation_summary": "The Department of Irrigation and Drainage operates national flood-information and geospatial systems, but detailed flood-hazard maps are commonly organized by river basin, state or study project. The top-five-state pilot covers Selangor, Johor, Sabah, Perak and Sarawak.",
+  "top_regions": [
+    {
+      "rank": 1,
+      "name": "Selangor",
+      "population": 6994233,
+      "pop_year": 2020,
+      "pop_source": "Department of Statistics Malaysia Census 2020",
+      "pop_source_url": "https://www.dosm.gov.my/portal-main/release-content/key-findings-population-and-housing-census-of-malaysia-2020"
+    },
+    {
+      "rank": 2,
+      "name": "Johor",
+      "population": 4009000,
+      "pop_year": 2020,
+      "pop_source": "Department of Statistics Malaysia Census 2020",
+      "pop_source_url": "https://www.dosm.gov.my/portal-main/release-content/key-findings-population-and-housing-census-of-malaysia-2020"
+    },
+    {
+      "rank": 3,
+      "name": "Sabah",
+      "population": 3418785,
+      "pop_year": 2020,
+      "pop_source": "Department of Statistics Malaysia Census 2020",
+      "pop_source_url": "https://www.dosm.gov.my/portal-main/release-content/key-findings-population-and-housing-census-of-malaysia-2020"
+    },
+    {
+      "rank": 4,
+      "name": "Perak",
+      "population": 2496700,
+      "pop_year": 2020,
+      "pop_source": "Department of Statistics Malaysia Census 2020",
+      "pop_source_url": "https://www.dosm.gov.my/portal-main/release-content/key-findings-population-and-housing-census-of-malaysia-2020"
+    },
+    {
+      "rank": 5,
+      "name": "Sarawak",
+      "population": 2453900,
+      "pop_year": 2020,
+      "pop_source": "Department of Statistics Malaysia Census 2020",
+      "pop_source_url": "https://www.dosm.gov.my/portal-main/release-content/key-findings-population-and-housing-census-of-malaysia-2020"
+    }
+  ],
+  "deferred_regions": [
+    "Kedah",
+    "Kelantan",
+    "Melaka",
+    "Negeri Sembilan",
+    "Pahang",
+    "Penang",
+    "Perlis",
+    "Terengganu",
+    "Federal Territories"
+  ],
+  "score": 1,
+  "confidence": "low",
+  "score_provisional": true,
+  "subscores": {
+    "geographic_completeness": 1,
+    "scenario_richness": 1,
+    "technical_accessibility": 1,
+    "documentation_currency": 2,
+    "licensing": 2,
+    "integration_effort": 1
+  },
+  "sources": [
+    {
+      "id": "MY-JPS-001",
+      "jurisdiction": "National",
+      "agency": "Jabatan Pengairan dan Saliran Malaysia / Department of Irrigation and Drainage",
+      "native_name": "Public Infobanjir",
+      "english_name": "Public Flood Information Portal",
+      "product_type": "operational_flood_map",
+      "flood_types": [
+        "fluvial",
+        "surface_water"
+      ],
+      "scenarios": [
+        "current observations",
+        "warnings",
+        "event inundation candidates"
+      ],
+      "coverage": "Malaysia",
+      "resolution_scale": null,
+      "formats": [
+        "Interactive map",
+        "API/service candidate",
+        "Reports"
+      ],
+      "license": "Government of Malaysia terms; verify",
+      "delivery_mode": "viewer+api candidate",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://publicinfobanjir.water.gov.my/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 206,
+        "content_type": "text/html",
+        "final_url": "https://publicinfobanjir.water.gov.my/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "wrong_product",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "https://publicinfobanjir.water.gov.my/",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "The reachable product is operational or observational, not a confirmed flood-hazard dataset.",
+          "links": {
+            "primary": {
+              "http_status": 206,
+              "content_type": "text/html",
+              "final_url": "https://publicinfobanjir.water.gov.my/",
+              "bytes": 15598,
+              "range_honored": true,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:13:25Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "National operational portal; static hazard-map availability must be distinguished from live monitoring."
+    },
+    {
+      "id": "MY-JPS-002",
+      "jurisdiction": "National",
+      "agency": "Jabatan Pengairan dan Saliran Malaysia",
+      "native_name": "JPS Geospatial / Peta Bahaya Banjir",
+      "english_name": "DID Geospatial Flood Hazard Maps",
+      "product_type": "national_hazard_catalogue",
+      "flood_types": [
+        "fluvial",
+        "coastal",
+        "surface_water"
+      ],
+      "scenarios": [
+        "study-specific return periods",
+        "depth candidates"
+      ],
+      "coverage": "Malaysia; basin/state project coverage",
+      "resolution_scale": null,
+      "formats": [
+        "Web GIS",
+        "WMS/ArcGIS candidate",
+        "GIS download candidate",
+        "PDF"
+      ],
+      "license": "Government of Malaysia terms; verify",
+      "delivery_mode": "geoportal",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://jpsgeo.water.gov.my/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": null,
+        "content_type": null,
+        "final_url": null,
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "unavailable",
+          "access_class": "unavailable",
+          "authority_confirmed": false,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": null,
+          "selected_url": null,
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "No candidate link resolved successfully during the strict audit.",
+          "links": {
+            "primary": {
+              "http_status": null,
+              "content_type": null,
+              "final_url": null,
+              "bytes": 0,
+              "range_honored": null,
+              "error": "GET: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:13:25Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate authoritative geospatial system for flood-hazard and river-basin products."
+    },
+    {
+      "id": "MY-NAHRIM-001",
+      "jurisdiction": "National",
+      "agency": "National Water Research Institute of Malaysia (NAHRIM)",
+      "native_name": "Flood and Climate Risk Research Products",
+      "english_name": "NAHRIM Flood and Climate Risk Products",
+      "product_type": "research_hazard_products",
+      "flood_types": [
+        "fluvial",
+        "coastal",
+        "surface_water"
+      ],
+      "scenarios": [
+        "climate and design scenarios vary by study"
+      ],
+      "coverage": "Malaysia; project-based",
+      "resolution_scale": null,
+      "formats": [
+        "Reports",
+        "Maps",
+        "GIS candidate"
+      ],
+      "license": "Government of Malaysia terms; verify",
+      "delivery_mode": "portal+reports",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://www.nahrim.gov.my/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://www.nahrim.gov.my/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "generic_portal",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "https://www.nahrim.gov.my/",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "The link is a generic agency or geoportal entry point; the named dataset was not resolved.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://www.nahrim.gov.my/",
+              "bytes": 65536,
+              "range_honored": false,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:13:58Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate source for national-scale flood and climate studies, often report-led."
+    },
+    {
+      "id": "MY-SEL-001",
+      "jurisdiction": "Selangor",
+      "agency": "JPS Malaysia / JPS Selangor",
+      "native_name": "Peta Bahaya Banjir Selangor",
+      "english_name": "Selangor Flood Hazard Maps",
+      "product_type": "regional_hazard_map",
+      "flood_types": [
+        "fluvial",
+        "surface_water"
+      ],
+      "scenarios": [
+        "basin-specific return periods"
+      ],
+      "coverage": "Selangor; filter national/state systems",
+      "resolution_scale": null,
+      "formats": [
+        "Web GIS",
+        "GIS download candidate",
+        "PDF"
+      ],
+      "license": "Government of Malaysia terms; verify",
+      "delivery_mode": "state-filtered national portal",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://jpsgeo.water.gov.my/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": null,
+        "content_type": null,
+        "final_url": null,
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "unavailable",
+          "access_class": "unavailable",
+          "authority_confirmed": false,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": null,
+          "selected_url": null,
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "No candidate link resolved successfully during the strict audit.",
+          "links": {
+            "primary": {
+              "http_status": null,
+              "content_type": null,
+              "final_url": null,
+              "bytes": 0,
+              "range_honored": null,
+              "error": "GET: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:13:58Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "State candidate within DID systems; Klang and Langat basin studies are especially relevant."
+    },
+    {
+      "id": "MY-JHR-001",
+      "jurisdiction": "Johor",
+      "agency": "JPS Malaysia / JPS Johor",
+      "native_name": "Peta Bahaya Banjir Johor",
+      "english_name": "Johor Flood Hazard Maps",
+      "product_type": "regional_hazard_map",
+      "flood_types": [
+        "fluvial",
+        "coastal"
+      ],
+      "scenarios": [
+        "basin-specific return periods"
+      ],
+      "coverage": "Johor; filter national/state systems",
+      "resolution_scale": null,
+      "formats": [
+        "Web GIS",
+        "GIS download candidate",
+        "PDF"
+      ],
+      "license": "Government of Malaysia terms; verify",
+      "delivery_mode": "state-filtered national portal",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://jpsgeo.water.gov.my/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": null,
+        "content_type": null,
+        "final_url": null,
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "unavailable",
+          "access_class": "unavailable",
+          "authority_confirmed": false,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": null,
+          "selected_url": null,
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "No candidate link resolved successfully during the strict audit.",
+          "links": {
+            "primary": {
+              "http_status": null,
+              "content_type": null,
+              "final_url": null,
+              "bytes": 0,
+              "range_honored": null,
+              "error": "GET: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:13:58Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "State candidate within DID systems."
+    },
+    {
+      "id": "MY-SBH-001",
+      "jurisdiction": "Sabah",
+      "agency": "Jabatan Pengairan dan Saliran Sabah",
+      "native_name": "Peta Bahaya Banjir Sabah",
+      "english_name": "Sabah Flood Hazard Maps",
+      "product_type": "regional_hazard_map",
+      "flood_types": [
+        "fluvial",
+        "coastal",
+        "flash_flood"
+      ],
+      "scenarios": [
+        "project-specific scenarios"
+      ],
+      "coverage": "Sabah",
+      "resolution_scale": null,
+      "formats": [
+        "Web GIS candidate",
+        "PDF",
+        "GIS candidate"
+      ],
+      "license": "Sabah government terms; verify",
+      "delivery_mode": "portal",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://did.sabah.gov.my/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://did.sabah.gov.my/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "generic_portal",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "https://did.sabah.gov.my/",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "The link is a generic agency or geoportal entry point; the named dataset was not resolved.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://did.sabah.gov.my/",
+              "bytes": 65536,
+              "range_honored": false,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:14:06Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate state authority; public machine-readable access may differ from peninsular Malaysia."
+    },
+    {
+      "id": "MY-PRK-001",
+      "jurisdiction": "Perak",
+      "agency": "JPS Malaysia / JPS Perak",
+      "native_name": "Peta Bahaya Banjir Perak",
+      "english_name": "Perak Flood Hazard Maps",
+      "product_type": "regional_hazard_map",
+      "flood_types": [
+        "fluvial"
+      ],
+      "scenarios": [
+        "basin-specific return periods"
+      ],
+      "coverage": "Perak; filter national/state systems",
+      "resolution_scale": null,
+      "formats": [
+        "Web GIS",
+        "GIS download candidate",
+        "PDF"
+      ],
+      "license": "Government of Malaysia terms; verify",
+      "delivery_mode": "state-filtered national portal",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://jpsgeo.water.gov.my/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": null,
+        "content_type": null,
+        "final_url": null,
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "unavailable",
+          "access_class": "unavailable",
+          "authority_confirmed": false,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": null,
+          "selected_url": null,
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "No candidate link resolved successfully during the strict audit.",
+          "links": {
+            "primary": {
+              "http_status": null,
+              "content_type": null,
+              "final_url": null,
+              "bytes": 0,
+              "range_honored": null,
+              "error": "GET: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:14:06Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "State candidate within DID systems."
+    },
+    {
+      "id": "MY-SWK-001",
+      "jurisdiction": "Sarawak",
+      "agency": "Department of Irrigation and Drainage Sarawak",
+      "native_name": "Flood Hazard and Drainage Maps Sarawak",
+      "english_name": "Sarawak Flood Hazard and Drainage Maps",
+      "product_type": "regional_hazard_map",
+      "flood_types": [
+        "fluvial",
+        "coastal",
+        "surface_water"
+      ],
+      "scenarios": [
+        "project-specific scenarios"
+      ],
+      "coverage": "Sarawak",
+      "resolution_scale": null,
+      "formats": [
+        "Web GIS candidate",
+        "PDF",
+        "GIS candidate"
+      ],
+      "license": "Sarawak government terms; verify",
+      "delivery_mode": "portal",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://did.sarawak.gov.my/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://did.sarawak.gov.my/web/home/index/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "generic_portal",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "https://did.sarawak.gov.my/web/home/index/",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "The link is a generic agency or geoportal entry point; the named dataset was not resolved.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://did.sarawak.gov.my/web/home/index/",
+              "bytes": 65536,
+              "range_honored": false,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:14:15Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate state authority; detailed mapping may be project/request based."
+    },
+    {
+      "id": "MY-JRC-001",
+      "jurisdiction": "National fallback",
+      "agency": "European Commission Joint Research Centre",
+      "native_name": "Global River Flood Hazard Maps",
+      "english_name": "Global River Flood Hazard Maps",
+      "product_type": "global_hazard_raster",
+      "flood_types": [
+        "fluvial"
+      ],
+      "scenarios": [
+        "multiple return periods"
+      ],
+      "coverage": "Malaysia",
+      "resolution_scale": null,
+      "formats": [
+        "GeoTIFF"
+      ],
+      "license": "European Commission reuse terms",
+      "delivery_mode": "download",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://data.jrc.ec.europa.eu/collection/id-0054",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": true,
+      "is_material": false,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://data.jrc.ec.europa.eu/collection/id-0054",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "restricted",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "https://data.jrc.ec.europa.eu/collection/id-0054",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "The JRC collection resolves to a login surface; unauthenticated dataset access was not confirmed.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://data.jrc.ec.europa.eu/collection/id-0054",
+              "bytes": 36273,
+              "range_honored": false,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:14:16Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "International fallback only."
+    }
+  ],
+  "discovery_metrics": {
+    "searches": 2,
+    "page_reads": 3,
+    "capability_probes": 0,
+    "consecutive_empty_searches": 0,
+    "stop_reason": "National DID flood portals and state-filtered candidate coverage for the five most populous states were identified."
+  },
+  "provenance": {
+    "discovered_by": "codex",
+    "discovered_at": "2026-06-24T16:05:40Z"
+  }
+}

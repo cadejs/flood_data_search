@@ -1,0 +1,195 @@
+{
+  "artifact_type": "manifest",
+  "schema_version": "1.0.0",
+  "countries": [
+    {
+      "iso2": "GB",
+      "report_scope": "fixture",
+      "status": "verified",
+      "score": 3,
+      "confidence": "high",
+      "source_count": 14,
+      "updated_at": "2026-06-24T21:11:13Z"
+    },
+    {
+      "iso2": "BR",
+      "report_scope": "final",
+      "status": "built",
+      "score": 1,
+      "confidence": "low",
+      "source_count": 9,
+      "updated_at": "2026-06-24T21:22:59Z"
+    },
+    {
+      "iso2": "IN",
+      "report_scope": "final",
+      "status": "built",
+      "score": 3,
+      "confidence": "medium",
+      "source_count": 9,
+      "updated_at": "2026-06-24T21:22:59Z"
+    },
+    {
+      "iso2": "DE",
+      "report_scope": "final",
+      "status": "built",
+      "score": 3,
+      "confidence": "high",
+      "source_count": 9,
+      "updated_at": "2026-06-24T21:22:59Z"
+    },
+    {
+      "iso2": "CN",
+      "report_scope": "final",
+      "status": "built",
+      "score": 2,
+      "confidence": "low",
+      "source_count": 9,
+      "updated_at": "2026-06-24T21:22:59Z"
+    },
+    {
+      "iso2": "CA",
+      "report_scope": "final",
+      "status": "built",
+      "score": 3,
+      "confidence": "medium",
+      "source_count": 8,
+      "updated_at": "2026-06-24T21:23:00Z"
+    },
+    {
+      "iso2": "FR",
+      "report_scope": "final",
+      "status": "built",
+      "score": 3,
+      "confidence": "medium",
+      "source_count": 8,
+      "updated_at": "2026-06-24T21:23:00Z"
+    },
+    {
+      "iso2": "MX",
+      "report_scope": "final",
+      "status": "built",
+      "score": 3,
+      "confidence": "medium",
+      "source_count": 9,
+      "updated_at": "2026-06-24T21:23:00Z"
+    },
+    {
+      "iso2": "MY",
+      "report_scope": "final",
+      "status": "built",
+      "score": 1,
+      "confidence": "low",
+      "source_count": 9,
+      "updated_at": "2026-06-24T21:23:00Z"
+    },
+    {
+      "iso2": "PL",
+      "report_scope": "final",
+      "status": "built",
+      "score": 3,
+      "confidence": "medium",
+      "source_count": 5,
+      "updated_at": "2026-06-24T21:23:00Z"
+    },
+    {
+      "iso2": "JP",
+      "report_scope": "final",
+      "status": "built",
+      "score": 3,
+      "confidence": "high",
+      "source_count": 8,
+      "updated_at": "2026-06-24T21:23:00Z"
+    },
+    {
+      "iso2": "BE",
+      "report_scope": "final",
+      "status": "built",
+      "score": 3,
+      "confidence": "medium",
+      "source_count": 6,
+      "updated_at": "2026-06-24T21:23:00Z"
+    },
+    {
+      "iso2": "IT",
+      "report_scope": "final",
+      "status": "built",
+      "score": 3,
+      "confidence": "medium",
+      "source_count": 8,
+      "updated_at": "2026-06-24T21:23:00Z"
+    },
+    {
+      "iso2": "CH",
+      "report_scope": "final",
+      "status": "built",
+      "score": 3,
+      "confidence": "medium",
+      "source_count": 7,
+      "updated_at": "2026-06-24T21:23:01Z"
+    },
+    {
+      "iso2": "IE",
+      "report_scope": "final",
+      "status": "built",
+      "score": 3,
+      "confidence": "medium",
+      "source_count": 6,
+      "updated_at": "2026-06-24T21:23:01Z"
+    },
+    {
+      "iso2": "TH",
+      "report_scope": "final",
+      "status": "built",
+      "score": 1,
+      "confidence": "low",
+      "source_count": 10,
+      "updated_at": "2026-06-24T21:23:01Z"
+    },
+    {
+      "iso2": "SE",
+      "report_scope": "final",
+      "status": "built",
+      "score": 3,
+      "confidence": "medium",
+      "source_count": 6,
+      "updated_at": "2026-06-24T21:23:01Z"
+    },
+    {
+      "iso2": "AT",
+      "report_scope": "final",
+      "status": "built",
+      "score": 3,
+      "confidence": "medium",
+      "source_count": 5,
+      "updated_at": "2026-06-24T21:23:01Z"
+    },
+    {
+      "iso2": "AE",
+      "report_scope": "final",
+      "status": "built",
+      "score": 1,
+      "confidence": "low",
+      "source_count": 8,
+      "updated_at": "2026-06-24T21:23:01Z"
+    },
+    {
+      "iso2": "ZA",
+      "report_scope": "final",
+      "status": "built",
+      "score": 1,
+      "confidence": "low",
+      "source_count": 9,
+      "updated_at": "2026-06-24T21:23:01Z"
+    },
+    {
+      "iso2": "KR",
+      "report_scope": "final",
+      "status": "built",
+      "score": 3,
+      "confidence": "medium",
+      "source_count": 6,
+      "updated_at": "2026-06-24T21:23:02Z"
+    }
+  ]
+}

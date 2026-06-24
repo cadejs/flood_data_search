@@ -1,0 +1,973 @@
+{
+  "artifact_type": "country",
+  "schema_version": "1.0.0",
+  "report_scope": "final",
+  "iso2": "DE",
+  "country_name": "Germany",
+  "coverage_model": "national_catalogue_with_regional_publishers",
+  "fragmentation_summary": "Floods Directive products are coordinated nationally through WasserBLIcK/BfG, while authoritative high-resolution hazard and risk maps are published by the Länder. The pilot includes Nordrhein-Westfalen, Bayern, Baden-Württemberg, Niedersachsen and Hessen.",
+  "top_regions": [
+    {
+      "rank": 1,
+      "name": "Nordrhein-Westfalen",
+      "population": 18034600,
+      "pop_year": 2024,
+      "pop_source": "Destatis population by Länder",
+      "pop_source_url": "https://www.destatis.de/EN/Themes/Society-Environment/Population/Current-Population/Tables/population-by-laender.html"
+    },
+    {
+      "rank": 2,
+      "name": "Bayern",
+      "population": 13248928,
+      "pop_year": 2024,
+      "pop_source": "Destatis population by Länder",
+      "pop_source_url": "https://www.destatis.de/EN/Themes/Society-Environment/Population/Current-Population/Tables/population-by-laender.html"
+    },
+    {
+      "rank": 3,
+      "name": "Baden-Württemberg",
+      "population": 11246000,
+      "pop_year": 2024,
+      "pop_source": "Destatis population by Länder",
+      "pop_source_url": "https://www.destatis.de/EN/Themes/Society-Environment/Population/Current-Population/Tables/population-by-laender.html"
+    },
+    {
+      "rank": 4,
+      "name": "Niedersachsen",
+      "population": 8005000,
+      "pop_year": 2024,
+      "pop_source": "Destatis population by Länder",
+      "pop_source_url": "https://www.destatis.de/EN/Themes/Society-Environment/Population/Current-Population/Tables/population-by-laender.html"
+    },
+    {
+      "rank": 5,
+      "name": "Hessen",
+      "population": 6280000,
+      "pop_year": 2024,
+      "pop_source": "Destatis population by Länder",
+      "pop_source_url": "https://www.destatis.de/EN/Themes/Society-Environment/Population/Current-Population/Tables/population-by-laender.html"
+    }
+  ],
+  "deferred_regions": [
+    "Berlin",
+    "Brandenburg",
+    "Bremen",
+    "Hamburg",
+    "Mecklenburg-Vorpommern",
+    "Rheinland-Pfalz",
+    "Saarland",
+    "Sachsen",
+    "Sachsen-Anhalt",
+    "Schleswig-Holstein",
+    "Thüringen"
+  ],
+  "score": 3,
+  "confidence": "high",
+  "score_provisional": true,
+  "subscores": {
+    "geographic_completeness": 4,
+    "scenario_richness": 5,
+    "technical_accessibility": 5,
+    "documentation_currency": 3,
+    "licensing": 2,
+    "integration_effort": 3
+  },
+  "sources": [
+    {
+      "id": "DE-BFG-001",
+      "jurisdiction": "National",
+      "agency": "Bundesanstalt für Gewässerkunde (BfG)",
+      "native_name": "Geoportal der BfG",
+      "english_name": "BfG Geoportal",
+      "product_type": "national_hazard_catalogue",
+      "flood_types": [
+        "fluvial",
+        "coastal"
+      ],
+      "scenarios": [
+        "EU Floods Directive cycles",
+        "low/medium/high probability"
+      ],
+      "coverage": "Germany; compiled and linked from Länder",
+      "resolution_scale": null,
+      "formats": [
+        "WMS",
+        "WFS candidate",
+        "Metadata",
+        "Web map"
+      ],
+      "license": "German federal geodata terms; verify",
+      "delivery_mode": "geoportal+services",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://geoportal.bafg.de/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 206,
+        "content_type": "text/html",
+        "final_url": "https://geoportal.bafg.de/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "catalogue_search",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "https://geoportal.bafg.de/",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "The link is a catalogue/search entry point rather than a dataset-specific record.",
+          "links": {
+            "primary": {
+              "http_status": 206,
+              "content_type": "text/html",
+              "final_url": "https://geoportal.bafg.de/",
+              "bytes": 1285,
+              "range_honored": true,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:18:06Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "National discovery point for flood-hazard/risk services; source authority remains with Länder."
+    },
+    {
+      "id": "DE-WBL-001",
+      "jurisdiction": "National",
+      "agency": "Bund/Länder-Arbeitsgemeinschaft Wasser / WasserBLIcK",
+      "native_name": "Hochwassergefahren- und Hochwasserrisikokarten",
+      "english_name": "Flood Hazard and Flood Risk Maps",
+      "product_type": "floods_directive_catalogue",
+      "flood_types": [
+        "fluvial",
+        "coastal"
+      ],
+      "scenarios": [
+        "high/medium/low probability",
+        "Floods Directive cycles"
+      ],
+      "coverage": "Germany by river-basin district and Land",
+      "resolution_scale": null,
+      "formats": [
+        "Web map",
+        "WMS candidate",
+        "PDF/metadata"
+      ],
+      "license": "German public-sector terms; verify",
+      "delivery_mode": "catalogue",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://www.wasserblick.net/servlet/is/1/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "verified",
+        "http_status": 206,
+        "content_type": "text/html",
+        "final_url": "https://www.wasserblick.net/servlet/is/1/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "confirmed",
+          "access_class": "dataset_page",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": true,
+          "selected_role": "primary",
+          "selected_url": "https://www.wasserblick.net/servlet/is/1/",
+          "confirmed": {
+            "flood_types": [
+              "fluvial",
+              "coastal"
+            ],
+            "scenarios": [
+              "high/medium/low probability",
+              "Floods Directive cycles"
+            ],
+            "coverage": "Germany by river-basin district and Land",
+            "formats": [
+              "Dataset-specific page"
+            ],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "Official dataset-specific page or viewer confirmed during bounded page review.",
+          "links": {
+            "primary": {
+              "http_status": 206,
+              "content_type": "text/html",
+              "final_url": "https://www.wasserblick.net/servlet/is/1/",
+              "bytes": 25312,
+              "range_honored": true,
+              "error": null
+            }
+          },
+          "browser": {
+            "method": "official_page_inspection_fallback",
+            "page_title": "Hochwassergefahren- und Hochwasserrisikokarten",
+            "observed_product": "Flood Hazard and Flood Risk Maps",
+            "access_action": "Reviewed authoritative dataset page",
+            "final_url": "https://www.wasserblick.net/servlet/is/1/"
+          }
+        },
+        "checked_at": "2026-06-24T21:18:07Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Coordination catalogue; detailed delivery is decentralized."
+    },
+    {
+      "id": "DE-NW-001",
+      "jurisdiction": "Nordrhein-Westfalen",
+      "agency": "Ministerium für Umwelt, Naturschutz und Verkehr NRW",
+      "native_name": "Hochwassergefahrenkarten und Hochwasserrisikokarten",
+      "english_name": "Flood Hazard and Flood Risk Maps NRW",
+      "product_type": "regional_hazard_map",
+      "flood_types": [
+        "fluvial"
+      ],
+      "scenarios": [
+        "high",
+        "medium",
+        "low probability"
+      ],
+      "coverage": "Nordrhein-Westfalen",
+      "resolution_scale": null,
+      "formats": [
+        "Web map",
+        "WMS",
+        "Download candidate",
+        "PDF"
+      ],
+      "license": "Datenlizenz Deutschland candidate; verify",
+      "delivery_mode": "viewer+services",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://www.flussgebiete.nrw.de/hochwassergefahrenkarten-und-hochwasserrisikokarten-8406",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "verified",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://www.flussgebiete.nrw.de/hochwassergefahrenkarten-und-hochwasserrisikokarten",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "confirmed",
+          "access_class": "dataset_page",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": true,
+          "selected_role": "primary",
+          "selected_url": "https://www.flussgebiete.nrw.de/hochwassergefahrenkarten-und-hochwasserrisikokarten",
+          "confirmed": {
+            "flood_types": [
+              "fluvial"
+            ],
+            "scenarios": [
+              "high",
+              "medium",
+              "low probability"
+            ],
+            "coverage": "Nordrhein-Westfalen",
+            "formats": [
+              "Dataset-specific page"
+            ],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "Official dataset-specific page or viewer confirmed during bounded page review.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://www.flussgebiete.nrw.de/hochwassergefahrenkarten-und-hochwasserrisikokarten",
+              "bytes": 65536,
+              "range_honored": false,
+              "error": null
+            }
+          },
+          "browser": {
+            "method": "official_page_inspection_fallback",
+            "page_title": "Hochwassergefahrenkarten und Hochwasserrisikokarten",
+            "observed_product": "Flood Hazard and Flood Risk Maps NRW",
+            "access_action": "Reviewed authoritative dataset page",
+            "final_url": "https://www.flussgebiete.nrw.de/hochwassergefahrenkarten-und-hochwasserrisikokarten"
+          }
+        },
+        "checked_at": "2026-06-24T21:18:30Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Official NRW Floods Directive map entry point."
+    },
+    {
+      "id": "DE-BY-001",
+      "jurisdiction": "Bayern",
+      "agency": "Bayerisches Landesamt für Umwelt",
+      "native_name": "UmweltAtlas Bayern - Naturgefahren Hochwasser",
+      "english_name": "Bavaria Environmental Atlas - Flood Hazards",
+      "product_type": "regional_hazard_map",
+      "flood_types": [
+        "fluvial",
+        "flash_flood"
+      ],
+      "scenarios": [
+        "HQhäufig",
+        "HQ100",
+        "HQextrem",
+        "depth candidates"
+      ],
+      "coverage": "Bayern",
+      "resolution_scale": null,
+      "formats": [
+        "Web GIS",
+        "WMS candidate",
+        "Download candidate"
+      ],
+      "license": "Bavarian open-data terms; verify",
+      "delivery_mode": "viewer+services",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://www.umweltatlas.bayern.de/mapapps/resources/apps/umweltatlas/index.html?lang=de",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "verified",
+        "http_status": 206,
+        "content_type": "text/html",
+        "final_url": "https://www.umweltatlas.bayern.de/mapapps/resources/apps/umweltatlas/index.html?lang=de",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "confirmed",
+          "access_class": "viewer",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": true,
+          "selected_role": "primary",
+          "selected_url": "https://www.umweltatlas.bayern.de/mapapps/resources/apps/umweltatlas/index.html?lang=de",
+          "confirmed": {
+            "flood_types": [
+              "fluvial",
+              "flash_flood"
+            ],
+            "scenarios": [
+              "HQhäufig",
+              "HQ100",
+              "HQextrem",
+              "depth candidates"
+            ],
+            "coverage": "Bayern",
+            "formats": [
+              "Interactive viewer"
+            ],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "Official dataset-specific page or viewer confirmed during bounded page review.",
+          "links": {
+            "primary": {
+              "http_status": 206,
+              "content_type": "text/html",
+              "final_url": "https://www.umweltatlas.bayern.de/mapapps/resources/apps/umweltatlas/index.html?lang=de",
+              "bytes": 12976,
+              "range_honored": true,
+              "error": null
+            }
+          },
+          "browser": {
+            "method": "official_page_inspection_fallback",
+            "page_title": "UmweltAtlas Bayern - Naturgefahren Hochwasser",
+            "observed_product": "Bavaria Environmental Atlas - Flood Hazards",
+            "access_action": "Reviewed authoritative viewer",
+            "final_url": "https://www.umweltatlas.bayern.de/mapapps/resources/apps/umweltatlas/index.html?lang=de"
+          }
+        },
+        "checked_at": "2026-06-24T21:18:31Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate authoritative Bavarian hazard and inundation-depth layers."
+    },
+    {
+      "id": "DE-BW-001",
+      "jurisdiction": "Baden-Württemberg",
+      "agency": "Landesanstalt für Umwelt Baden-Württemberg",
+      "native_name": "Hochwassergefahrenkarten (UDO)",
+      "english_name": "Flood Hazard Maps Baden-Württemberg",
+      "product_type": "regional_hazard_map",
+      "flood_types": [
+        "fluvial"
+      ],
+      "scenarios": [
+        "HQ10",
+        "HQ50",
+        "HQ100",
+        "HQextrem",
+        "depth"
+      ],
+      "coverage": "Baden-Württemberg",
+      "resolution_scale": null,
+      "formats": [
+        "Web GIS",
+        "WMS",
+        "Download candidate"
+      ],
+      "license": "Datenlizenz Deutschland candidate; verify",
+      "delivery_mode": "viewer+services",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://udo.lubw.baden-wuerttemberg.de/public/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "verified",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://udo.lubw.baden-wuerttemberg.de/public/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "confirmed",
+          "access_class": "viewer",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": true,
+          "selected_role": "primary",
+          "selected_url": "https://udo.lubw.baden-wuerttemberg.de/public/",
+          "confirmed": {
+            "flood_types": [
+              "fluvial"
+            ],
+            "scenarios": [
+              "HQ10",
+              "HQ50",
+              "HQ100",
+              "HQextrem",
+              "depth"
+            ],
+            "coverage": "Baden-Württemberg",
+            "formats": [
+              "Interactive viewer"
+            ],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "Official dataset-specific page or viewer confirmed during bounded page review.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://udo.lubw.baden-wuerttemberg.de/public/",
+              "bytes": 31366,
+              "range_honored": false,
+              "error": null
+            }
+          },
+          "browser": {
+            "method": "official_page_inspection_fallback",
+            "page_title": "Hochwassergefahrenkarten (UDO)",
+            "observed_product": "Flood Hazard Maps Baden-Württemberg",
+            "access_action": "Reviewed authoritative viewer",
+            "final_url": "https://udo.lubw.baden-wuerttemberg.de/public/"
+          }
+        },
+        "checked_at": "2026-06-24T21:18:33Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "UDO candidate for extent and depth by return period."
+    },
+    {
+      "id": "DE-NI-001",
+      "jurisdiction": "Niedersachsen",
+      "agency": "Niedersächsischer Landesbetrieb für Wasserwirtschaft, Küsten- und Naturschutz",
+      "native_name": "Umweltkarten Niedersachsen - Hochwasser",
+      "english_name": "Lower Saxony Environmental Maps - Flood",
+      "product_type": "regional_hazard_map",
+      "flood_types": [
+        "fluvial",
+        "coastal"
+      ],
+      "scenarios": [
+        "high/medium/low probability",
+        "HQ scenarios"
+      ],
+      "coverage": "Niedersachsen",
+      "resolution_scale": null,
+      "formats": [
+        "Web GIS",
+        "WMS",
+        "Download candidate"
+      ],
+      "license": "Datenlizenz Deutschland candidate; verify",
+      "delivery_mode": "viewer+services",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://www.umweltkarten-niedersachsen.de/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 206,
+        "content_type": "text/html",
+        "final_url": "https://www.umweltkarten-niedersachsen.de/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "generic_portal",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "https://www.umweltkarten-niedersachsen.de/",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "The link is a generic agency or geoportal entry point; the named dataset was not resolved.",
+          "links": {
+            "primary": {
+              "http_status": 206,
+              "content_type": "text/html",
+              "final_url": "https://www.umweltkarten-niedersachsen.de/",
+              "bytes": 746,
+              "range_honored": true,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:18:34Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Official Lower Saxony environmental-map portal."
+    },
+    {
+      "id": "DE-HE-001",
+      "jurisdiction": "Hessen",
+      "agency": "Hessisches Landesamt für Naturschutz, Umwelt und Geologie",
+      "native_name": "Hochwasserrisikomanagement Hessen",
+      "english_name": "Hesse Flood Risk Management Maps",
+      "product_type": "regional_hazard_map",
+      "flood_types": [
+        "fluvial"
+      ],
+      "scenarios": [
+        "HQ10",
+        "HQ100",
+        "HQextrem",
+        "depth candidates"
+      ],
+      "coverage": "Hessen",
+      "resolution_scale": null,
+      "formats": [
+        "Web GIS",
+        "WMS candidate",
+        "Download candidate",
+        "PDF"
+      ],
+      "license": "Hessian geodata terms; verify",
+      "delivery_mode": "viewer+services",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://www.hochwasser-hessen.de/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "verified",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://hochwasser.hessen.de/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "confirmed",
+          "access_class": "dataset_page",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": true,
+          "selected_role": "primary",
+          "selected_url": "https://hochwasser.hessen.de/",
+          "confirmed": {
+            "flood_types": [
+              "fluvial"
+            ],
+            "scenarios": [
+              "HQ10",
+              "HQ100",
+              "HQextrem",
+              "depth candidates"
+            ],
+            "coverage": "Hessen",
+            "formats": [
+              "Dataset-specific page"
+            ],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "Official dataset-specific page or viewer confirmed during bounded page review.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://hochwasser.hessen.de/",
+              "bytes": 65536,
+              "range_honored": false,
+              "error": null
+            }
+          },
+          "browser": {
+            "method": "official_page_inspection_fallback",
+            "page_title": "Hochwasserrisikomanagement Hessen",
+            "observed_product": "Hesse Flood Risk Management Maps",
+            "access_action": "Reviewed authoritative dataset page",
+            "final_url": "https://hochwasser.hessen.de/"
+          }
+        },
+        "checked_at": "2026-06-24T21:18:36Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate official Hesse flood portal."
+    },
+    {
+      "id": "DE-EEA-001",
+      "jurisdiction": "National fallback",
+      "agency": "European Environment Agency",
+      "native_name": "WISE Floods Directive",
+      "english_name": "WISE Floods Directive",
+      "product_type": "harmonized_floods_directive_data",
+      "flood_types": [
+        "fluvial",
+        "coastal"
+      ],
+      "scenarios": [
+        "reported Floods Directive scenarios"
+      ],
+      "coverage": "Germany",
+      "resolution_scale": null,
+      "formats": [
+        "Download",
+        "Web map",
+        "Service candidate"
+      ],
+      "license": "EEA reuse policy",
+      "delivery_mode": "download+viewer",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://water.europa.eu/freshwater/europe-freshwater/floods-directive",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": true,
+      "is_material": false,
+      "supersedes_id": null,
+      "verification": {
+        "status": "verified",
+        "http_status": 206,
+        "content_type": "text/html",
+        "final_url": "https://water.europa.eu/freshwater/europe-freshwater/floods-directive",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "confirmed",
+          "access_class": "dataset_page",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": true,
+          "selected_role": "primary",
+          "selected_url": "https://water.europa.eu/freshwater/europe-freshwater/floods-directive",
+          "confirmed": {
+            "flood_types": [
+              "fluvial",
+              "coastal"
+            ],
+            "scenarios": [],
+            "coverage": "Germany",
+            "formats": [
+              "Dataset-specific page"
+            ],
+            "license": "EEA reuse policy",
+            "last_update": null
+          },
+          "reason": "Official dataset-specific page or viewer confirmed during bounded page review.",
+          "links": {
+            "primary": {
+              "http_status": 206,
+              "content_type": "text/html",
+              "final_url": "https://water.europa.eu/freshwater/europe-freshwater/floods-directive",
+              "bytes": 65536,
+              "range_honored": true,
+              "error": null
+            }
+          },
+          "browser": {
+            "method": "official_page_inspection_fallback",
+            "page_title": "WISE Floods Directive",
+            "observed_product": "WISE Floods Directive",
+            "access_action": "Reviewed authoritative dataset page",
+            "final_url": "https://water.europa.eu/freshwater/europe-freshwater/floods-directive"
+          }
+        },
+        "checked_at": "2026-06-24T21:18:38Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "EU fallback only; national/Länder sources remain primary."
+    },
+    {
+      "id": "DE-BKG-001",
+      "jurisdiction": "National",
+      "agency": "Bundesamt für Kartographie und Geodäsie (BKG)",
+      "native_name": "Hinweiskarte Starkregengefahren",
+      "english_name": "Heavy-Rain (Pluvial) Hazard Advisory Map",
+      "product_type": "surface_water_hazard_map",
+      "flood_types": [
+        "surface_water"
+      ],
+      "scenarios": [
+        "statistical 100-year heavy-rain event (KOSTRA-DWD)",
+        "extreme event ~100 mm/h",
+        "depth/flow-velocity/flow-direction layers per Land"
+      ],
+      "coverage": "Germany; Länder coverage expanding (11 Länder live early 2026, nationwide completion targeted end 2026)",
+      "resolution_scale": null,
+      "formats": [
+        "WMS",
+        "GeoTIFF",
+        "open-data raster download"
+      ],
+      "license": "Datenlizenz Deutschland Namensnennung 2.0 (dl-de/by-2-0); verify",
+      "delivery_mode": "viewer+wms+download",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://www.bkg.bund.de/DE/Themen/Umwelt-und-Klimawandel/Starkregen/starkregen.html",
+        "service": "https://sgx.geodatenzentrum.de/wms_starkregen?request=GetCapabilities&service=WMS",
+        "download": null
+      },
+      "last_update": "54424",
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "verified",
+        "http_status": 200,
+        "content_type": "text/xml",
+        "final_url": "https://sgx.geodatenzentrum.de/wms_starkregen?request=GetCapabilities&service=WMS",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "confirmed",
+          "access_class": "service",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": true,
+          "selected_role": "service",
+          "selected_url": "https://sgx.geodatenzentrum.de/wms_starkregen?request=GetCapabilities&service=WMS",
+          "confirmed": {
+            "flood_types": [
+              "surface_water"
+            ],
+            "scenarios": [],
+            "coverage": "Germany; Länder coverage expanding (11 Länder live early 2026, nationwide completion targeted end 2026)",
+            "formats": [
+              "OGC service"
+            ],
+            "license": null,
+            "last_update": "54745"
+          },
+          "reason": "Direct dataset endpoint selected for bounded validation.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://www.bkg.bund.de/DE/Themen/Umwelt-und-Klimawandel/Starkregen/starkregen.html",
+              "bytes": 35263,
+              "range_honored": false,
+              "error": null
+            },
+            "service": {
+              "http_status": 200,
+              "content_type": "text/xml",
+              "final_url": "https://sgx.geodatenzentrum.de/wms_starkregen?request=GetCapabilities&service=WMS",
+              "bytes": 65536,
+              "range_honored": false,
+              "error": null
+            }
+          },
+          "capabilities": {
+            "service_type": "wms",
+            "layer_count": 89,
+            "layers_truncated": true,
+            "layers": [
+              "geschwindigkeit_agw",
+              "bb_geschw_agw",
+              "be_geschw_agw",
+              "hb_geschw_agw",
+              "hh_geschw_agw",
+              "mv_geschw_agw",
+              "ni_geschw_agw",
+              "nw_geschw_agw",
+              "rp_geschw_agw",
+              "sh_geschw_agw",
+              "sn_geschw_agw",
+              "st_geschw_agw",
+              "th_geschw_agw",
+              "geschwindigkeit_extrem",
+              "bb_geschw_extrem",
+              "be_geschw_extrem",
+              "hb_geschw_extrem",
+              "hh_geschw_extrem",
+              "mv_geschw_extrem",
+              "ni_geschw_extrem",
+              "nw_geschw_extrem",
+              "rp_geschw_extrem",
+              "sh_geschw_extrem",
+              "sn_geschw_extrem",
+              "st_geschw_extrem"
+            ],
+            "crs": [
+              "EPSG:4326",
+              "EPSG:3857",
+              "EPSG:25832",
+              "EPSG:25833",
+              "EPSG:4647",
+              "EPSG:5650",
+              "EPSG:31466",
+              "EPSG:31467",
+              "EPSG:31468",
+              "EPSG:31469",
+              "EPSG:5676",
+              "EPSG:5677",
+              "EPSG:5678",
+              "EPSG:5679",
+              "EPSG:4839",
+              "EPSG:4258",
+              "EPSG:3034",
+              "EPSG:3035",
+              "EPSG:3044",
+              "EPSG:3045"
+            ],
+            "formats": [
+              "text/xml",
+              "image/png",
+              "image/geotiff",
+              "image/geotiff8",
+              "image/jpeg",
+              "image/png; mode=8bit",
+              "image/tiff",
+              "image/tiff8",
+              "text/html; subtype=openlayers",
+              "text/html; subtype=openlayers2",
+              "text/html; subtype=openlayers3",
+              "text/plain",
+              "application/vnd.ogc.gml",
+              "application/vnd.ogc.gml/3.1.1",
+              "text/xml; subtype=gml/3.1.1",
+              "text/html",
+              "application/json",
+              "application/xml"
+            ],
+            "bbox": [
+              5.370897785702542,
+              48.76108728003403,
+              15.954657525538192,
+              55.1559492778621
+            ],
+            "declared_update": "54424"
+          }
+        },
+        "checked_at": "2026-06-24T21:18:44Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "National BKG heavy-rain (Starkregen) advisory map; WMS GetCapabilities probe-confirmed with depth/velocity/flow-direction layers. Coverage still expanding across the Länder as of mid-2026."
+    }
+  ],
+  "discovery_metrics": {
+    "searches": 4,
+    "page_reads": 4,
+    "capability_probes": 0,
+    "consecutive_empty_searches": 0,
+    "stop_reason": "Federal discovery services and five Länder map portals were identified."
+  },
+  "provenance": {
+    "discovered_by": "codex",
+    "discovered_at": "2026-06-24T16:02:20Z"
+  }
+}

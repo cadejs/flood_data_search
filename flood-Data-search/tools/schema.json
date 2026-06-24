@@ -1,0 +1,735 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://luxterralabs.example/flood-readiness/schema-1.0.0.json",
+  "title": "Flood Data Readiness Pipeline Contract",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/country"
+    },
+    {
+      "$ref": "#/$defs/manifest"
+    },
+    {
+      "$ref": "#/$defs/findings"
+    }
+  ],
+  "$defs": {
+    "nullableString": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 4096
+    },
+    "nullableUri": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "uri",
+          "maxLength": 4096
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "nullableDateTime": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "produced_by",
+        "round"
+      ],
+      "properties": {
+        "produced_by": {
+          "enum": [
+            "codex",
+            "claude_code"
+          ]
+        },
+        "round": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 2
+        }
+      }
+    },
+    "verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "http_status",
+        "content_type",
+        "final_url",
+        "evidence",
+        "checked_at",
+        "checked_by"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "unverified",
+            "verified",
+            "failed",
+            "superseded"
+          ]
+        },
+        "http_status": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 100,
+          "maximum": 599
+        },
+        "content_type": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "final_url": {
+          "$ref": "#/$defs/nullableUri"
+        },
+        "evidence": {
+          "oneOf": [
+            {
+              "type": "object",
+              "maxProperties": 20,
+              "additionalProperties": true
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "checked_at": {
+          "$ref": "#/$defs/nullableDateTime"
+        },
+        "checked_by": {
+          "oneOf": [
+            {
+              "enum": [
+                "claude_code"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "jurisdiction",
+        "agency",
+        "native_name",
+        "english_name",
+        "product_type",
+        "flood_types",
+        "scenarios",
+        "coverage",
+        "resolution_scale",
+        "formats",
+        "license",
+        "delivery_mode",
+        "access_constraints",
+        "links",
+        "last_update",
+        "is_fallback",
+        "is_material",
+        "supersedes_id",
+        "verification",
+        "provenance",
+        "notes"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "[A-Z]{2}-[A-Z0-9]+-[0-9]{3}",
+          "maxLength": 40
+        },
+        "jurisdiction": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "agency": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "native_name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "english_name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "product_type": {
+          "type": "string",
+          "pattern": "[a-z][a-z0-9_]*",
+          "maxLength": 80
+        },
+        "flood_types": {
+          "type": "array",
+          "maxItems": 12,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "fluvial",
+              "coastal",
+              "surface_water",
+              "reservoir",
+              "groundwater",
+              "flash_flood",
+              "tsunami",
+              "historic",
+              "composite",
+              "other"
+            ]
+          }
+        },
+        "scenarios": {
+          "type": "array",
+          "maxItems": 100,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "maxLength": 160
+          }
+        },
+        "coverage": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        },
+        "resolution_scale": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "formats": {
+          "type": "array",
+          "maxItems": 40,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "maxLength": 80
+          }
+        },
+        "license": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "delivery_mode": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "access_constraints": {
+          "type": "array",
+          "maxItems": 8,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "viewer_only",
+              "pdf_only",
+              "address_only",
+              "restricted",
+              "paid",
+              "request_only",
+              "unofficial"
+            ]
+          }
+        },
+        "links": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "primary",
+            "service",
+            "download"
+          ],
+          "properties": {
+            "primary": {
+              "$ref": "#/$defs/nullableUri"
+            },
+            "service": {
+              "$ref": "#/$defs/nullableUri"
+            },
+            "download": {
+              "$ref": "#/$defs/nullableUri"
+            }
+          }
+        },
+        "last_update": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "is_fallback": {
+          "type": "boolean"
+        },
+        "is_material": {
+          "type": "boolean"
+        },
+        "supersedes_id": {
+          "oneOf": [
+            {
+              "type": "string",
+              "pattern": "[A-Z]{2}-[A-Z0-9]+-[0-9]{3}"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "verification": {
+          "$ref": "#/$defs/verification"
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        },
+        "notes": {
+          "type": "string",
+          "maxLength": 5000
+        }
+      }
+    },
+    "topRegion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "rank",
+        "name",
+        "population",
+        "pop_year",
+        "pop_source",
+        "pop_source_url"
+      ],
+      "properties": {
+        "rank": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "population": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "pop_year": {
+          "type": "integer",
+          "minimum": 1900,
+          "maximum": 2100
+        },
+        "pop_source": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        },
+        "pop_source_url": {
+          "type": "string",
+          "format": "uri",
+          "maxLength": 4096
+        }
+      }
+    },
+    "subscores": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "geographic_completeness",
+        "scenario_richness",
+        "technical_accessibility",
+        "documentation_currency",
+        "licensing",
+        "integration_effort"
+      ],
+      "properties": {
+        "geographic_completeness": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "scenario_richness": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "technical_accessibility": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "documentation_currency": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "licensing": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "integration_effort": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        }
+      }
+    },
+    "discoveryMetrics": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "searches",
+        "page_reads",
+        "capability_probes",
+        "consecutive_empty_searches",
+        "stop_reason"
+      ],
+      "properties": {
+        "searches": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 12
+        },
+        "page_reads": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 20
+        },
+        "capability_probes": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 15
+        },
+        "consecutive_empty_searches": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "stop_reason": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        }
+      }
+    },
+    "country": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "artifact_type",
+        "schema_version",
+        "report_scope",
+        "iso2",
+        "country_name",
+        "coverage_model",
+        "fragmentation_summary",
+        "top_regions",
+        "deferred_regions",
+        "score",
+        "confidence",
+        "score_provisional",
+        "subscores",
+        "sources",
+        "discovery_metrics",
+        "provenance"
+      ],
+      "properties": {
+        "artifact_type": {
+          "const": "country"
+        },
+        "schema_version": {
+          "const": "1.0.0"
+        },
+        "report_scope": {
+          "enum": [
+            "fixture",
+            "final"
+          ]
+        },
+        "iso2": {
+          "type": "string",
+          "pattern": "[A-Z]{2}"
+        },
+        "country_name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "coverage_model": {
+          "enum": [
+            "nationally_unified",
+            "national_catalogue_with_regional_publishers",
+            "primarily_regional",
+            "mixed_national_and_regional"
+          ]
+        },
+        "fragmentation_summary": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 5000
+        },
+        "top_regions": {
+          "type": "array",
+          "maxItems": 5,
+          "items": {
+            "$ref": "#/$defs/topRegion"
+          }
+        },
+        "deferred_regions": {
+          "type": "array",
+          "maxItems": 200,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "maxLength": 200
+          }
+        },
+        "score": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 5
+        },
+        "confidence": {
+          "oneOf": [
+            {
+              "enum": [
+                "high",
+                "medium",
+                "low"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "score_provisional": {
+          "type": "boolean"
+        },
+        "subscores": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/subscores"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sources": {
+          "type": "array",
+          "maxItems": 1000,
+          "items": {
+            "$ref": "#/$defs/source"
+          }
+        },
+        "discovery_metrics": {
+          "$ref": "#/$defs/discoveryMetrics"
+        },
+        "provenance": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "discovered_by",
+            "discovered_at"
+          ],
+          "properties": {
+            "discovered_by": {
+              "const": "codex"
+            },
+            "discovered_at": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        }
+      }
+    },
+    "manifestCountry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "iso2",
+        "report_scope",
+        "status",
+        "score",
+        "confidence",
+        "source_count",
+        "updated_at"
+      ],
+      "properties": {
+        "iso2": {
+          "type": "string",
+          "pattern": "[A-Z]{2}"
+        },
+        "report_scope": {
+          "enum": [
+            "fixture",
+            "final"
+          ]
+        },
+        "status": {
+          "enum": [
+            "planned",
+            "discovered",
+            "verified",
+            "built",
+            "failed",
+            "deferred"
+          ]
+        },
+        "score": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 5
+        },
+        "confidence": {
+          "oneOf": [
+            {
+              "enum": [
+                "high",
+                "medium",
+                "low"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "manifest": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "artifact_type",
+        "schema_version",
+        "countries"
+      ],
+      "properties": {
+        "artifact_type": {
+          "const": "manifest"
+        },
+        "schema_version": {
+          "const": "1.0.0"
+        },
+        "countries": {
+          "type": "array",
+          "maxItems": 21,
+          "items": {
+            "$ref": "#/$defs/manifestCountry"
+          }
+        }
+      }
+    },
+    "finding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "iso2",
+        "id",
+        "problem",
+        "evidence",
+        "request",
+        "status"
+      ],
+      "properties": {
+        "iso2": {
+          "type": "string",
+          "pattern": "[A-Z]{2}"
+        },
+        "id": {
+          "type": "string",
+          "pattern": "[A-Z]{2}-[A-Z0-9]+-[0-9]{3}"
+        },
+        "problem": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000
+        },
+        "evidence": {
+          "type": "object",
+          "maxProperties": 20
+        },
+        "request": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000
+        },
+        "status": {
+          "enum": [
+            "unresolved",
+            "resolved",
+            "human_review"
+          ]
+        }
+      }
+    },
+    "findings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "artifact_type",
+        "schema_version",
+        "round",
+        "items"
+      ],
+      "properties": {
+        "artifact_type": {
+          "const": "findings"
+        },
+        "schema_version": {
+          "const": "1.0.0"
+        },
+        "round": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 2
+        },
+        "items": {
+          "type": "array",
+          "maxItems": 2000,
+          "items": {
+            "$ref": "#/$defs/finding"
+          }
+        }
+      }
+    }
+  }
+}

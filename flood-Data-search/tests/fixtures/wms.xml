@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WMS_Capabilities version="1.3.0" updateSequence="2026-06-01">
+  <Capability>
+    <Request>
+      <GetMap>
+        <Format>image/png</Format>
+        <Format>image/jpeg</Format>
+      </GetMap>
+    </Request>
+    <Layer>
+      <CRS>EPSG:4326</CRS>
+      <EX_GeographicBoundingBox>
+        <westBoundLongitude>-10</westBoundLongitude>
+        <eastBoundLongitude>2</eastBoundLongitude>
+        <southBoundLatitude>49</southBoundLatitude>
+        <northBoundLatitude>61</northBoundLatitude>
+      </EX_GeographicBoundingBox>
+      <Layer><Name>flood_extent</Name></Layer>
+      <Layer><Name>flood_depth</Name></Layer>
+    </Layer>
+  </Capability>
+</WMS_Capabilities>

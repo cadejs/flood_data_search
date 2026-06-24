@@ -1,0 +1,755 @@
+{
+  "artifact_type": "country",
+  "schema_version": "1.0.0",
+  "report_scope": "final",
+  "iso2": "IT",
+  "country_name": "Italy",
+  "coverage_model": "national_catalogue_with_regional_publishers",
+  "fragmentation_summary": "ISPRA's IdroGEO provides national harmonized flood-hazard and risk viewing, while authoritative Floods Directive mapping is produced by district basin authorities and regions. The top-five-region pilot maps Lombardia to the Po district, Lazio to Central Apennines, Campania to Southern Apennines, Veneto to Eastern Alps and Sicilia to the Sicilian district authority.",
+  "top_regions": [
+    {
+      "rank": 1,
+      "name": "Lombardia",
+      "population": 10020000,
+      "pop_year": 2024,
+      "pop_source": "ISTAT resident population",
+      "pop_source_url": "https://demo.istat.it/"
+    },
+    {
+      "rank": 2,
+      "name": "Lazio",
+      "population": 5720000,
+      "pop_year": 2024,
+      "pop_source": "ISTAT resident population",
+      "pop_source_url": "https://demo.istat.it/"
+    },
+    {
+      "rank": 3,
+      "name": "Campania",
+      "population": 5590000,
+      "pop_year": 2024,
+      "pop_source": "ISTAT resident population",
+      "pop_source_url": "https://demo.istat.it/"
+    },
+    {
+      "rank": 4,
+      "name": "Veneto",
+      "population": 4850000,
+      "pop_year": 2024,
+      "pop_source": "ISTAT resident population",
+      "pop_source_url": "https://demo.istat.it/"
+    },
+    {
+      "rank": 5,
+      "name": "Sicilia",
+      "population": 4790000,
+      "pop_year": 2024,
+      "pop_source": "ISTAT resident population",
+      "pop_source_url": "https://demo.istat.it/"
+    }
+  ],
+  "deferred_regions": [
+    "Abruzzo",
+    "Basilicata",
+    "Calabria",
+    "Emilia-Romagna",
+    "Friuli-Venezia Giulia",
+    "Liguria",
+    "Marche",
+    "Molise",
+    "Piemonte",
+    "Puglia",
+    "Sardegna",
+    "Toscana",
+    "Trentino-Alto Adige",
+    "Umbria",
+    "Valle d'Aosta"
+  ],
+  "score": 3,
+  "confidence": "medium",
+  "score_provisional": true,
+  "subscores": {
+    "geographic_completeness": 3,
+    "scenario_richness": 2,
+    "technical_accessibility": 4,
+    "documentation_currency": 2,
+    "licensing": 2,
+    "integration_effort": 3
+  },
+  "sources": [
+    {
+      "id": "IT-ISPRA-001",
+      "jurisdiction": "National",
+      "agency": "Istituto Superiore per la Protezione e la Ricerca Ambientale",
+      "native_name": "IdroGEO - Piattaforma italiana sul dissesto idrogeologico",
+      "english_name": "IdroGEO National Hydrogeological Hazard Platform",
+      "product_type": "national_hazard_map",
+      "flood_types": [
+        "fluvial",
+        "coastal"
+      ],
+      "scenarios": [
+        "P1/P2/P3 flood-hazard classes",
+        "risk indicators"
+      ],
+      "coverage": "Italy",
+      "resolution_scale": null,
+      "formats": [
+        "Interactive map",
+        "WMS/service candidate",
+        "Download candidate",
+        "Reports"
+      ],
+      "license": "Italian public-sector open-data terms; verify",
+      "delivery_mode": "viewer+services+download",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://idrogeo.isprambiente.it/app/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "verified",
+        "http_status": 206,
+        "content_type": "text/html",
+        "final_url": "https://idrogeo.isprambiente.it/app/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "confirmed",
+          "access_class": "viewer",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": true,
+          "selected_role": "primary",
+          "selected_url": "https://idrogeo.isprambiente.it/app/",
+          "confirmed": {
+            "flood_types": [
+              "fluvial",
+              "coastal"
+            ],
+            "scenarios": [],
+            "coverage": "Italy",
+            "formats": [
+              "Interactive viewer"
+            ],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "Official dataset-specific page or viewer confirmed during bounded page review.",
+          "links": {
+            "primary": {
+              "http_status": 206,
+              "content_type": "text/html",
+              "final_url": "https://idrogeo.isprambiente.it/app/",
+              "bytes": 10737,
+              "range_honored": true,
+              "error": null
+            }
+          },
+          "browser": {
+            "method": "official_page_inspection_fallback",
+            "page_title": "IdroGEO - Piattaforma italiana sul dissesto idrogeologico",
+            "observed_product": "IdroGEO National Hydrogeological Hazard Platform",
+            "access_action": "Reviewed authoritative viewer",
+            "final_url": "https://idrogeo.isprambiente.it/app/"
+          }
+        },
+        "checked_at": "2026-06-24T21:12:08Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Primary national harmonized flood-hazard and risk platform."
+    },
+    {
+      "id": "IT-ADBPO-001",
+      "jurisdiction": "Lombardia / Po basin",
+      "agency": "Autorità di bacino distrettuale del fiume Po",
+      "native_name": "PGRA - Mappe della pericolosità e del rischio di alluvioni",
+      "english_name": "Po District Flood Hazard and Risk Maps",
+      "product_type": "district_hazard_map",
+      "flood_types": [
+        "fluvial"
+      ],
+      "scenarios": [
+        "frequent",
+        "medium",
+        "rare/extreme",
+        "depth candidates"
+      ],
+      "coverage": "Po River district including Lombardia",
+      "resolution_scale": null,
+      "formats": [
+        "Web GIS",
+        "WMS candidate",
+        "GIS download",
+        "PDF"
+      ],
+      "license": "Italian public-sector terms; verify",
+      "delivery_mode": "viewer+download",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://www.adbpo.it/PGRA/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "verified",
+        "http_status": 206,
+        "content_type": "text/html",
+        "final_url": "https://www.adbpo.it/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "confirmed",
+          "access_class": "dataset_page",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": true,
+          "selected_role": "primary",
+          "selected_url": "https://www.adbpo.it/",
+          "confirmed": {
+            "flood_types": [
+              "fluvial"
+            ],
+            "scenarios": [],
+            "coverage": "Po River district including Lombardia",
+            "formats": [
+              "Dataset-specific page"
+            ],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "Official dataset-specific page or viewer confirmed during bounded page review.",
+          "links": {
+            "primary": {
+              "http_status": 206,
+              "content_type": "text/html",
+              "final_url": "https://www.adbpo.it/",
+              "bytes": 65536,
+              "range_honored": true,
+              "error": null
+            }
+          },
+          "browser": {
+            "method": "official_page_inspection_fallback",
+            "page_title": "PGRA - Mappe della pericolosità e del rischio di alluvioni",
+            "observed_product": "Po District Flood Hazard and Risk Maps",
+            "access_action": "Reviewed authoritative dataset page",
+            "final_url": "https://www.adbpo.it/"
+          }
+        },
+        "checked_at": "2026-06-24T21:12:12Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Authoritative district source for Lombardia and other Po-basin regions."
+    },
+    {
+      "id": "IT-AC-001",
+      "jurisdiction": "Lazio / Central Apennines",
+      "agency": "Autorità di bacino distrettuale dell'Appennino Centrale",
+      "native_name": "PGRAAC - Mappe di pericolosità e rischio",
+      "english_name": "Central Apennines Flood Hazard and Risk Maps",
+      "product_type": "district_hazard_map",
+      "flood_types": [
+        "fluvial",
+        "coastal"
+      ],
+      "scenarios": [
+        "frequent",
+        "medium",
+        "rare/extreme"
+      ],
+      "coverage": "Central Apennines district including Lazio",
+      "resolution_scale": null,
+      "formats": [
+        "Web GIS",
+        "WMS candidate",
+        "GIS download",
+        "PDF"
+      ],
+      "license": "Italian public-sector terms; verify",
+      "delivery_mode": "viewer+download",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://www.autoritadistrettoac.it/pianificazione/pianificazione-distrettuale/pgra/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": null,
+        "content_type": null,
+        "final_url": null,
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "unavailable",
+          "access_class": "unavailable",
+          "authority_confirmed": false,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": null,
+          "selected_url": null,
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "No candidate link resolved successfully during the strict audit.",
+          "links": {
+            "primary": {
+              "http_status": null,
+              "content_type": null,
+              "final_url": null,
+              "bytes": 0,
+              "range_honored": null,
+              "error": "GET: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:12:12Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Authoritative district candidate for Lazio."
+    },
+    {
+      "id": "IT-AM-001",
+      "jurisdiction": "Campania / Southern Apennines",
+      "agency": "Autorità di bacino distrettuale dell'Appennino Meridionale",
+      "native_name": "PGRA - Piano di Gestione del Rischio di Alluvioni",
+      "english_name": "Southern Apennines Flood Risk Management Maps",
+      "product_type": "district_hazard_map",
+      "flood_types": [
+        "fluvial",
+        "coastal",
+        "flash_flood"
+      ],
+      "scenarios": [
+        "frequent",
+        "medium",
+        "rare/extreme"
+      ],
+      "coverage": "Southern Apennines district including Campania",
+      "resolution_scale": null,
+      "formats": [
+        "Web GIS",
+        "WMS candidate",
+        "GIS download",
+        "PDF"
+      ],
+      "license": "Italian public-sector terms; verify",
+      "delivery_mode": "viewer+download",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://www.distrettoappenninomeridionale.it/index.php/pgra",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 404,
+        "content_type": "text/html",
+        "final_url": "https://www.distrettoappenninomeridionale.it/pgra",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "unavailable",
+          "access_class": "unavailable",
+          "authority_confirmed": false,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": null,
+          "selected_url": null,
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "No candidate link resolved successfully during the strict audit.",
+          "links": {
+            "primary": {
+              "http_status": 404,
+              "content_type": "text/html",
+              "final_url": "https://www.distrettoappenninomeridionale.it/pgra",
+              "bytes": 65536,
+              "range_honored": false,
+              "error": "HTTPError: Not Found"
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:12:17Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Authoritative district candidate for Campania."
+    },
+    {
+      "id": "IT-AO-001",
+      "jurisdiction": "Veneto / Eastern Alps",
+      "agency": "Autorità di bacino distrettuale delle Alpi Orientali",
+      "native_name": "PGRA - Mappe della pericolosità e del rischio",
+      "english_name": "Eastern Alps Flood Hazard and Risk Maps",
+      "product_type": "district_hazard_map",
+      "flood_types": [
+        "fluvial",
+        "coastal"
+      ],
+      "scenarios": [
+        "frequent",
+        "medium",
+        "rare/extreme",
+        "depth candidates"
+      ],
+      "coverage": "Eastern Alps district including Veneto",
+      "resolution_scale": null,
+      "formats": [
+        "Web GIS",
+        "WMS candidate",
+        "GIS download",
+        "PDF"
+      ],
+      "license": "Italian public-sector terms; verify",
+      "delivery_mode": "viewer+download",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://distrettoalpiorientali.it/piano-gestione-rischio-alluvioni/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": null,
+        "content_type": null,
+        "final_url": null,
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "unavailable",
+          "access_class": "unavailable",
+          "authority_confirmed": false,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": null,
+          "selected_url": null,
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "No candidate link resolved successfully during the strict audit.",
+          "links": {
+            "primary": {
+              "http_status": null,
+              "content_type": null,
+              "final_url": null,
+              "bytes": 0,
+              "range_honored": null,
+              "error": "GET: URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:12:18Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Authoritative district candidate for Veneto."
+    },
+    {
+      "id": "IT-SIC-001",
+      "jurisdiction": "Sicilia",
+      "agency": "Autorità di bacino del Distretto Idrografico della Sicilia",
+      "native_name": "Piano di Gestione del Rischio di Alluvioni",
+      "english_name": "Sicily Flood Risk Management Plan Maps",
+      "product_type": "district_hazard_map",
+      "flood_types": [
+        "fluvial",
+        "coastal",
+        "flash_flood"
+      ],
+      "scenarios": [
+        "frequent",
+        "medium",
+        "rare/extreme"
+      ],
+      "coverage": "Sicily",
+      "resolution_scale": null,
+      "formats": [
+        "Web GIS candidate",
+        "GIS download candidate",
+        "PDF"
+      ],
+      "license": "Sicilian regional public-sector terms; verify",
+      "delivery_mode": "portal+download",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/presidenza-regione/autorita-bacino-distretto-idrografico-sicilia",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/presidenza-regione/autorita-bacino-distretto-idrografico-sicilia",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "ambiguous",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/presidenza-regione/autorita-bacino-distretto-idrografico-sicilia",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "The page resolves, but dataset identity or usable access could not be confirmed.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/presidenza-regione/autorita-bacino-distretto-idrografico-sicilia",
+              "bytes": 65536,
+              "range_honored": false,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:12:21Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Authoritative Sicilian district entry point; maps may be organized by planning documents and web GIS."
+    },
+    {
+      "id": "IT-EEA-001",
+      "jurisdiction": "National fallback",
+      "agency": "European Environment Agency",
+      "native_name": "WISE Floods Directive",
+      "english_name": "WISE Floods Directive",
+      "product_type": "harmonized_floods_directive_data",
+      "flood_types": [
+        "fluvial",
+        "coastal"
+      ],
+      "scenarios": [
+        "reported Floods Directive scenarios"
+      ],
+      "coverage": "Italy",
+      "resolution_scale": null,
+      "formats": [
+        "Download",
+        "Web map",
+        "Service candidate"
+      ],
+      "license": "EEA reuse policy",
+      "delivery_mode": "download+viewer",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://water.europa.eu/freshwater/europe-freshwater/floods-directive",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": true,
+      "is_material": false,
+      "supersedes_id": null,
+      "verification": {
+        "status": "verified",
+        "http_status": 206,
+        "content_type": "text/html",
+        "final_url": "https://water.europa.eu/freshwater/europe-freshwater/floods-directive",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "confirmed",
+          "access_class": "dataset_page",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": true,
+          "selected_role": "primary",
+          "selected_url": "https://water.europa.eu/freshwater/europe-freshwater/floods-directive",
+          "confirmed": {
+            "flood_types": [
+              "fluvial",
+              "coastal"
+            ],
+            "scenarios": [],
+            "coverage": "Italy",
+            "formats": [
+              "Dataset-specific page"
+            ],
+            "license": "EEA reuse policy",
+            "last_update": null
+          },
+          "reason": "Official dataset-specific page or viewer confirmed during bounded page review.",
+          "links": {
+            "primary": {
+              "http_status": 206,
+              "content_type": "text/html",
+              "final_url": "https://water.europa.eu/freshwater/europe-freshwater/floods-directive",
+              "bytes": 65536,
+              "range_honored": true,
+              "error": null
+            }
+          },
+          "browser": {
+            "method": "official_page_inspection_fallback",
+            "page_title": "WISE Floods Directive",
+            "observed_product": "WISE Floods Directive",
+            "access_action": "Reviewed authoritative dataset page",
+            "final_url": "https://water.europa.eu/freshwater/europe-freshwater/floods-directive"
+          }
+        },
+        "checked_at": "2026-06-24T21:12:23Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "EU fallback only."
+    },
+    {
+      "id": "IT-MI-001",
+      "jurisdiction": "Comune di Milano (Lombardia)",
+      "agency": "Comune di Milano - PGT Componente Geologica",
+      "native_name": "Documento Semplificato del Rischio Idraulico / Carta del Rischio Idraulico",
+      "english_name": "Milan Simplified Hydraulic-Risk Document and Map",
+      "product_type": "surface_water_hazard_map",
+      "flood_types": [
+        "surface_water"
+      ],
+      "scenarios": [
+        "intense-rainfall pluvial flooding (surface runoff and ponding)",
+        "sewer-network overload",
+        "minor hydrographic network"
+      ],
+      "coverage": "Municipality of Milan; largest Italian core city",
+      "resolution_scale": null,
+      "formats": [
+        "PDF map",
+        "Shapefile",
+        "WMS candidate"
+      ],
+      "license": "Comune di Milano open-data terms; verify",
+      "delivery_mode": "portal+download",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://pgt.comune.milano.it/gall08-documento-semplificato-del-rischio-idraulico",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 403,
+        "content_type": "text/html",
+        "final_url": "https://pgt.comune.milano.it/gall08-documento-semplificato-del-rischio-idraulico",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "unavailable",
+          "access_class": "unavailable",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": null,
+          "selected_url": null,
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "The official page returned HTTP 403; public dataset usability could not be confirmed.",
+          "links": {
+            "primary": {
+              "http_status": 403,
+              "content_type": "text/html",
+              "final_url": "https://pgt.comune.milano.it/gall08-documento-semplificato-del-rischio-idraulico",
+              "bytes": 179,
+              "range_honored": false,
+              "error": "HTTPError: Forbidden"
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:12:24Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Milan statutory simplified hydraulic-risk document mapping pluvial/urban flooding from intense rainfall and sewer overload, distinct from the river/coastal PGRA maps. No national Italian pluvial product exists; this is a metropolitan-scale candidate."
+    }
+  ],
+  "discovery_metrics": {
+    "searches": 2,
+    "page_reads": 4,
+    "capability_probes": 0,
+    "consecutive_empty_searches": 0,
+    "stop_reason": "National IdroGEO and the five basin-district authorities covering the population-priority regions were identified."
+  },
+  "provenance": {
+    "discovered_by": "codex",
+    "discovered_at": "2026-06-24T16:08:24Z"
+  }
+}

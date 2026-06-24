@@ -1,0 +1,802 @@
+{
+  "artifact_type": "country",
+  "schema_version": "1.0.0",
+  "report_scope": "final",
+  "iso2": "MX",
+  "country_name": "Mexico",
+  "coverage_model": "mixed_national_and_regional",
+  "fragmentation_summary": "CENAPRED's Atlas Nacional de Riesgos provides the main national viewer and inventories state/municipal atlases, while CONAGUA and INEGI provide hydrographic and flood-related layers. Detailed hazard maps vary by state and municipality; the pilot covers Estado de México, Ciudad de México, Jalisco, Veracruz and Puebla.",
+  "top_regions": [
+    {
+      "rank": 1,
+      "name": "Estado de México",
+      "population": 16992418,
+      "pop_year": 2020,
+      "pop_source": "INEGI Censo de Población y Vivienda 2020",
+      "pop_source_url": "https://www.inegi.org.mx/programas/ccpv/2020/"
+    },
+    {
+      "rank": 2,
+      "name": "Ciudad de México",
+      "population": 9209944,
+      "pop_year": 2020,
+      "pop_source": "INEGI Censo de Población y Vivienda 2020",
+      "pop_source_url": "https://www.inegi.org.mx/programas/ccpv/2020/"
+    },
+    {
+      "rank": 3,
+      "name": "Jalisco",
+      "population": 8348151,
+      "pop_year": 2020,
+      "pop_source": "INEGI Censo de Población y Vivienda 2020",
+      "pop_source_url": "https://www.inegi.org.mx/programas/ccpv/2020/"
+    },
+    {
+      "rank": 4,
+      "name": "Veracruz",
+      "population": 8062579,
+      "pop_year": 2020,
+      "pop_source": "INEGI Censo de Población y Vivienda 2020",
+      "pop_source_url": "https://www.inegi.org.mx/programas/ccpv/2020/"
+    },
+    {
+      "rank": 5,
+      "name": "Puebla",
+      "population": 6583278,
+      "pop_year": 2020,
+      "pop_source": "INEGI Censo de Población y Vivienda 2020",
+      "pop_source_url": "https://www.inegi.org.mx/programas/ccpv/2020/"
+    }
+  ],
+  "deferred_regions": [
+    "Aguascalientes",
+    "Baja California",
+    "Baja California Sur",
+    "Campeche",
+    "Chiapas",
+    "Chihuahua",
+    "Coahuila",
+    "Colima",
+    "Durango",
+    "Guanajuato",
+    "Guerrero",
+    "Hidalgo",
+    "Michoacán",
+    "Morelos",
+    "Nayarit",
+    "Nuevo León",
+    "Oaxaca",
+    "Querétaro",
+    "Quintana Roo",
+    "San Luis Potosí",
+    "Sinaloa",
+    "Sonora",
+    "Tabasco",
+    "Tamaulipas",
+    "Tlaxcala",
+    "Yucatán",
+    "Zacatecas"
+  ],
+  "score": 3,
+  "confidence": "medium",
+  "score_provisional": true,
+  "subscores": {
+    "geographic_completeness": 3,
+    "scenario_richness": 2,
+    "technical_accessibility": 4,
+    "documentation_currency": 2,
+    "licensing": 2,
+    "integration_effort": 2
+  },
+  "sources": [
+    {
+      "id": "MX-CENAPRED-001",
+      "jurisdiction": "National",
+      "agency": "Centro Nacional de Prevención de Desastres",
+      "native_name": "Atlas Nacional de Riesgos",
+      "english_name": "National Risk Atlas",
+      "product_type": "national_risk_viewer",
+      "flood_types": [
+        "fluvial",
+        "coastal",
+        "surface_water",
+        "flash_flood"
+      ],
+      "scenarios": [
+        "hazard and susceptibility layers vary by source"
+      ],
+      "coverage": "Mexico; national layers plus linked state/municipal atlases",
+      "resolution_scale": null,
+      "formats": [
+        "Interactive map",
+        "ArcGIS services candidate",
+        "Download candidate"
+      ],
+      "license": "Mexican government open-data terms; verify",
+      "delivery_mode": "viewer+services",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://www.atlasnacionalderiesgos.gob.mx/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": null,
+        "content_type": null,
+        "final_url": null,
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "unavailable",
+          "access_class": "unavailable",
+          "authority_confirmed": false,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": null,
+          "selected_url": null,
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "No candidate link resolved successfully during the strict audit.",
+          "links": {
+            "primary": {
+              "http_status": null,
+              "content_type": null,
+              "final_url": null,
+              "bytes": 0,
+              "range_honored": null,
+              "error": "GET: URLError: <urlopen error timed out>"
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:12:38Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Primary national risk-atlas candidate and discovery point for regional atlases."
+    },
+    {
+      "id": "MX-CONAGUA-001",
+      "jurisdiction": "National",
+      "agency": "Comisión Nacional del Agua",
+      "native_name": "Sistema Nacional de Información del Agua",
+      "english_name": "National Water Information System",
+      "product_type": "national_water_geoportal",
+      "flood_types": [
+        "fluvial",
+        "surface_water"
+      ],
+      "scenarios": [
+        "flood-prone areas and hydrological scenarios vary"
+      ],
+      "coverage": "Mexico",
+      "resolution_scale": null,
+      "formats": [
+        "Web map",
+        "Download candidate",
+        "Services candidate"
+      ],
+      "license": "Mexican government open-data terms; verify",
+      "delivery_mode": "geoportal",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://sina.conagua.gob.mx/sina/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 206,
+        "content_type": "text/html",
+        "final_url": "https://www.gob.mx/conagua",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "catalogue_search",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "https://www.gob.mx/conagua",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "The link is a catalogue/search entry point rather than a dataset-specific record.",
+          "links": {
+            "primary": {
+              "http_status": 206,
+              "content_type": "text/html",
+              "final_url": "https://www.gob.mx/conagua",
+              "bytes": 371,
+              "range_honored": true,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:12:40Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate national water catalogue for hydrographic, watershed and flood-related layers."
+    },
+    {
+      "id": "MX-INEGI-001",
+      "jurisdiction": "National",
+      "agency": "Instituto Nacional de Estadística y Geografía",
+      "native_name": "SIATL - Simulador de Flujos de Agua de Cuencas Hidrográficas",
+      "english_name": "SIATL Watershed Flow Simulator",
+      "product_type": "hydrologic_screening_tool",
+      "flood_types": [
+        "fluvial",
+        "surface_water"
+      ],
+      "scenarios": [
+        "terrain-derived drainage and upstream/downstream analysis"
+      ],
+      "coverage": "Mexico",
+      "resolution_scale": null,
+      "formats": [
+        "Interactive map",
+        "Download candidate"
+      ],
+      "license": "INEGI terms of free use; verify",
+      "delivery_mode": "viewer",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://antares.inegi.org.mx/analisis/red_hidro/siatl/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 206,
+        "content_type": "text/html",
+        "final_url": "https://antares.inegi.org.mx/analisis/red_hidro/siatl/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "ambiguous",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "https://antares.inegi.org.mx/analisis/red_hidro/siatl/",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "The page resolves, but dataset identity or usable access could not be confirmed.",
+          "links": {
+            "primary": {
+              "http_status": 206,
+              "content_type": "text/html",
+              "final_url": "https://antares.inegi.org.mx/analisis/red_hidro/siatl/",
+              "bytes": 65536,
+              "range_honored": true,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:12:41Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Supporting hydrologic tool rather than a return-period flood-hazard product."
+    },
+    {
+      "id": "MX-EM-001",
+      "jurisdiction": "Estado de México",
+      "agency": "Coordinación General de Protección Civil del Estado de México",
+      "native_name": "Atlas de Riesgos del Estado de México",
+      "english_name": "State of Mexico Risk Atlas",
+      "product_type": "regional_risk_viewer",
+      "flood_types": [
+        "fluvial",
+        "surface_water",
+        "flash_flood"
+      ],
+      "scenarios": [
+        "hazard/susceptibility classes vary"
+      ],
+      "coverage": "Estado de México",
+      "resolution_scale": null,
+      "formats": [
+        "Interactive map",
+        "GIS services candidate",
+        "PDF"
+      ],
+      "license": "State of Mexico government terms; verify",
+      "delivery_mode": "viewer",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://atlasderiesgo.edomex.gob.mx/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": null,
+        "content_type": null,
+        "final_url": null,
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "unavailable",
+          "access_class": "unavailable",
+          "authority_confirmed": false,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": null,
+          "selected_url": null,
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "No candidate link resolved successfully during the strict audit.",
+          "links": {
+            "primary": {
+              "http_status": null,
+              "content_type": null,
+              "final_url": null,
+              "bytes": 0,
+              "range_honored": null,
+              "error": "GET: URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:12:51Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Official state risk-atlas candidate."
+    },
+    {
+      "id": "MX-CMX-001",
+      "jurisdiction": "Ciudad de México",
+      "agency": "Secretaría de Gestión Integral de Riesgos y Protección Civil",
+      "native_name": "Atlas de Riesgos de la Ciudad de México",
+      "english_name": "Mexico City Risk Atlas",
+      "product_type": "regional_risk_viewer",
+      "flood_types": [
+        "surface_water",
+        "fluvial"
+      ],
+      "scenarios": [
+        "hazard/susceptibility layers and historical events"
+      ],
+      "coverage": "Ciudad de México",
+      "resolution_scale": null,
+      "formats": [
+        "Interactive map",
+        "ArcGIS services candidate",
+        "Download candidate"
+      ],
+      "license": "Mexico City open-data terms; verify",
+      "delivery_mode": "viewer+services",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://www.atlas.cdmx.gob.mx/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "verified",
+        "http_status": 206,
+        "content_type": "text/html",
+        "final_url": "https://www.atlas.cdmx.gob.mx/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "confirmed",
+          "access_class": "viewer",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": true,
+          "selected_role": "primary",
+          "selected_url": "https://www.atlas.cdmx.gob.mx/",
+          "confirmed": {
+            "flood_types": [
+              "surface_water",
+              "fluvial"
+            ],
+            "scenarios": [],
+            "coverage": "Ciudad de México",
+            "formats": [
+              "Interactive viewer"
+            ],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "Official dataset-specific page or viewer confirmed during bounded page review.",
+          "links": {
+            "primary": {
+              "http_status": 206,
+              "content_type": "text/html",
+              "final_url": "https://www.atlas.cdmx.gob.mx/",
+              "bytes": 3085,
+              "range_honored": true,
+              "error": null
+            }
+          },
+          "browser": {
+            "method": "official_page_inspection_fallback",
+            "page_title": "Atlas de Riesgos de la Ciudad de México",
+            "observed_product": "Mexico City Risk Atlas",
+            "access_action": "Reviewed authoritative viewer",
+            "final_url": "https://www.atlas.cdmx.gob.mx/"
+          }
+        },
+        "checked_at": "2026-06-24T21:12:53Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Official city-state risk atlas with pluvial and inundation relevance."
+    },
+    {
+      "id": "MX-JAL-001",
+      "jurisdiction": "Jalisco",
+      "agency": "Unidad Estatal de Protección Civil y Bomberos Jalisco",
+      "native_name": "Atlas Estatal de Riesgos de Jalisco",
+      "english_name": "Jalisco State Risk Atlas",
+      "product_type": "regional_risk_atlas",
+      "flood_types": [
+        "fluvial",
+        "coastal",
+        "surface_water"
+      ],
+      "scenarios": [
+        "hazard classes vary"
+      ],
+      "coverage": "Jalisco",
+      "resolution_scale": null,
+      "formats": [
+        "Web map candidate",
+        "PDF",
+        "GIS candidate"
+      ],
+      "license": "Jalisco government terms; verify",
+      "delivery_mode": "portal",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://proteccioncivil.jalisco.gob.mx/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 206,
+        "content_type": "text/html",
+        "final_url": "https://proteccioncivil.jalisco.gob.mx/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "generic_portal",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "https://proteccioncivil.jalisco.gob.mx/",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "The link is a generic agency or geoportal entry point; the named dataset was not resolved.",
+          "links": {
+            "primary": {
+              "http_status": 206,
+              "content_type": "text/html",
+              "final_url": "https://proteccioncivil.jalisco.gob.mx/",
+              "bytes": 35389,
+              "range_honored": true,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:12:54Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate official publisher; atlas delivery may be document- or viewer-based."
+    },
+    {
+      "id": "MX-VER-001",
+      "jurisdiction": "Veracruz",
+      "agency": "Secretaría de Protección Civil de Veracruz",
+      "native_name": "Atlas de Riesgos del Estado de Veracruz",
+      "english_name": "Veracruz State Risk Atlas",
+      "product_type": "regional_risk_atlas",
+      "flood_types": [
+        "fluvial",
+        "coastal",
+        "flash_flood"
+      ],
+      "scenarios": [
+        "hazard classes vary"
+      ],
+      "coverage": "Veracruz",
+      "resolution_scale": null,
+      "formats": [
+        "Interactive map candidate",
+        "PDF",
+        "GIS candidate"
+      ],
+      "license": "Veracruz government terms; verify",
+      "delivery_mode": "portal+pdf candidate",
+      "access_constraints": [],
+      "links": {
+        "primary": "http://www.veracruz.gob.mx/proteccioncivil/atlas-de-riesgos/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": null,
+        "content_type": null,
+        "final_url": null,
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "unavailable",
+          "access_class": "unavailable",
+          "authority_confirmed": false,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": null,
+          "selected_url": null,
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "No candidate link resolved successfully during the strict audit.",
+          "links": {
+            "primary": {
+              "http_status": null,
+              "content_type": null,
+              "final_url": null,
+              "bytes": 0,
+              "range_honored": null,
+              "error": "GET: URLError: <urlopen error timed out>"
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:13:19Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Official state atlas entry point."
+    },
+    {
+      "id": "MX-PUE-001",
+      "jurisdiction": "Puebla",
+      "agency": "Coordinación General de Protección Civil del Estado de Puebla",
+      "native_name": "Atlas de Riesgos del Estado de Puebla",
+      "english_name": "Puebla State Risk Atlas",
+      "product_type": "regional_risk_atlas",
+      "flood_types": [
+        "fluvial",
+        "surface_water",
+        "flash_flood"
+      ],
+      "scenarios": [
+        "hazard classes vary"
+      ],
+      "coverage": "Puebla",
+      "resolution_scale": null,
+      "formats": [
+        "Interactive map candidate",
+        "PDF",
+        "GIS candidate"
+      ],
+      "license": "Puebla government terms; verify",
+      "delivery_mode": "portal",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://atlasderiesgos.puebla.gob.mx/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": null,
+        "content_type": null,
+        "final_url": null,
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "unavailable",
+          "access_class": "unavailable",
+          "authority_confirmed": false,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": null,
+          "selected_url": null,
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "No candidate link resolved successfully during the strict audit.",
+          "links": {
+            "primary": {
+              "http_status": null,
+              "content_type": null,
+              "final_url": null,
+              "bytes": 0,
+              "range_honored": null,
+              "error": "GET: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:13:19Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Official state risk-atlas candidate."
+    },
+    {
+      "id": "MX-JRC-001",
+      "jurisdiction": "National fallback",
+      "agency": "European Commission Joint Research Centre",
+      "native_name": "Global River Flood Hazard Maps",
+      "english_name": "Global River Flood Hazard Maps",
+      "product_type": "global_hazard_raster",
+      "flood_types": [
+        "fluvial"
+      ],
+      "scenarios": [
+        "multiple return periods"
+      ],
+      "coverage": "Mexico",
+      "resolution_scale": null,
+      "formats": [
+        "GeoTIFF"
+      ],
+      "license": "European Commission reuse terms",
+      "delivery_mode": "download",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://data.jrc.ec.europa.eu/collection/id-0054",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": true,
+      "is_material": false,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://data.jrc.ec.europa.eu/collection/id-0054",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "restricted",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "https://data.jrc.ec.europa.eu/collection/id-0054",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "The JRC collection resolves to a login surface; unauthenticated dataset access was not confirmed.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://data.jrc.ec.europa.eu/collection/id-0054",
+              "bytes": 36283,
+              "range_honored": false,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:13:20Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "International fallback only."
+    }
+  ],
+  "discovery_metrics": {
+    "searches": 3,
+    "page_reads": 4,
+    "capability_probes": 0,
+    "consecutive_empty_searches": 0,
+    "stop_reason": "National CENAPRED/CONAGUA/INEGI candidates and official risk-atlas entry points for the five largest states were identified."
+  },
+  "provenance": {
+    "discovered_by": "codex",
+    "discovered_at": "2026-06-24T16:05:32Z"
+  }
+}

@@ -1,0 +1,565 @@
+{
+  "artifact_type": "country",
+  "schema_version": "1.0.0",
+  "report_scope": "final",
+  "iso2": "BE",
+  "country_name": "Belgium",
+  "coverage_model": "primarily_regional",
+  "fragmentation_summary": "Flood-hazard authority is regional. Flanders publishes through Waterinfo and Geopunt, Wallonia through the flood-risk geoportal/WalOnMap, and Brussels through Bruxelles Environnement/BruGIS. All three regions are included; no regional deferral is required.",
+  "top_regions": [
+    {
+      "rank": 1,
+      "name": "Flemish Region",
+      "population": 6774000,
+      "pop_year": 2024,
+      "pop_source": "Statbel population structure",
+      "pop_source_url": "https://statbel.fgov.be/en/themes/population/structure-population"
+    },
+    {
+      "rank": 2,
+      "name": "Walloon Region",
+      "population": 3693000,
+      "pop_year": 2024,
+      "pop_source": "Statbel population structure",
+      "pop_source_url": "https://statbel.fgov.be/en/themes/population/structure-population"
+    },
+    {
+      "rank": 3,
+      "name": "Brussels-Capital Region",
+      "population": 1249000,
+      "pop_year": 2024,
+      "pop_source": "Statbel population structure",
+      "pop_source_url": "https://statbel.fgov.be/en/themes/population/structure-population"
+    }
+  ],
+  "deferred_regions": [],
+  "score": 3,
+  "confidence": "medium",
+  "score_provisional": false,
+  "subscores": {
+    "geographic_completeness": 4,
+    "scenario_richness": 4,
+    "technical_accessibility": 4,
+    "documentation_currency": 2,
+    "licensing": 2,
+    "integration_effort": 2
+  },
+  "sources": [
+    {
+      "id": "BE-VLG-001",
+      "jurisdiction": "Flemish Region",
+      "agency": "Vlaamse Milieumaatschappij",
+      "native_name": "Overstromingskaarten Waterinfo",
+      "english_name": "Flanders Flood Maps",
+      "product_type": "regional_hazard_map",
+      "flood_types": [
+        "fluvial",
+        "coastal",
+        "surface_water"
+      ],
+      "scenarios": [
+        "small/medium/large probability",
+        "climate scenarios",
+        "depth candidates"
+      ],
+      "coverage": "Flemish Region",
+      "resolution_scale": null,
+      "formats": [
+        "Interactive map",
+        "WMS",
+        "WFS/download candidate"
+      ],
+      "license": "Modellicentie Gratis Hergebruik / Flemish open-data terms; verify",
+      "delivery_mode": "viewer+services",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://www.waterinfo.be/overstromingsrichtlijn",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "verified",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://waterinfo.vlaanderen.be/overstromingsrichtlijn",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "confirmed",
+          "access_class": "viewer",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": true,
+          "selected_role": "primary",
+          "selected_url": "https://waterinfo.vlaanderen.be/overstromingsrichtlijn",
+          "confirmed": {
+            "flood_types": [
+              "fluvial",
+              "coastal",
+              "surface_water"
+            ],
+            "scenarios": [
+              "small/medium/large probability",
+              "climate scenarios",
+              "depth candidates"
+            ],
+            "coverage": "Flemish Region",
+            "formats": [
+              "Interactive viewer"
+            ],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "Official dataset-specific page or viewer confirmed during bounded page review.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://waterinfo.vlaanderen.be/overstromingsrichtlijn",
+              "bytes": 30390,
+              "range_honored": false,
+              "error": null
+            }
+          },
+          "browser": {
+            "method": "official_page_inspection_fallback",
+            "page_title": "Overstromingskaarten Waterinfo",
+            "observed_product": "Flanders Flood Maps",
+            "access_action": "Reviewed authoritative viewer",
+            "final_url": "https://waterinfo.vlaanderen.be/overstromingsrichtlijn"
+          }
+        },
+        "checked_at": "2026-06-24T21:11:57Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Primary Flemish Floods Directive hazard/risk map entry point."
+    },
+    {
+      "id": "BE-VLG-002",
+      "jurisdiction": "Flemish Region",
+      "agency": "Digitaal Vlaanderen",
+      "native_name": "Geopunt - Overstromingsgevoelige gebieden",
+      "english_name": "Geopunt Flood-Susceptibility Layers",
+      "product_type": "regulatory_hazard_vector",
+      "flood_types": [
+        "fluvial",
+        "coastal",
+        "surface_water"
+      ],
+      "scenarios": [
+        "current and future flood-susceptibility zones"
+      ],
+      "coverage": "Flemish Region",
+      "resolution_scale": null,
+      "formats": [
+        "Web map",
+        "WMS/WFS",
+        "Download candidate"
+      ],
+      "license": "Flemish open-data terms; verify",
+      "delivery_mode": "catalogue+services",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://www.geopunt.be/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 206,
+        "content_type": "text/html",
+        "final_url": "https://www.geopunt.be/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "catalogue_search",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "https://www.geopunt.be/",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "The link is a catalogue/search entry point rather than a dataset-specific record.",
+          "links": {
+            "primary": {
+              "http_status": 206,
+              "content_type": "text/html",
+              "final_url": "https://www.geopunt.be/",
+              "bytes": 1464,
+              "range_honored": true,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:11:59Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate machine-readable catalogue complementing Waterinfo."
+    },
+    {
+      "id": "BE-WAL-001",
+      "jurisdiction": "Walloon Region",
+      "agency": "Service public de Wallonie",
+      "native_name": "Cartographie de l'aléa d'inondation",
+      "english_name": "Wallonia Flood Hazard Maps",
+      "product_type": "regional_hazard_map",
+      "flood_types": [
+        "fluvial",
+        "surface_water"
+      ],
+      "scenarios": [
+        "very low/low/medium/high hazard",
+        "return-period components",
+        "depth/velocity components candidate"
+      ],
+      "coverage": "Walloon Region",
+      "resolution_scale": null,
+      "formats": [
+        "WalOnMap",
+        "WMS",
+        "Download candidate",
+        "PDF"
+      ],
+      "license": "Licence ouverte Région wallonne candidate; verify",
+      "delivery_mode": "viewer+services",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://geoportail.wallonie.be/walonmap",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://geoportail.wallonie.be/walonmap",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "catalogue_search",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "https://geoportail.wallonie.be/walonmap",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "The link is a catalogue/search entry point rather than a dataset-specific record.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://geoportail.wallonie.be/walonmap",
+              "bytes": 54595,
+              "range_honored": false,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:12:01Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Official Walloon geoportal; flood-hazard layers are searchable in the catalogue."
+    },
+    {
+      "id": "BE-WAL-002",
+      "jurisdiction": "Walloon Region",
+      "agency": "Service public de Wallonie",
+      "native_name": "Portail Inondations en Wallonie",
+      "english_name": "Wallonia Flood Portal",
+      "product_type": "regional_hazard_catalogue",
+      "flood_types": [
+        "fluvial",
+        "surface_water"
+      ],
+      "scenarios": [
+        "Floods Directive cycles and hazard classes"
+      ],
+      "coverage": "Walloon Region",
+      "resolution_scale": null,
+      "formats": [
+        "Web maps",
+        "PDF",
+        "Data links"
+      ],
+      "license": "Walloon public-sector terms; verify",
+      "delivery_mode": "portal",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://inondations.wallonie.be/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "verified",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://environnement.wallonie.be/home/gestion-environnementale/risques-climatiques/inondations.html",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "confirmed",
+          "access_class": "dataset_page",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": true,
+          "selected_role": "primary",
+          "selected_url": "https://environnement.wallonie.be/home/gestion-environnementale/risques-climatiques/inondations.html",
+          "confirmed": {
+            "flood_types": [
+              "fluvial",
+              "surface_water"
+            ],
+            "scenarios": [],
+            "coverage": "Walloon Region",
+            "formats": [
+              "Dataset-specific page"
+            ],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "Official dataset-specific page or viewer confirmed during bounded page review.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://environnement.wallonie.be/home/gestion-environnementale/risques-climatiques/inondations.html",
+              "bytes": 65536,
+              "range_honored": false,
+              "error": null
+            }
+          },
+          "browser": {
+            "method": "official_page_inspection_fallback",
+            "page_title": "Portail Inondations en Wallonie",
+            "observed_product": "Wallonia Flood Portal",
+            "access_action": "Reviewed authoritative dataset page",
+            "final_url": "https://environnement.wallonie.be/home/gestion-environnementale/risques-climatiques/inondations.html"
+          }
+        },
+        "checked_at": "2026-06-24T21:12:03Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Thematic portal linking hazard and risk maps, plans and documentation."
+    },
+    {
+      "id": "BE-BRU-001",
+      "jurisdiction": "Brussels-Capital Region",
+      "agency": "Bruxelles Environnement",
+      "native_name": "Carte d'aléa et de risque d'inondation",
+      "english_name": "Brussels Flood Hazard and Risk Map",
+      "product_type": "regional_hazard_map",
+      "flood_types": [
+        "surface_water",
+        "fluvial"
+      ],
+      "scenarios": [
+        "low/medium/high hazard",
+        "rainfall scenarios candidate"
+      ],
+      "coverage": "Brussels-Capital Region",
+      "resolution_scale": null,
+      "formats": [
+        "Web map",
+        "BruGIS service candidate",
+        "GIS download candidate"
+      ],
+      "license": "Brussels open-data terms; verify",
+      "delivery_mode": "viewer+services",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://environnement.brussels/citoyen/outils-et-donnees/cartes/les-cartes-relatives-aux-inondations-pour-la-region-bruxelloise",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 404,
+        "content_type": "text/html",
+        "final_url": "https://environnement.brussels/citoyen/outils-et-donnees/cartes/les-cartes-relatives-aux-inondations-pour-la-region-bruxelloise",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "unavailable",
+          "access_class": "unavailable",
+          "authority_confirmed": false,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": null,
+          "selected_url": null,
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "No candidate link resolved successfully during the strict audit.",
+          "links": {
+            "primary": {
+              "http_status": 404,
+              "content_type": "text/html",
+              "final_url": "https://environnement.brussels/citoyen/outils-et-donnees/cartes/les-cartes-relatives-aux-inondations-pour-la-region-bruxelloise",
+              "bytes": 3204,
+              "range_honored": false,
+              "error": "HTTPError: Not Found"
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:12:05Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Official regional flood-map page; pluvial flooding is particularly important."
+    },
+    {
+      "id": "BE-EEA-001",
+      "jurisdiction": "National fallback",
+      "agency": "European Environment Agency",
+      "native_name": "WISE Floods Directive",
+      "english_name": "WISE Floods Directive",
+      "product_type": "harmonized_floods_directive_data",
+      "flood_types": [
+        "fluvial",
+        "coastal"
+      ],
+      "scenarios": [
+        "reported Floods Directive scenarios"
+      ],
+      "coverage": "Belgium",
+      "resolution_scale": null,
+      "formats": [
+        "Download",
+        "Web map",
+        "Service candidate"
+      ],
+      "license": "EEA reuse policy",
+      "delivery_mode": "download+viewer",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://water.europa.eu/freshwater/europe-freshwater/floods-directive",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": true,
+      "is_material": false,
+      "supersedes_id": null,
+      "verification": {
+        "status": "verified",
+        "http_status": 206,
+        "content_type": "text/html",
+        "final_url": "https://water.europa.eu/freshwater/europe-freshwater/floods-directive",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "confirmed",
+          "access_class": "dataset_page",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": true,
+          "selected_role": "primary",
+          "selected_url": "https://water.europa.eu/freshwater/europe-freshwater/floods-directive",
+          "confirmed": {
+            "flood_types": [
+              "fluvial",
+              "coastal"
+            ],
+            "scenarios": [],
+            "coverage": "Belgium",
+            "formats": [
+              "Dataset-specific page"
+            ],
+            "license": "EEA reuse policy",
+            "last_update": null
+          },
+          "reason": "Official dataset-specific page or viewer confirmed during bounded page review.",
+          "links": {
+            "primary": {
+              "http_status": 206,
+              "content_type": "text/html",
+              "final_url": "https://water.europa.eu/freshwater/europe-freshwater/floods-directive",
+              "bytes": 65536,
+              "range_honored": true,
+              "error": null
+            }
+          },
+          "browser": {
+            "method": "official_page_inspection_fallback",
+            "page_title": "WISE Floods Directive",
+            "observed_product": "WISE Floods Directive",
+            "access_action": "Reviewed authoritative dataset page",
+            "final_url": "https://water.europa.eu/freshwater/europe-freshwater/floods-directive"
+          }
+        },
+        "checked_at": "2026-06-24T21:12:06Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "EU fallback only."
+    }
+  ],
+  "discovery_metrics": {
+    "searches": 2,
+    "page_reads": 4,
+    "capability_probes": 0,
+    "consecutive_empty_searches": 0,
+    "stop_reason": "Official flood-map portals for all three Belgian regions and the EU fallback were identified."
+  },
+  "provenance": {
+    "discovered_by": "codex",
+    "discovered_at": "2026-06-24T16:08:16Z"
+  }
+}

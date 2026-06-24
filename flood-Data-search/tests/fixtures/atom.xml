@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <updated>2026-06-02T00:00:00Z</updated>
+  <entry>
+    <title>Flood extent package</title>
+    <link href="https://example.test/flood.zip" type="application/zip"/>
+  </entry>
+</feed>

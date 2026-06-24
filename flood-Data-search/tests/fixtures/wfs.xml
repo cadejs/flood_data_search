@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WFS_Capabilities version="2.0.0">
+  <FeatureTypeList>
+    <FeatureType>
+      <Name>flood:extent</Name>
+      <DefaultCRS>urn:ogc:def:crs:EPSG::4326</DefaultCRS>
+      <WGS84BoundingBox>
+        <LowerCorner>-10 49</LowerCorner>
+        <UpperCorner>2 61</UpperCorner>
+      </WGS84BoundingBox>
+    </FeatureType>
+  </FeatureTypeList>
+  <OperationsMetadata>
+    <Parameter name="outputFormat">
+      <Value>application/json</Value>
+      <Value>text/xml; subtype=gml/3.2</Value>
+    </Parameter>
+  </OperationsMetadata>
+</WFS_Capabilities>

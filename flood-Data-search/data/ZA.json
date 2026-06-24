@@ -1,0 +1,775 @@
+{
+  "artifact_type": "country",
+  "schema_version": "1.0.0",
+  "report_scope": "final",
+  "iso2": "ZA",
+  "country_name": "South Africa",
+  "coverage_model": "mixed_national_and_regional",
+  "fragmentation_summary": "National risk, hydrology and geospatial platforms provide broad susceptibility, event and water-resource context, while regulatory floodlines and detailed hydraulic maps are mainly produced by provinces and municipalities. The pilot covers Gauteng, KwaZulu-Natal, Western Cape, Eastern Cape and Limpopo.",
+  "top_regions": [
+    {
+      "rank": 1,
+      "name": "Gauteng",
+      "population": 15100000,
+      "pop_year": 2022,
+      "pop_source": "Statistics South Africa Census 2022",
+      "pop_source_url": "https://census.statssa.gov.za/"
+    },
+    {
+      "rank": 2,
+      "name": "KwaZulu-Natal",
+      "population": 12420000,
+      "pop_year": 2022,
+      "pop_source": "Statistics South Africa Census 2022",
+      "pop_source_url": "https://census.statssa.gov.za/"
+    },
+    {
+      "rank": 3,
+      "name": "Western Cape",
+      "population": 7430000,
+      "pop_year": 2022,
+      "pop_source": "Statistics South Africa Census 2022",
+      "pop_source_url": "https://census.statssa.gov.za/"
+    },
+    {
+      "rank": 4,
+      "name": "Eastern Cape",
+      "population": 7230000,
+      "pop_year": 2022,
+      "pop_source": "Statistics South Africa Census 2022",
+      "pop_source_url": "https://census.statssa.gov.za/"
+    },
+    {
+      "rank": 5,
+      "name": "Limpopo",
+      "population": 6570000,
+      "pop_year": 2022,
+      "pop_source": "Statistics South Africa Census 2022",
+      "pop_source_url": "https://census.statssa.gov.za/"
+    }
+  ],
+  "deferred_regions": [
+    "Free State",
+    "Mpumalanga",
+    "North West",
+    "Northern Cape"
+  ],
+  "score": 1,
+  "confidence": "low",
+  "score_provisional": true,
+  "subscores": {
+    "geographic_completeness": 1,
+    "scenario_richness": 1,
+    "technical_accessibility": 1,
+    "documentation_currency": 2,
+    "licensing": 2,
+    "integration_effort": 1
+  },
+  "sources": [
+    {
+      "id": "ZA-SARVA-001",
+      "jurisdiction": "National",
+      "agency": "South African Environmental Observation Network / government partners",
+      "native_name": "South African Risk and Vulnerability Atlas",
+      "english_name": "South African Risk and Vulnerability Atlas",
+      "product_type": "national_risk_atlas",
+      "flood_types": [
+        "fluvial",
+        "coastal",
+        "surface_water"
+      ],
+      "scenarios": [
+        "susceptibility/risk indicators and climate scenarios vary"
+      ],
+      "coverage": "South Africa",
+      "resolution_scale": null,
+      "formats": [
+        "Interactive atlas",
+        "GIS layers candidate",
+        "Reports"
+      ],
+      "license": "South African public-sector/research terms; verify",
+      "delivery_mode": "viewer+download candidate",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://sarva.saeon.ac.za/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://sarva.saeon.ac.za/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "generic_portal",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "https://sarva.saeon.ac.za/",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "The link is a generic agency or geoportal entry point; the named dataset was not resolved.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://sarva.saeon.ac.za/",
+              "bytes": 65536,
+              "range_honored": false,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:13:31Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "National risk-atlas candidate; distinguish susceptibility/risk indicators from modelled hazard extents."
+    },
+    {
+      "id": "ZA-DWS-001",
+      "jurisdiction": "National",
+      "agency": "Department of Water and Sanitation",
+      "native_name": "Hydrological Services and Flood Studies",
+      "english_name": "DWS Hydrological and Flood Studies",
+      "product_type": "national_water_catalogue",
+      "flood_types": [
+        "fluvial"
+      ],
+      "scenarios": [
+        "design floods and catchment studies vary"
+      ],
+      "coverage": "South Africa; study/catchment dependent",
+      "resolution_scale": null,
+      "formats": [
+        "Hydrology portal",
+        "Reports",
+        "GIS candidate"
+      ],
+      "license": "South African government terms; verify",
+      "delivery_mode": "portal+reports",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://www.dws.gov.za/Hydrology/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 403,
+        "content_type": "text/html",
+        "final_url": "https://www.dws.gov.za/Hydrology/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "unavailable",
+          "access_class": "unavailable",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": null,
+          "selected_url": null,
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "The official page returned HTTP 403; public dataset usability could not be confirmed.",
+          "links": {
+            "primary": {
+              "http_status": 403,
+              "content_type": "text/html",
+              "final_url": "https://www.dws.gov.za/Hydrology/",
+              "bytes": 239,
+              "range_honored": false,
+              "error": "HTTPError: Forbidden"
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:13:34Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate national authority for hydrological design data and flood studies; public polygons may be limited."
+    },
+    {
+      "id": "ZA-NDMC-001",
+      "jurisdiction": "National",
+      "agency": "National Disaster Management Centre",
+      "native_name": "NDMC GIS Portal / Risk Information",
+      "english_name": "National Disaster Risk GIS",
+      "product_type": "national_risk_geoportal",
+      "flood_types": [
+        "fluvial",
+        "coastal",
+        "surface_water",
+        "flash_flood"
+      ],
+      "scenarios": [
+        "risk/susceptibility layers vary"
+      ],
+      "coverage": "South Africa",
+      "resolution_scale": null,
+      "formats": [
+        "ArcGIS portal candidate",
+        "Reports",
+        "Risk profiles"
+      ],
+      "license": "South African government terms; verify",
+      "delivery_mode": "geoportal+documents",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://www.ndmc.gov.za/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://www.ndmc.gov.za/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "generic_portal",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "https://www.ndmc.gov.za/",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "The link is a generic agency or geoportal entry point; the named dataset was not resolved.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://www.ndmc.gov.za/",
+              "bytes": 44953,
+              "range_honored": false,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:13:37Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate national disaster-risk discovery point."
+    },
+    {
+      "id": "ZA-GP-001",
+      "jurisdiction": "Gauteng",
+      "agency": "Gauteng Provincial Government / municipalities",
+      "native_name": "Gauteng GIS floodline and risk layers",
+      "english_name": "Gauteng Floodline and Risk Geodata",
+      "product_type": "regional_hazard_catalogue",
+      "flood_types": [
+        "fluvial",
+        "surface_water"
+      ],
+      "scenarios": [
+        "municipal 1:50/1:100-year floodlines candidate"
+      ],
+      "coverage": "Gauteng; detailed authority often municipal",
+      "resolution_scale": null,
+      "formats": [
+        "Web GIS",
+        "ArcGIS services candidate",
+        "PDF"
+      ],
+      "license": "Gauteng government terms; verify",
+      "delivery_mode": "geoportal",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://gis.gauteng.gov.za/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": null,
+        "content_type": null,
+        "final_url": null,
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "unavailable",
+          "access_class": "unavailable",
+          "authority_confirmed": false,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": null,
+          "selected_url": null,
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "No candidate link resolved successfully during the strict audit.",
+          "links": {
+            "primary": {
+              "http_status": null,
+              "content_type": null,
+              "final_url": null,
+              "bytes": 0,
+              "range_honored": null,
+              "error": "GET: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:13:38Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Official provincial GIS candidate; Johannesburg, Tshwane and Ekurhuleni may publish separate floodline data."
+    },
+    {
+      "id": "ZA-KZN-001",
+      "jurisdiction": "KwaZulu-Natal",
+      "agency": "KwaZulu-Natal Provincial Disaster Management Centre / eThekwini Municipality",
+      "native_name": "KwaZulu-Natal flood risk and floodline maps",
+      "english_name": "KwaZulu-Natal Flood Risk and Floodline Maps",
+      "product_type": "regional_hazard_catalogue",
+      "flood_types": [
+        "fluvial",
+        "coastal",
+        "surface_water",
+        "flash_flood"
+      ],
+      "scenarios": [
+        "municipal design floodlines and risk assessments"
+      ],
+      "coverage": "KwaZulu-Natal; strongest detailed candidate in eThekwini",
+      "resolution_scale": null,
+      "formats": [
+        "Municipal GIS",
+        "PDF risk profiles",
+        "Data request candidate"
+      ],
+      "license": "Provincial/municipal terms; verify",
+      "delivery_mode": "portal+request candidate",
+      "access_constraints": [
+        "request_only"
+      ],
+      "links": {
+        "primary": "https://www.kzncogta.gov.za/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://www.kzncogta.gov.za/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "request_only",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "https://www.kzncogta.gov.za/",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "Access requires a data request; no public dataset path was confirmed.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://www.kzncogta.gov.za/",
+              "bytes": 65536,
+              "range_honored": false,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:13:43Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate provincial authority; detailed public GIS is likely fragmented by municipality."
+    },
+    {
+      "id": "ZA-WC-001",
+      "jurisdiction": "Western Cape",
+      "agency": "Western Cape Government / Department of Local Government",
+      "native_name": "Western Cape Disaster Risk and Flood Mapping",
+      "english_name": "Western Cape Flood Risk Mapping",
+      "product_type": "regional_hazard_catalogue",
+      "flood_types": [
+        "fluvial",
+        "coastal",
+        "surface_water"
+      ],
+      "scenarios": [
+        "municipal/catchment scenarios"
+      ],
+      "coverage": "Western Cape",
+      "resolution_scale": null,
+      "formats": [
+        "Risk maps",
+        "GIS portal candidate",
+        "PDF",
+        "Data request"
+      ],
+      "license": "Western Cape Government open-data terms; verify",
+      "delivery_mode": "portal+download candidate",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://www.westerncape.gov.za/general-publication/disaster-management",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 404,
+        "content_type": "text/html",
+        "final_url": "https://www.westerncape.gov.za/general-publication/disaster-management",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "unavailable",
+          "access_class": "unavailable",
+          "authority_confirmed": false,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": null,
+          "selected_url": null,
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "No candidate link resolved successfully during the strict audit.",
+          "links": {
+            "primary": {
+              "http_status": 404,
+              "content_type": "text/html",
+              "final_url": "https://www.westerncape.gov.za/general-publication/disaster-management",
+              "bytes": 65536,
+              "range_honored": false,
+              "error": "HTTPError: Not Found"
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:13:47Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate provincial discovery point; City of Cape Town and municipalities may hold detailed floodlines."
+    },
+    {
+      "id": "ZA-EC-001",
+      "jurisdiction": "Eastern Cape",
+      "agency": "Eastern Cape Provincial Disaster Management Centre",
+      "native_name": "Eastern Cape Disaster Risk Profile and Flood Maps",
+      "english_name": "Eastern Cape Flood Risk Maps",
+      "product_type": "regional_hazard_documents",
+      "flood_types": [
+        "fluvial",
+        "coastal",
+        "flash_flood"
+      ],
+      "scenarios": [
+        "district risk classes and studies"
+      ],
+      "coverage": "Eastern Cape",
+      "resolution_scale": null,
+      "formats": [
+        "PDF",
+        "GIS candidate",
+        "Data request"
+      ],
+      "license": "Eastern Cape government terms; verify",
+      "delivery_mode": "portal+pdf candidate",
+      "access_constraints": [
+        "request_only"
+      ],
+      "links": {
+        "primary": "https://www.eccogta.gov.za/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://www.eccogta.gov.za/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "request_only",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "https://www.eccogta.gov.za/",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "Access requires a data request; no public dataset path was confirmed.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://www.eccogta.gov.za/",
+              "bytes": 65536,
+              "range_honored": false,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:13:53Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate provincial source; detailed machine-readable mapping is uncertain."
+    },
+    {
+      "id": "ZA-LP-001",
+      "jurisdiction": "Limpopo",
+      "agency": "Limpopo Provincial Disaster Management Centre",
+      "native_name": "Limpopo Disaster Risk Profile and Flood Maps",
+      "english_name": "Limpopo Flood Risk Maps",
+      "product_type": "regional_hazard_documents",
+      "flood_types": [
+        "fluvial",
+        "flash_flood"
+      ],
+      "scenarios": [
+        "district risk classes and studies"
+      ],
+      "coverage": "Limpopo",
+      "resolution_scale": null,
+      "formats": [
+        "PDF",
+        "GIS candidate",
+        "Data request"
+      ],
+      "license": "Limpopo government terms; verify",
+      "delivery_mode": "portal+pdf candidate",
+      "access_constraints": [
+        "request_only"
+      ],
+      "links": {
+        "primary": "https://www.coghsta.limpopo.gov.za/",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": false,
+      "is_material": true,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://www.coghsta.limpopo.gov.za/",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "request_only",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": false,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "https://www.coghsta.limpopo.gov.za/",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "Access requires a data request; no public dataset path was confirmed.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://www.coghsta.limpopo.gov.za/",
+              "bytes": 49203,
+              "range_honored": false,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:13:56Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "Candidate provincial source; detailed machine-readable mapping is uncertain."
+    },
+    {
+      "id": "ZA-JRC-001",
+      "jurisdiction": "National fallback",
+      "agency": "European Commission Joint Research Centre",
+      "native_name": "Global River Flood Hazard Maps",
+      "english_name": "Global River Flood Hazard Maps",
+      "product_type": "global_hazard_raster",
+      "flood_types": [
+        "fluvial"
+      ],
+      "scenarios": [
+        "multiple return periods"
+      ],
+      "coverage": "South Africa",
+      "resolution_scale": null,
+      "formats": [
+        "GeoTIFF"
+      ],
+      "license": "European Commission reuse terms",
+      "delivery_mode": "download",
+      "access_constraints": [],
+      "links": {
+        "primary": "https://data.jrc.ec.europa.eu/collection/id-0054",
+        "service": null,
+        "download": null
+      },
+      "last_update": null,
+      "is_fallback": true,
+      "is_material": false,
+      "supersedes_id": null,
+      "verification": {
+        "status": "failed",
+        "http_status": 200,
+        "content_type": "text/html",
+        "final_url": "https://data.jrc.ec.europa.eu/collection/id-0054",
+        "evidence": {
+          "standard": "dataset_resolved_v1",
+          "outcome": "lead",
+          "access_class": "restricted",
+          "authority_confirmed": true,
+          "dataset_identity_confirmed": true,
+          "human_usable": false,
+          "selected_role": "primary",
+          "selected_url": "https://data.jrc.ec.europa.eu/collection/id-0054",
+          "confirmed": {
+            "flood_types": [],
+            "scenarios": [],
+            "coverage": null,
+            "formats": [],
+            "license": null,
+            "last_update": null
+          },
+          "reason": "The JRC collection resolves to a login surface; unauthenticated dataset access was not confirmed.",
+          "links": {
+            "primary": {
+              "http_status": 200,
+              "content_type": "text/html",
+              "final_url": "https://data.jrc.ec.europa.eu/collection/id-0054",
+              "bytes": 36273,
+              "range_honored": false,
+              "error": null
+            }
+          }
+        },
+        "checked_at": "2026-06-24T21:13:58Z",
+        "checked_by": "claude_code"
+      },
+      "provenance": {
+        "produced_by": "codex",
+        "round": 1
+      },
+      "notes": "International fallback only."
+    }
+  ],
+  "discovery_metrics": {
+    "searches": 2,
+    "page_reads": 3,
+    "capability_probes": 0,
+    "consecutive_empty_searches": 0,
+    "stop_reason": "National risk/hydrology portals and official provincial or metropolitan discovery points for the five largest provinces were identified."
+  },
+  "provenance": {
+    "discovered_by": "codex",
+    "discovered_at": "2026-06-24T16:13:36Z"
+  }
+}
