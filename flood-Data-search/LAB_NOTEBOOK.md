@@ -6379,3 +6379,224 @@ Report redesigned from a scored ranking into an actionable workbook (presentatio
 - added: ["how_to_use", "country_overview_factual", "what_we_have", "what_comes_next"]
 - kept in data: ["score", "subscores", "confidence"]
 - removed: ["composite_score", "subscores_table", "scoring_method_section"]
+
+## 2026-06-25T15:08:53Z — verification · FR
+
+**Actor:** claude_code
+
+Ran a bounded URL check.
+
+- bytes: 63524
+- content type: text/html
+- final url: https://www.georisques.gouv.fr/donnees/bases-de-donnees
+- head status: 200
+- http status: 200
+- range honored: False
+
+## 2026-06-25T15:08:57Z — verification · MY
+
+**Actor:** claude_code
+
+Ran a bounded URL check.
+
+- bytes: 15598
+- content type: text/html
+- final url: https://publicinfobanjir.water.gov.my/
+- head status: 200
+- http status: 206
+- range honored: True
+
+## 2026-06-25T15:09:45Z — verification · FR
+
+**Actor:** claude_code
+
+Ran a bounded URL check.
+
+- bytes: 592
+- content type: application/json
+- final url: https://www.georisques.gouv.fr/api/v1/gaspar/azi?rayon=1000&latlon=2.3522,48.8566&page=1&page_size=1
+- head status: 200
+- http status: 200
+- range honored: False
+
+## 2026-06-25T15:09:47Z — verification · FR
+
+**Actor:** claude_code
+
+Ran a bounded URL check.
+
+- bytes: 103
+- content type: application/json
+- final url: https://georisques.gouv.fr/api/v1/zonage_inondation?code_insee=75056
+- head status: 404
+- http status: 404
+- range honored: False
+
+## 2026-06-25T15:09:48Z — verification · FR
+
+**Actor:** claude_code
+
+Ran a bounded URL check.
+
+- bytes: 592
+- content type: application/json
+- final url: https://www.georisques.gouv.fr/api/v1/gaspar/azi?code_insee=75056
+- head status: 200
+- http status: 200
+- range honored: False
+
+## 2026-06-25T15:09:51Z — verification · MY
+
+**Actor:** claude_code
+
+Ran a bounded URL check.
+
+- bytes: 57962
+- content type: text/html
+- final url: https://publicinfobanjir.water.gov.my/arcgis/rest/services?f=json
+- head status: 404
+- http status: 404
+- range honored: False
+
+## 2026-06-25T15:09:53Z — verification · MY
+
+**Actor:** claude_code
+
+Ran a bounded URL check.
+
+- bytes: 56975
+- content type: application/json
+- final url: https://publicinfobanjir.water.gov.my/wp-json/
+- head status: 200
+- http status: 206
+- range honored: True
+
+## 2026-06-25T15:09:55Z — verification · MY
+
+**Actor:** claude_code
+
+Ran a bounded URL check.
+
+- bytes: 57962
+- content type: text/html
+- final url: https://publicinfobanjir.water.gov.my/hujan/data/hujan_table.php
+- head status: 404
+- http status: 404
+- range honored: False
+
+## 2026-06-25T15:12:03Z — verification · TH
+
+**Actor:** claude_code
+
+Ran a bounded URL check.
+
+- bytes: 3123
+- content type: text/html
+- final url: https://www.thaiwater.net/
+- head status: 200
+- http status: 200
+- range honored: False
+
+## 2026-06-25T15:12:06Z — verification · TH
+
+**Actor:** claude_code
+
+Ran a bounded URL check.
+
+- bytes: 34
+- content type: text/plain
+- final url: https://api-v3.thaiwater.net/api/v1/thaiwater30/provinces
+- head status: 404
+- http status: 404
+- range honored: False
+
+## 2026-06-25T15:12:07Z — verification · TH
+
+**Actor:** claude_code
+
+Ran a bounded URL check.
+
+- bytes: 3123
+- content type: text/html
+- final url: https://www.thaiwater.net/api/v1/flood
+- head status: 200
+- http status: 200
+- range honored: False
+
+## 2026-06-25T15:12:10Z — verification · KR
+
+**Actor:** claude_code
+
+Ran a bounded URL check.
+
+- bytes: 1410
+- content type: text/html
+- final url: https://www.safemap.go.kr/
+- head status: 400
+- http status: 200
+- range honored: False
+
+## 2026-06-25T15:12:11Z — verification · KR
+
+**Actor:** claude_code
+
+Ran a bounded URL check.
+
+- bytes: 130
+- content type: application/json
+- final url: https://www.safemap.go.kr/openApiService/data/getDisasterInfoData.do
+- head status: 400
+- http status: 200
+- range honored: False
+
+## 2026-06-25T15:12:14Z — verification · KR
+
+**Actor:** claude_code
+
+Ran a bounded URL check.
+
+- bytes: 17111
+- content type: text/html
+- final url: https://www.safemap.go.kr/main/smap.do
+- head status: 400
+- http status: 200
+- range honored: False
+
+## 2026-06-25T15:12:17Z — verification · MX
+
+**Actor:** claude_code
+
+Ran a bounded URL check.
+
+- bytes: 371
+- content type: text/html
+- final url: https://www.gob.mx/conagua
+- head status: 200
+- http status: 206
+- range honored: True
+
+## 2026-06-25T15:12:19Z — verification · MX
+
+**Actor:** claude_code
+
+Ran a bounded URL check.
+
+- bytes: 371
+- content type: text/html
+- final url: https://www.gob.mx/conagua
+- head status: 200
+- http status: 206
+- range honored: True
+
+## 2026-06-25T15:12:19Z — verification · MX
+
+**Actor:** claude_code
+
+Ran a bounded URL check.
+
+- bytes: 0
+- content type: None
+- final url: None
+- head status: None
+- http status: None
+- range honored: None
